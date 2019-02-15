@@ -1,6 +1,6 @@
 # Sphinx Github Pages Tutorial	
 
- Website:  https://runawayhorse001.github.io/DatamingTutorial	
+ Website:  https://runawayhorse001.github.io/SphinxGithub
 
 
  This document is a summary of my Sphinx 
