@@ -191,7 +191,7 @@ html_use_smartypants = True
 #html_file_suffix = ''
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'theanodoc'
+htmlhelp_basename = 'spnixgitdoc'
 
 # Options for the linkcode extension
 # ----------------------------------
