@@ -73,7 +73,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General substitutions.
-project = 'Sphinx with github pages'
+project = 'Sphinx with Github Webpages'
 copyright = '2019, Wenqiang Feng'
 
 # The default replacements for |version| and |release|, also used in various
@@ -85,7 +85,7 @@ copyright = '2019, Wenqiang Feng'
 # The short X.Y version.
 version = '1.00'
 # The full version, including alpha/beta/rc tags.
-release = 'v1.00'
+release = '1.00'
 
 # There are two options for replacing |today|: either, you set today to some
 # non-false value, then it is used:
