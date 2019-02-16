@@ -1,5 +1,13 @@
 # -*- coding: utf-8 -*-
-#
+#############################################################################
+# I heavily borrowed, modified and used the configuration in conf.py of Theano
+# package progject. I will keep all the comments from Theano team and the 
+# coryright of this file belongs to Theano team. 
+# reference: 
+#           
+# Theano repository: https://github.com/Theano/Theano
+# conf.py: https://github.com/Theano/Theano/blob/master/doc/conf.py 
+##############################################################################
 # theano documentation build configuration file, created by
 # sphinx-quickstart on Tue Oct  7 16:34:06 2008.
 #
@@ -22,7 +30,6 @@ from __future__ import absolute_import, print_function, division
 
 import os
 import sys
-#import theano
 
 theano_path = os.path.join(os.path.dirname(__file__), os.pardir)
 sys.path.append(os.path.abspath(theano_path))
@@ -228,7 +235,7 @@ def linkcode_resolve(domain, info):
 
 latex_elements = {
     # The paper size ('letter' or 'a4').
-    #latex_paper_size = 'letter',
+    #latex_paper_size = 'a4',
 
     # The font size ('10pt', '11pt' or '12pt').
     'pointsize': '12pt',
@@ -241,12 +248,12 @@ latex_elements = {
 # (source start file, target name, title, author, document class
 # [howto/manual]).
 latex_documents = [
-  ('index', 'sphinxgithub.tex', 'Sphinx Github Page Tutorials',
+  ('index', 'sphinxgithub.tex', 'Sphinx Github Webpage Tutorials',
    'Wenqiang Feng', 'manual'),
 ]
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
-latex_logo = None
+latex_logo = 'images/logo.png'
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
 #latex_logo = 'images/snake_theta2-trans.png'
@@ -261,7 +268,7 @@ latex_logo = None
 
 # If false, no module index is generated.
 #latex_use_modindex = True
-latex_logo = 'images/logo.png'
+
 
 #latex_elements['preamble'] = '\usepackage{xcolor}'
 # Additional stuff for the LaTeX preamble.

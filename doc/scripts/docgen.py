@@ -1,3 +1,12 @@
+#############################################################################
+# I heavily borrowed, modified and used the configuration in docgen.py of Theano
+# package progject. I will keep all the comments from Theano team and the 
+# coryright of this file belongs to Theano team. 
+# reference: 
+#           
+# Theano repository: https://github.com/Theano/Theano
+# docgen.py: https://github.com/Theano/Theano/blob/master/doc/scripts/docgen.py
+##############################################################################
 from __future__ import print_function
 import sys
 import os
@@ -41,6 +50,7 @@ if __name__ == '__main__':
         except OSError:
             pass
 
+    # create the putput folder docs, since github page will use /docs folder for Github page.
     outdir = options['-o'] or (throot + '/docs')
     files = None
     if len(args) != 0:

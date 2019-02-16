@@ -1,18 +1,8 @@
-# Sphinx Github Pages Tutorial	
+# Sphinx Github Webpages Tutorial	
 
  Website:  https://runawayhorse001.github.io/SphinxGithub
 
 
- This document is a summary of my Sphinx 
+ This is a shared repository for my Sphinx Github page notes. In this repository, I will share some of my valueable experiences in using Python decumentation ``Sphinx`` with ``Github`` webpage.   
 
-
-BTW, the ``sphinx-to-github`` function for github pages  can be easily solved by add  an empty file ``.nojekyll ``  to your docs folder.  I add the following piece of code to add it automatically: 
-
-
-```
-# add .nojekyll file to fix the github pages issues
-nojekyll_path = os.path.join(outdir, '.nojekyll')
-if not os.path.exists(nojekyll_path):
-    os.makedirs(nojekyll_path)
-
-```
+The tutorials assume that the reader has a preliminary knowledge of ``programing``, ``Latex`` and ``Linux``. And this document is generated automatically by using sphinx.
