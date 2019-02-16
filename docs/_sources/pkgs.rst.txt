@@ -4,14 +4,39 @@
 Packages Installation
 =====================
 
+.. warning::
+
+	It's been 10 years since I abandoned ``Windows`` operating systems. I am a noob for ``Windows`` operating systems and I really do not know how to install ``some packages`` on ``Windows`` operating systems. 
+
 Python Installation
 +++++++++++++++++++
+
+1. Install ``pip``:
+
+.. code-block:: bash
+
+   sudo easy_install pip
+
+2. In stall ``python``:
+
+.. code-block:: bash
+
+   pip install python
+
 
 Sphinx Installation
 +++++++++++++++++++
 
+.. code-block:: bash
+
+   pip install -U Sphinx
+
 Latex Installation
 ++++++++++++++++++
 
+You can download the ``MacTex`` from: https://www.tug.org/mactex/ for Mac system. Or you can you the following command to install on Linux system:
 
-TO DO......
+.. code-block:: bash
+   
+   sudo apt update && sudo apt install texlive-full
+
