@@ -6,7 +6,7 @@ Packages Installation
 
 .. warning::
 
-	It's been 10 years since I abandoned ``Windows`` operating systems. I am a noob for ``Windows`` operating systems and I really do not know how to install ``some packages`` on ``Windows`` operating systems. 
+	It's been 10 years since I abandoned ``Windows`` operating systems. So I am a noob for ``Windows`` operating systems and I really do not know how to install ``some packages`` on ``Windows`` operating systems. 
 
 Python Installation
 +++++++++++++++++++
@@ -34,7 +34,7 @@ Sphinx Installation
 Latex Installation
 ++++++++++++++++++
 
-You can download the ``MacTex`` from: https://www.tug.org/mactex/ for Mac system. Or you can you the following command to install on Linux system:
+You can download the ``MacTex`` from: https://www.tug.org/mactex/ and install it for Mac system. Or you can use the following command to install ``TexLive`` on Linux system:
 
 .. code-block:: bash
    

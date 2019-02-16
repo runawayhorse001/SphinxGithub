@@ -1,7 +1,7 @@
-.. _pkgs:
+.. _sphinx:
 
 =====================
-Packages Installation
+Sphinx Configuration
 =====================
 
 .. warning::

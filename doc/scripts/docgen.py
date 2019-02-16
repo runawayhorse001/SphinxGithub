@@ -52,11 +52,15 @@ if __name__ == '__main__':
 
     # create the putput folder docs, since github page will use /docs folder for Github page.
     outdir = options['-o'] or (throot + '/docs')
+    # create the output folder latex
+    latexdir = options['-o'] or (throot + '/latex')
+
     files = None
     if len(args) != 0:
         files = [os.path.abspath(f) for f in args]
     currentdir = os.getcwd()
     mkdir(outdir)
+    mkdir(latexdir)
     os.chdir(outdir)
 
     # add .nojekyll file to fix the github pages issues
@@ -99,7 +103,8 @@ if __name__ == '__main__':
         if not options['--nopdf']:
             # Generate latex file in a temp directory
             import tempfile
-            workdir = tempfile.mkdtemp()
+            #workdir = tempfile.mkdtemp()
+            workdir = latexdir
             call_sphinx('latex', workdir)
             # Compile to PDF
             os.chdir(workdir)
@@ -107,7 +112,8 @@ if __name__ == '__main__':
             try:
                 shutil.copy(os.path.join(workdir, 'sphinxgithub.pdf'), outdir)
                 os.chdir(outdir)
-                shutil.rmtree(workdir)
+                # remove the workdir folder
+                #shutil.rmtree(workdir)
             except OSError as e:
                 print('OSError:', e)
             except IOError as e:

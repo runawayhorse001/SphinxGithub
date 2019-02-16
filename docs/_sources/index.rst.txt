@@ -18,4 +18,5 @@ Contents
    preface
    intro
    pkgs
+   sphinx
 
