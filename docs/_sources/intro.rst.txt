@@ -13,19 +13,19 @@ The following descriptions are from `Sphinx`_:
 
 It was originally created for the Python documentation, and it has excellent facilities for the documentation of software projects in a range of languages. Of course, this site is also created from reStructuredText sources using Sphinx! The following features should be highlighted:
 
-#. **Output formats:** ``HTML`` (including Windows HTML Help), ``LaTeX`` (for printable PDF versions), ePub, Texinfo, manual pages, plain text
+* **Output formats:** ``HTML`` (including Windows HTML Help), ``LaTeX`` (for printable PDF versions), ePub, Texinfo, manual pages, plain text
 
-#. **OExtensive cross-references:** semantic markup and automatic links for functions, classes, citations, glossary terms and similar pieces of information
+* **Extensive cross-references:** semantic markup and automatic links for functions, classes, citations, glossary terms and similar pieces of information
 
-#. **OHierarchical structure:** easy definition of a document tree, with automatic links to siblings, parents and children
+* **Hierarchical structure:** easy definition of a document tree, with automatic links to siblings, parents and children
 
-#. **OAutomatic indices:** general index as well as a language-specific module indices
+* **Automatic indices:** general index as well as a language-specific module indices
 
-#. **OCode handling:** automatic highlighting using the Pygments highlighter
+* **Code handling:** automatic highlighting using the Pygments highlighter
 
-#. **OExtensions:** automatic testing of code snippets, inclusion of docstrings from Python modules (API docs), and more
+* **Extensions:** automatic testing of code snippets, inclusion of docstrings from Python modules (API docs), and more
 
-#. **OContributed extensions:** more than 50 extensions contributed by users in a second repository; most of them installable from PyPI
+* **Contributed extensions:** more than 50 extensions contributed by users in a second repository; most of them installable from PyPI
 
 Sphinx uses `reStructuredText`_ as its markup language, and many of its strengths come from the power and straightforwardness of reStructuredText and its parsing and translating suite, the Docutils.
 

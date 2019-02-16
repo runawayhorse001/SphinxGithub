@@ -7,7 +7,7 @@ Preface
 About this tutorial
 +++++++++++++++++++
 
-This document is a summary of my valueable experiences in using Python decumentation ``Sphinx`` with ``Github`` webpage. **You may download and distribute it. Please be aware, however, that the note contains typos as well as inaccurate or incorrect description.** 
+This document is a summary of my valueable experiences in using Python decumentation ``Sphinx`` with ``Github`` webpage. The PDF version can be downloaded from `HERE <sphinxgithub.pdf>`_. **You may download and distribute it. Please be aware, however, that the note contains typos as well as inaccurate or incorrect description.** 
 
 In this repository, I try to use the detailed demo code and 
 examples to show how to use ``Sphinx`` to generate the ``.html`` and ``.pdf`` documents and how to hookup them automatically on ``Github``. If you find your work wasn’t cited in this note, please feel free to let me know.
@@ -47,21 +47,21 @@ Motivation for this tutorial
 ++++++++++++++++++++++++++++
 ``Sphinx`` is an awesome Python documentation package, and it has excellent facilities for the documentation of software projects in a range of languages. I was impressed and attracted by Sphinx in the first using. And I foud that:
 
-#. It supports **several popular output formats**: ``HTML`` (including Windows HTML Help), ``LaTeX`` (for printable PDF versions), ePub, Texinfo, manual pages, plain text.
+* It supports **several popular output formats**: ``HTML`` (including Windows HTML Help), ``LaTeX`` (for printable PDF versions), ePub, Texinfo, manual pages, plain text.
 
-#. It has **easy publishing routes**: Github.
+* It has **easy publishing routes**: Github.
 
-#. Is has **extensive cross-references**: semantic markup and automatic links for functions, classes, citations, glossary terms and similar pieces of information
+* Is has **extensive cross-references**: semantic markup and automatic links for functions, classes, citations, glossary terms and similar pieces of information
 
-#. It has **hierarchical structure**: easy definition of a document tree, with automatic links to siblings, parents and children.
+* It has **hierarchical structure**: easy definition of a document tree, with automatic links to siblings, parents and children.
 
-#. It has **automatic indices**: general index as well as a language-specific module indices
+* It has **automatic indices**: general index as well as a language-specific module indices
 
-#. It has awesome **code handling**: automatic highlighting using the Pygments highlighter
+* It has awesome **code handling**: automatic highlighting using the Pygments highlighter
 
-#. Is has abundant **extensions**: automatic testing of code snippets, inclusion of docstrings from Python modules (API docs), and more
+* Is has abundant **extensions**: automatic testing of code snippets, inclusion of docstrings from Python modules (API docs), and more
 
-#. It has abundant **contributed extensions**: more than 50 extensions contributed by users in a second repository; most of them installable from PyPI
+* It has abundant **contributed extensions**: more than 50 extensions contributed by users in a second repository; most of them installable from PyPI
 
 
 Feedback and suggestions

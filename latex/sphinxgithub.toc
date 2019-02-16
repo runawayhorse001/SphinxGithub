@@ -13,6 +13,16 @@
 \contentsline {section}{\numberline {3.2}Sphinx Installation}{9}{section.3.2}
 \contentsline {section}{\numberline {3.3}Latex Installation}{9}{section.3.3}
 \contentsline {chapter}{\numberline {4}Sphinx Configuration}{11}{chapter.4}
-\contentsline {section}{\numberline {4.1}Python Installation}{11}{section.4.1}
-\contentsline {section}{\numberline {4.2}Sphinx Installation}{11}{section.4.2}
-\contentsline {section}{\numberline {4.3}Latex Installation}{11}{section.4.3}
+\contentsline {section}{\numberline {4.1}General HTML Configuration}{11}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}General Evironment Infomation}{11}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}General Project Infomation}{13}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}General LaTex Configuration}{14}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}General LaTeX Output Options}{14}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}LaTeX preamble definitions}{15}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}Full \sphinxstyleliteralintitle {\sphinxupquote {conf.py}} Script}{16}{section.4.3}
+\contentsline {section}{\numberline {4.4}General Documentation Generator Configuration}{24}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Output Options}{24}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Output Directory}{25}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Documentation Compiler}{26}{subsection.4.4.3}
+\contentsline {subsection}{\numberline {4.4.4}\sphinxstyleliteralintitle {\sphinxupquote {Makefile}} Wrapper}{27}{subsection.4.4.4}
+\contentsline {section}{\numberline {4.5}Full \sphinxstyleliteralintitle {\sphinxupquote {docgen.py}} Script}{27}{section.4.5}

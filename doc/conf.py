@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #############################################################################
 # I heavily borrowed, modified and used the configuration in conf.py of Theano
-# package progject. I will keep all the comments from Theano team and the 
+# package project. I will keep all the comments from Theano team and the 
 # coryright of this file belongs to Theano team. 
 # reference: 
 #           
@@ -284,10 +284,10 @@ latex_elements['preamble'] =  '\\usepackage{amsmath}\n'+\
                           '\\def\\X{\\mathbf{X}}\n'+\
                           '\\def\\By{\\mathbf{y}}\n'+\
                           '\\def\\Bbeta{\\boldsymbol{\\beta}}\n'+\
-        '\\def\\bU{\\mathbf{U}}\n'+\
+                          '\\def\\bU{\\mathbf{U}}\n'+\
                           '\\def\\bV{\\mathbf{V}}\n'+\
                           '\\def\\V1{\\mathds{1}}\n'+\
-        '\\def\\hU{\\mathbf{\hat{U}}}\n'+\
+                          '\\def\\hU{\\mathbf{\hat{U}}}\n'+\
                           '\\def\\hS{\\mathbf{\hat{\Sigma}}}\n'+\
                           '\\def\\hV{\\mathbf{\hat{V}}}\n'+\
                           '\\def\\E{\\mathbf{E}}\n'+\
@@ -313,7 +313,7 @@ latex_elements['preamble'] =  '\\usepackage{amsmath}\n'+\
 #latex_use_modindex = True
 
 default_role = 'math'
-pngmath_divpng_args = ['-gamma 1.5','-D 110']
+ingmath_divpng_args = ['-gamma 1.5','-D 110']
 #pngmath_divpng_args = ['-gamma', '1.5', '-D', '110', '-bg', 'Transparent'] 
 imgmath_latex_preamble =  '\\usepackage{amsmath}\n'+\
                           '\\usepackage{mathtools}\n'+\

@@ -112,7 +112,7 @@
 \end{figure}
 \end{quote}
 
-Welcome to my Sphinx gihub webpage tutorials! In those tutorials, you will learn how to use \sphinxcode{\sphinxupquote{Sphinx}} to create \sphinxcode{\sphinxupquote{.html}} and \sphinxcode{\sphinxupquote{.pdf}} and how to hookup your \sphinxcode{\sphinxupquote{Sphinx}} webpage to github. The PDF version can be downloaded from \sphinxhref{sphinxgithub.pdf}{HERE}.
+Welcome to my \sphinxstylestrong{Sphinx gihub webpage} tutorials! In those tutorials, you will learn how to use \sphinxcode{\sphinxupquote{Sphinx}} to create \sphinxcode{\sphinxupquote{.html}} and \sphinxcode{\sphinxupquote{.pdf}} and how to hookup your \sphinxcode{\sphinxupquote{Sphinx}} webpage to github. The PDF version can be downloaded from \sphinxhref{sphinxgithub.pdf}{HERE}.
 
 
 
@@ -122,7 +122,7 @@ Welcome to my Sphinx gihub webpage tutorials! In those tutorials, you will learn
 
 \section{About this tutorial}
 \label{\detokenize{preface:about-this-tutorial}}
-This document is a summary of my valueable experiences in using Python decumentation \sphinxcode{\sphinxupquote{Sphinx}} with \sphinxcode{\sphinxupquote{Github}} webpage. \sphinxstylestrong{You may download and distribute it. Please be aware, however, that the note contains typos as well as inaccurate or incorrect description.}
+This document is a summary of my valueable experiences in using Python decumentation \sphinxcode{\sphinxupquote{Sphinx}} with \sphinxcode{\sphinxupquote{Github}} webpage. The PDF version can be downloaded from \sphinxhref{sphinxgithub.pdf}{HERE}. \sphinxstylestrong{You may download and distribute it. Please be aware, however, that the note contains typos as well as inaccurate or incorrect description.}
 
 In this repository, I try to use the detailed demo code and
 examples to show how to use \sphinxcode{\sphinxupquote{Sphinx}} to generate the \sphinxcode{\sphinxupquote{.html}} and \sphinxcode{\sphinxupquote{.pdf}} documents and how to hookup them automatically on \sphinxcode{\sphinxupquote{Github}}. If you find your work wasn’t cited in this note, please feel free to let me know.
@@ -171,10 +171,7 @@ The work of Wenqiang Feng was supported by the IMA, while working at IMA. Howeve
 \section{Motivation for this tutorial}
 \label{\detokenize{preface:motivation-for-this-tutorial}}
 \sphinxcode{\sphinxupquote{Sphinx}} is an awesome Python documentation package, and it has excellent facilities for the documentation of software projects in a range of languages. I was impressed and attracted by Sphinx in the first using. And I foud that:
-\begin{enumerate}
-\def\theenumi{\arabic{enumi}}
-\def\labelenumi{\theenumi .}
-\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\begin{itemize}
 \item {} 
 It supports \sphinxstylestrong{several popular output formats}: \sphinxcode{\sphinxupquote{HTML}} (including Windows HTML Help), \sphinxcode{\sphinxupquote{LaTeX}} (for printable PDF versions), ePub, Texinfo, manual pages, plain text.
 
@@ -199,7 +196,7 @@ Is has abundant \sphinxstylestrong{extensions}: automatic testing of code snippe
 \item {} 
 It has abundant \sphinxstylestrong{contributed extensions}: more than 50 extensions contributed by users in a second repository; most of them installable from PyPI
 
-\end{enumerate}
+\end{itemize}
 
 
 \section{Feedback and suggestions}
@@ -218,32 +215,29 @@ The following descriptions are from \sphinxhref{http://www.sphinx-doc.org/en/mas
 \sphinxhref{http://www.sphinx-doc.org/en/master/}{Sphinx} is a tool that makes it easy to create intelligent and beautiful documentation, written by Georg Brandl and licensed under the BSD license.
 
 It was originally created for the Python documentation, and it has excellent facilities for the documentation of software projects in a range of languages. Of course, this site is also created from reStructuredText sources using Sphinx! The following features should be highlighted:
-\begin{enumerate}
-\def\theenumi{\arabic{enumi}}
-\def\labelenumi{\theenumi .}
-\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\begin{itemize}
 \item {} 
 \sphinxstylestrong{Output formats:} \sphinxcode{\sphinxupquote{HTML}} (including Windows HTML Help), \sphinxcode{\sphinxupquote{LaTeX}} (for printable PDF versions), ePub, Texinfo, manual pages, plain text
 
 \item {} 
-\sphinxstylestrong{OExtensive cross-references:} semantic markup and automatic links for functions, classes, citations, glossary terms and similar pieces of information
+\sphinxstylestrong{Extensive cross-references:} semantic markup and automatic links for functions, classes, citations, glossary terms and similar pieces of information
 
 \item {} 
-\sphinxstylestrong{OHierarchical structure:} easy definition of a document tree, with automatic links to siblings, parents and children
+\sphinxstylestrong{Hierarchical structure:} easy definition of a document tree, with automatic links to siblings, parents and children
 
 \item {} 
-\sphinxstylestrong{OAutomatic indices:} general index as well as a language-specific module indices
+\sphinxstylestrong{Automatic indices:} general index as well as a language-specific module indices
 
 \item {} 
-\sphinxstylestrong{OCode handling:} automatic highlighting using the Pygments highlighter
+\sphinxstylestrong{Code handling:} automatic highlighting using the Pygments highlighter
 
 \item {} 
-\sphinxstylestrong{OExtensions:} automatic testing of code snippets, inclusion of docstrings from Python modules (API docs), and more
+\sphinxstylestrong{Extensions:} automatic testing of code snippets, inclusion of docstrings from Python modules (API docs), and more
 
 \item {} 
-\sphinxstylestrong{OContributed extensions:} more than 50 extensions contributed by users in a second repository; most of them installable from PyPI
+\sphinxstylestrong{Contributed extensions:} more than 50 extensions contributed by users in a second repository; most of them installable from PyPI
 
-\end{enumerate}
+\end{itemize}
 
 Sphinx uses \sphinxhref{https://en.wikipedia.org/wiki/ReStructuredText}{reStructuredText} as its markup language, and many of its strengths come from the power and straightforwardness of reStructuredText and its parsing and translating suite, the Docutils.
 
@@ -281,24 +275,18 @@ It’s been 10 years since I abandoned \sphinxcode{\sphinxupquote{Windows}} oper
 \item {} 
 Install \sphinxcode{\sphinxupquote{pip}}:
 
-\end{enumerate}
-
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
 sudo easy\PYGZus{}install pip
 \end{sphinxVerbatim}
-\begin{enumerate}
-\def\theenumi{\arabic{enumi}}
-\def\labelenumi{\theenumi .}
-\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
-\setcounter{enumi}{1}
+
 \item {} 
 In stall \sphinxcode{\sphinxupquote{python}}:
-
-\end{enumerate}
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
 pip install python
 \end{sphinxVerbatim}
+
+\end{enumerate}
 
 
 \section{Sphinx Installation}
@@ -319,23 +307,36 @@ sudo apt update \PYG{o}{\PYGZam{}\PYGZam{}} sudo apt install texlive\PYGZhy{}ful
 
 \chapter{Sphinx Configuration}
 \label{\detokenize{sphinx:sphinx-configuration}}\label{\detokenize{sphinx:sphinx}}\label{\detokenize{sphinx::doc}}
-\begin{sphinxadmonition}{warning}{Warning:}
-It’s been 10 years since I abandoned \sphinxcode{\sphinxupquote{Windows}} operating systems. So I am a noob for \sphinxcode{\sphinxupquote{Windows}} operating systems and I really do not know how to install \sphinxcode{\sphinxupquote{some packages}} on \sphinxcode{\sphinxupquote{Windows}} operating systems.
+\begin{sphinxadmonition}{note}{Note:}
+I heavily borrowed, modified and used the configuration in \sphinxcode{\sphinxupquote{conf.py}} and \sphinxcode{\sphinxupquote{docgen.py}} of \sphinxhref{https://github.com/Theano/Theano}{Theano package project}. I will keep all the comments from Theano team and the coryrights of those files belong to Theano team.
 \end{sphinxadmonition}
 
 
-\section{Python Installation}
-\label{\detokenize{sphinx:python-installation}}\begin{enumerate}
+\section{General HTML Configuration}
+\label{\detokenize{sphinx:general-html-configuration}}
+
+\subsection{General Evironment Infomation}
+\label{\detokenize{sphinx:general-evironment-infomation}}\begin{enumerate}
 \def\theenumi{\arabic{enumi}}
 \def\labelenumi{\theenumi .}
 \makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
 \item {} 
-Install \sphinxcode{\sphinxupquote{pip}}:
+Sphinx extension
 
 \end{enumerate}
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-sudo easy\PYGZus{}install pip
+\PYG{c+c1}{\PYGZsh{} Add any Sphinx extension module names here, as strings. They can be}
+\PYG{c+c1}{\PYGZsh{} extensions coming with Sphinx (named \PYGZsq{}sphinx.ext.*\PYGZsq{}) or your custom ones.}
+\PYG{n}{extensions} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sphinx.ext.autodoc}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+              \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sphinx.ext.todo}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+              \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sphinx.ext.doctest}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+              \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sphinx.ext.napoleon}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+              \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sphinx.ext.linkcode}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}
+
+\PYG{n}{todo\PYGZus{}include\PYGZus{}todos} \PYG{o}{=} \PYG{n+nb+bp}{True}
+\PYG{n}{napoleon\PYGZus{}google\PYGZus{}docstring} \PYG{o}{=} \PYG{n+nb+bp}{False}
+\PYG{n}{napoleon\PYGZus{}include\PYGZus{}special\PYGZus{}with\PYGZus{}doc} \PYG{o}{=} \PYG{n+nb+bp}{False}
 \end{sphinxVerbatim}
 \begin{enumerate}
 \def\theenumi{\arabic{enumi}}
@@ -343,28 +344,865 @@ sudo easy\PYGZus{}install pip
 \makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
 \setcounter{enumi}{1}
 \item {} 
-In stall \sphinxcode{\sphinxupquote{python}}:
+Math formula support
 
 \end{enumerate}
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-pip install python
+\PYG{c+c1}{\PYGZsh{} We do it like this to support multiple sphinx version without having warning.}
+\PYG{c+c1}{\PYGZsh{} Our buildbot consider warning as error.}
+\PYG{k}{try}\PYG{p}{:}
+    \PYG{k+kn}{from} \PYG{n+nn}{sphinx.ext} \PYG{k+kn}{import} \PYG{n}{imgmath}
+    \PYG{n}{extensions}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sphinx.ext.imgmath}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{k}{except} \PYG{n+ne}{ImportError}\PYG{p}{:}
+    \PYG{k}{try}\PYG{p}{:}
+        \PYG{k+kn}{from} \PYG{n+nn}{sphinx.ext} \PYG{k+kn}{import} \PYG{n}{pngmath}
+        \PYG{n}{extensions}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sphinx.ext.pngmath}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+    \PYG{k}{except} \PYG{n+ne}{ImportError}\PYG{p}{:}
+        \PYG{k}{pass}
+\end{sphinxVerbatim}
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\setcounter{enumi}{2}
+\item {} 
+Included and excluded folders options
+
+\end{enumerate}
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} Add any paths that contain templates here, relative to this directory.}
+\PYG{n}{templates\PYGZus{}path} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{.templates}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}
+
+\PYG{c+c1}{\PYGZsh{} List of directories, relative to source directories, that shouldn\PYGZsq{}t be}
+\PYG{c+c1}{\PYGZsh{} searched for source files.}
+\PYG{n}{exclude\PYGZus{}dirs} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{images}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{scripts}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sandbox}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}
+\end{sphinxVerbatim}
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\setcounter{enumi}{3}
+\item {} 
+Image math formula preamble
+
+\end{enumerate}
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} If false, no module index is generated.}
+\PYG{c+c1}{\PYGZsh{}latex\PYGZus{}use\PYGZus{}modindex = True}
+
+\PYG{n}{default\PYGZus{}role} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{math}\PYG{l+s+s1}{\PYGZsq{}}
+\PYG{n}{pngmath\PYGZus{}divpng\PYGZus{}args} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}gamma 1.5}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}D 110}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}
+\PYG{c+c1}{\PYGZsh{}pngmath\PYGZus{}divpng\PYGZus{}args = [\PYGZsq{}\PYGZhy{}gamma\PYGZsq{}, \PYGZsq{}1.5\PYGZsq{}, \PYGZsq{}\PYGZhy{}D\PYGZsq{}, \PYGZsq{}110\PYGZsq{}, \PYGZsq{}\PYGZhy{}bg\PYGZsq{}, \PYGZsq{}Transparent\PYGZsq{}]}
+\PYG{n}{imgmath\PYGZus{}latex\PYGZus{}preamble} \PYG{o}{=}  \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{usepackage\PYGZob{}amsmath\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{usepackage\PYGZob{}mathtools\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{usepackage\PYGZob{}amsfonts\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{usepackage\PYGZob{}amssymb\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{usepackage\PYGZob{}dsfont\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{Z\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbb\PYGZob{}Z\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{R\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbb\PYGZob{}R\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{bX\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}X\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{X\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}X\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{By\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}y\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{Bbeta\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{boldsymbol\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{beta\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{U\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}U\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{V\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}V\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{V1\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathds\PYGZob{}1\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{hU\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}}\PYG{l+s+s1}{\PYGZbs{}}\PYG{l+s+s1}{hat\PYGZob{}U\PYGZcb{}\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{hS\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}}\PYG{l+s+s1}{\PYGZbs{}}\PYG{l+s+s1}{hat\PYGZob{}}\PYG{l+s+s1}{\PYGZbs{}}\PYG{l+s+s1}{Sigma\PYGZcb{}\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{hV\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}}\PYG{l+s+s1}{\PYGZbs{}}\PYG{l+s+s1}{hat\PYGZob{}V\PYGZcb{}\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{E\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}E\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{F\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}F\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{x\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}x\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{h\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}h\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{v\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}v\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{nv\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}v\PYGZca{}\PYGZob{}\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}b}\PYG{l+s+s1}{f \PYGZhy{}\PYGZcb{}\PYGZcb{}\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{nh\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}h\PYGZca{}\PYGZob{}\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}b}\PYG{l+s+s1}{f \PYGZhy{}\PYGZcb{}\PYGZcb{}\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{s\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}s\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{b\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}b\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{c\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}c\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{W\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}W\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{C\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}C\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{P\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}P\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{T\PYGZob{}\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{bf }\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathcal T\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{B\PYGZob{}\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{bf }\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathcal B\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}
 \end{sphinxVerbatim}
 
 
-\section{Sphinx Installation}
-\label{\detokenize{sphinx:sphinx-installation}}
+\subsection{General Project Infomation}
+\label{\detokenize{sphinx:general-project-infomation}}\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\item {} 
+The suffix of source filenames
+
+\end{enumerate}
+
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-pip install \PYGZhy{}U Sphinx
+\PYG{c+c1}{\PYGZsh{} The suffix of source filenames.}
+\PYG{n}{source\PYGZus{}suffix} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{.rst}\PYG{l+s+s1}{\PYGZsq{}}
+\end{sphinxVerbatim}
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\setcounter{enumi}{1}
+\item {} 
+The master toctree document
+
+\end{enumerate}
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} The master toctree document.}
+\PYG{n}{master\PYGZus{}doc} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{index}\PYG{l+s+s1}{\PYGZsq{}}
+\end{sphinxVerbatim}
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\setcounter{enumi}{2}
+\item {} 
+General substitutions
+
+\end{enumerate}
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} General substitutions.}
+\PYG{n}{project} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Sphinx with Github Webpages}\PYG{l+s+s1}{\PYGZsq{}}
+\PYG{n}{copyright} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{2019, Wenqiang Feng}\PYG{l+s+s1}{\PYGZsq{}}
+\end{sphinxVerbatim}
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\setcounter{enumi}{3}
+\item {} 
+Version and date format
+
+\end{enumerate}
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} We need this hokey\PYGZhy{}pokey because versioneer needs the current}
+\PYG{c+c1}{\PYGZsh{} directory to be the root of the project to work.}
+\PYG{c+c1}{\PYGZsh{} The short X.Y version.}
+\PYG{n}{version} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{1.00}\PYG{l+s+s1}{\PYGZsq{}}
+\PYG{c+c1}{\PYGZsh{} The full version, including alpha/beta/rc tags.}
+\PYG{n}{release} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{1.00}\PYG{l+s+s1}{\PYGZsq{}}
+
+\PYG{c+c1}{\PYGZsh{} There are two options for replacing \textbar{}today\textbar{}: either, you set today to some}
+\PYG{c+c1}{\PYGZsh{} non\PYGZhy{}false value, then it is used:}
+\PYG{c+c1}{\PYGZsh{}today = \PYGZsq{}\PYGZsq{}}
+\PYG{c+c1}{\PYGZsh{} Else, today\PYGZus{}fmt is used as the format for a strftime call.}
+\PYG{n}{today\PYGZus{}fmt} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZpc{}}\PYG{l+s+s1}{B }\PYG{l+s+si}{\PYGZpc{}d}\PYG{l+s+s1}{, }\PYG{l+s+s1}{\PYGZpc{}}\PYG{l+s+s1}{Y}\PYG{l+s+s1}{\PYGZsq{}}
+
+\PYG{c+c1}{\PYGZsh{} Add any paths that contain custom static files (such as style sheets) here,}
+\PYG{c+c1}{\PYGZsh{} relative to this directory. They are copied after the builtin static files,}
+\PYG{c+c1}{\PYGZsh{} so a file named \PYGZdq{}default.css\PYGZdq{} will overwrite the builtin \PYGZdq{}default.css\PYGZdq{}.}
+\PYG{n}{html\PYGZus{}static\PYGZus{}path} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{images}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}
+
+\PYG{c+c1}{\PYGZsh{} If not \PYGZsq{}\PYGZsq{}, a \PYGZsq{}Last updated on:\PYGZsq{} timestamp is inserted at every page bottom,}
+\PYG{c+c1}{\PYGZsh{} using the given strftime format.}
+\PYG{n}{html\PYGZus{}last\PYGZus{}updated\PYGZus{}fmt} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZpc{}}\PYG{l+s+s1}{b }\PYG{l+s+si}{\PYGZpc{}d}\PYG{l+s+s1}{, }\PYG{l+s+s1}{\PYGZpc{}}\PYG{l+s+s1}{Y}\PYG{l+s+s1}{\PYGZsq{}}
+
+\PYG{c+c1}{\PYGZsh{} If true, SmartyPants will be used to convert quotes and dashes to}
+\PYG{c+c1}{\PYGZsh{} typographically correct entities.}
+\PYG{n}{html\PYGZus{}use\PYGZus{}smartypants} \PYG{o}{=} \PYG{n+nb+bp}{True}
 \end{sphinxVerbatim}
 
 
-\section{Latex Installation}
-\label{\detokenize{sphinx:latex-installation}}
-You can download the \sphinxcode{\sphinxupquote{MacTex}} from: \sphinxurl{https://www.tug.org/mactex/} and install it for Mac system. Or you can use the following command to install \sphinxcode{\sphinxupquote{TexLive}} on Linux system:
+\section{General LaTex Configuration}
+\label{\detokenize{sphinx:general-latex-configuration}}
+
+\subsection{General LaTeX Output Options}
+\label{\detokenize{sphinx:general-latex-output-options}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} Options for LaTeX output}
+\PYG{c+c1}{\PYGZsh{} \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+
+\PYG{n}{latex\PYGZus{}elements} \PYG{o}{=} \PYG{p}{\PYGZob{}}
+    \PYG{c+c1}{\PYGZsh{} The paper size (\PYGZsq{}letter\PYGZsq{} or \PYGZsq{}a4\PYGZsq{}).}
+    \PYG{c+c1}{\PYGZsh{}latex\PYGZus{}paper\PYGZus{}size = \PYGZsq{}a4\PYGZsq{},}
+
+    \PYG{c+c1}{\PYGZsh{} The font size (\PYGZsq{}10pt\PYGZsq{}, \PYGZsq{}11pt\PYGZsq{} or \PYGZsq{}12pt\PYGZsq{}).}
+    \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{pointsize}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{12pt}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+
+    \PYG{c+c1}{\PYGZsh{} Additional stuff for the LaTeX preamble.}
+    \PYG{c+c1}{\PYGZsh{}latex\PYGZus{}preamble = \PYGZsq{}\PYGZsq{},}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{c+c1}{\PYGZsh{} Grouping the document tree into LaTeX files. List of tuples}
+\PYG{c+c1}{\PYGZsh{} (source start file, target name, title, author, document class}
+\PYG{c+c1}{\PYGZsh{} [howto/manual]).}
+\PYG{n}{latex\PYGZus{}documents} \PYG{o}{=} \PYG{p}{[}
+  \PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{index}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sphinxgithub.tex}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Sphinx Github Webpage Tutorials}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+   \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Wenqiang Feng}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{manual}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}\PYG{p}{,}
+\PYG{p}{]}
+\PYG{c+c1}{\PYGZsh{} The name of an image file (relative to this directory) to place at the top of}
+\PYG{c+c1}{\PYGZsh{} the title page.}
+\PYG{n}{latex\PYGZus{}logo} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{images/logo.png}\PYG{l+s+s1}{\PYGZsq{}}
+\end{sphinxVerbatim}
+
+
+\subsection{LaTeX preamble definitions}
+\label{\detokenize{sphinx:latex-preamble-definitions}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{}latex\PYGZus{}elements[\PYGZsq{}preamble\PYGZsq{}] = \PYGZsq{}\PYGZbs{}usepackage\PYGZob{}xcolor\PYGZcb{}\PYGZsq{}}
+\PYG{c+c1}{\PYGZsh{} Additional stuff for the LaTeX preamble.}
+\PYG{c+c1}{\PYGZsh{}latex\PYGZus{}preamble}
+\PYG{n}{latex\PYGZus{}elements}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{preamble}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]} \PYG{o}{=}  \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{usepackage\PYGZob{}amsmath\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{usepackage\PYGZob{}mathtools\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{usepackage\PYGZob{}amsfonts\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{usepackage\PYGZob{}amssymb\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{usepackage\PYGZob{}dsfont\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{Z\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbb\PYGZob{}Z\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{R\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbb\PYGZob{}R\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{bX\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}X\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{X\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}X\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{By\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}y\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{Bbeta\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{boldsymbol\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{beta\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{bU\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}U\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{bV\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}V\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{V1\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathds\PYGZob{}1\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{hU\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}}\PYG{l+s+s1}{\PYGZbs{}}\PYG{l+s+s1}{hat\PYGZob{}U\PYGZcb{}\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{hS\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}}\PYG{l+s+s1}{\PYGZbs{}}\PYG{l+s+s1}{hat\PYGZob{}}\PYG{l+s+s1}{\PYGZbs{}}\PYG{l+s+s1}{Sigma\PYGZcb{}\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{hV\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}}\PYG{l+s+s1}{\PYGZbs{}}\PYG{l+s+s1}{hat\PYGZob{}V\PYGZcb{}\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{E\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}E\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{F\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}F\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{x\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}x\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{h\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}h\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{v\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}v\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{nv\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}v\PYGZca{}\PYGZob{}\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}b}\PYG{l+s+s1}{f \PYGZhy{}\PYGZcb{}\PYGZcb{}\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{nh\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}h\PYGZca{}\PYGZob{}\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}b}\PYG{l+s+s1}{f \PYGZhy{}\PYGZcb{}\PYGZcb{}\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{s\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}s\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{b\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}b\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{c\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}c\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{W\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}W\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{C\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}C\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{P\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}P\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{T\PYGZob{}\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{bf }\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathcal T\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{B\PYGZob{}\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{bf }\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathcal B\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}
+\end{sphinxVerbatim}
+
+
+\section{Full \sphinxstyleliteralintitle{\sphinxupquote{conf.py}} Script}
+\label{\detokenize{sphinx:full-conf-py-script}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{} \PYGZhy{}*\PYGZhy{} coding: utf\PYGZhy{}8 \PYGZhy{}*\PYGZhy{}}
+\PYG{c+c1}{\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}}
+\PYG{c+c1}{\PYGZsh{} I heavily borrowed, modified and used the configuration in conf.py of Theano}
+\PYG{c+c1}{\PYGZsh{} package project. I will keep all the comments from Theano team and the}
+\PYG{c+c1}{\PYGZsh{} coryright of this file belongs to Theano team.}
+\PYG{c+c1}{\PYGZsh{} reference:}
+\PYG{c+c1}{\PYGZsh{}}
+\PYG{c+c1}{\PYGZsh{} Theano repository: https://github.com/Theano/Theano}
+\PYG{c+c1}{\PYGZsh{} conf.py: https://github.com/Theano/Theano/blob/master/doc/conf.py}
+\PYG{c+c1}{\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}}
+\PYG{c+c1}{\PYGZsh{} theano documentation build configuration file, created by}
+\PYG{c+c1}{\PYGZsh{} sphinx\PYGZhy{}quickstart on Tue Oct  7 16:34:06 2008.}
+\PYG{c+c1}{\PYGZsh{}}
+\PYG{c+c1}{\PYGZsh{} This file is execfile()d with the current directory set to its containing}
+\PYG{c+c1}{\PYGZsh{} directory.}
+\PYG{c+c1}{\PYGZsh{}}
+\PYG{c+c1}{\PYGZsh{} The contents of this file are pickled, so don\PYGZsq{}t put values in the namespace}
+\PYG{c+c1}{\PYGZsh{} that aren\PYGZsq{}t pickleable (module imports are okay, they\PYGZsq{}re removed}
+\PYG{c+c1}{\PYGZsh{} automatically).}
+\PYG{c+c1}{\PYGZsh{}}
+\PYG{c+c1}{\PYGZsh{} All configuration values have a default value; values that are commented out}
+\PYG{c+c1}{\PYGZsh{} serve to show the default value.}
+
+\PYG{c+c1}{\PYGZsh{} If your extensions are in another directory, add it here. If the directory}
+\PYG{c+c1}{\PYGZsh{} is relative to the documentation root, use os.path.abspath to make it}
+\PYG{c+c1}{\PYGZsh{} absolute, like shown here.}
+\PYG{c+c1}{\PYGZsh{}sys.path.append(os.path.abspath(\PYGZsq{}some/directory\PYGZsq{}))}
+
+\PYG{k+kn}{from} \PYG{n+nn}{\PYGZus{}\PYGZus{}future\PYGZus{}\PYGZus{}} \PYG{k+kn}{import} \PYG{n}{absolute\PYGZus{}import}\PYG{p}{,} \PYG{n}{print\PYGZus{}function}\PYG{p}{,} \PYG{n}{division}
+
+\PYG{k+kn}{import} \PYG{n+nn}{os}
+\PYG{k+kn}{import} \PYG{n+nn}{sys}
+
+\PYG{n}{theano\PYGZus{}path} \PYG{o}{=} \PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{join}\PYG{p}{(}\PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{dirname}\PYG{p}{(}\PYG{n+nv+vm}{\PYGZus{}\PYGZus{}file\PYGZus{}\PYGZus{}}\PYG{p}{)}\PYG{p}{,} \PYG{n}{os}\PYG{o}{.}\PYG{n}{pardir}\PYG{p}{)}
+\PYG{n}{sys}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{abspath}\PYG{p}{(}\PYG{n}{theano\PYGZus{}path}\PYG{p}{)}\PYG{p}{)}
+\PYG{k+kn}{import} \PYG{n+nn}{versioneer}
+
+\PYG{c+c1}{\PYGZsh{} General configuration}
+\PYG{c+c1}{\PYGZsh{} \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+
+\PYG{c+c1}{\PYGZsh{} Add any Sphinx extension module names here, as strings. They can be}
+\PYG{c+c1}{\PYGZsh{} extensions coming with Sphinx (named \PYGZsq{}sphinx.ext.*\PYGZsq{}) or your custom ones.}
+\PYG{n}{extensions} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sphinx.ext.autodoc}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+              \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sphinx.ext.todo}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+              \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sphinx.ext.doctest}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+              \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sphinx.ext.napoleon}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+              \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sphinx.ext.linkcode}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}
+
+\PYG{n}{todo\PYGZus{}include\PYGZus{}todos} \PYG{o}{=} \PYG{n+nb+bp}{True}
+\PYG{n}{napoleon\PYGZus{}google\PYGZus{}docstring} \PYG{o}{=} \PYG{n+nb+bp}{False}
+\PYG{n}{napoleon\PYGZus{}include\PYGZus{}special\PYGZus{}with\PYGZus{}doc} \PYG{o}{=} \PYG{n+nb+bp}{False}
+
+\PYG{c+c1}{\PYGZsh{} We do it like this to support multiple sphinx version without having warning.}
+\PYG{c+c1}{\PYGZsh{} Our buildbot consider warning as error.}
+\PYG{k}{try}\PYG{p}{:}
+    \PYG{k+kn}{from} \PYG{n+nn}{sphinx.ext} \PYG{k+kn}{import} \PYG{n}{imgmath}
+    \PYG{n}{extensions}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sphinx.ext.imgmath}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{k}{except} \PYG{n+ne}{ImportError}\PYG{p}{:}
+    \PYG{k}{try}\PYG{p}{:}
+        \PYG{k+kn}{from} \PYG{n+nn}{sphinx.ext} \PYG{k+kn}{import} \PYG{n}{pngmath}
+        \PYG{n}{extensions}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sphinx.ext.pngmath}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+    \PYG{k}{except} \PYG{n+ne}{ImportError}\PYG{p}{:}
+        \PYG{k}{pass}
+
+
+\PYG{c+c1}{\PYGZsh{} Add any paths that contain templates here, relative to this directory.}
+\PYG{n}{templates\PYGZus{}path} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{.templates}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}
+
+\PYG{c+c1}{\PYGZsh{} The suffix of source filenames.}
+\PYG{n}{source\PYGZus{}suffix} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{.rst}\PYG{l+s+s1}{\PYGZsq{}}
+
+\PYG{c+c1}{\PYGZsh{} The master toctree document.}
+\PYG{n}{master\PYGZus{}doc} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{index}\PYG{l+s+s1}{\PYGZsq{}}
+
+\PYG{c+c1}{\PYGZsh{} General substitutions.}
+\PYG{n}{project} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Sphinx with Github Webpages}\PYG{l+s+s1}{\PYGZsq{}}
+\PYG{n}{copyright} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{2019, Wenqiang Feng}\PYG{l+s+s1}{\PYGZsq{}}
+
+\PYG{c+c1}{\PYGZsh{} The default replacements for \textbar{}version\textbar{} and \textbar{}release\textbar{}, also used in various}
+\PYG{c+c1}{\PYGZsh{} other places throughout the built documents.}
+\PYG{c+c1}{\PYGZsh{}}
+
+\PYG{c+c1}{\PYGZsh{} We need this hokey\PYGZhy{}pokey because versioneer needs the current}
+\PYG{c+c1}{\PYGZsh{} directory to be the root of the project to work.}
+\PYG{c+c1}{\PYGZsh{} The short X.Y version.}
+\PYG{n}{version} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{1.00}\PYG{l+s+s1}{\PYGZsq{}}
+\PYG{c+c1}{\PYGZsh{} The full version, including alpha/beta/rc tags.}
+\PYG{n}{release} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{1.00}\PYG{l+s+s1}{\PYGZsq{}}
+
+\PYG{c+c1}{\PYGZsh{} There are two options for replacing \textbar{}today\textbar{}: either, you set today to some}
+\PYG{c+c1}{\PYGZsh{} non\PYGZhy{}false value, then it is used:}
+\PYG{c+c1}{\PYGZsh{}today = \PYGZsq{}\PYGZsq{}}
+\PYG{c+c1}{\PYGZsh{} Else, today\PYGZus{}fmt is used as the format for a strftime call.}
+\PYG{n}{today\PYGZus{}fmt} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZpc{}}\PYG{l+s+s1}{B }\PYG{l+s+si}{\PYGZpc{}d}\PYG{l+s+s1}{, }\PYG{l+s+s1}{\PYGZpc{}}\PYG{l+s+s1}{Y}\PYG{l+s+s1}{\PYGZsq{}}
+
+\PYG{c+c1}{\PYGZsh{} List of documents that shouldn\PYGZsq{}t be included in the build.}
+\PYG{c+c1}{\PYGZsh{}unused\PYGZus{}docs = []}
+
+\PYG{c+c1}{\PYGZsh{} List of directories, relative to source directories, that shouldn\PYGZsq{}t be}
+\PYG{c+c1}{\PYGZsh{} searched for source files.}
+\PYG{n}{exclude\PYGZus{}dirs} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{images}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{scripts}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sandbox}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}
+
+\PYG{c+c1}{\PYGZsh{} The reST default role (used for this markup: {}`text{}`) to use for all}
+\PYG{c+c1}{\PYGZsh{} documents.}
+\PYG{c+c1}{\PYGZsh{}default\PYGZus{}role = None}
+
+\PYG{c+c1}{\PYGZsh{} If true, \PYGZsq{}()\PYGZsq{} will be appended to :func: etc. cross\PYGZhy{}reference text.}
+\PYG{c+c1}{\PYGZsh{}add\PYGZus{}function\PYGZus{}parentheses = True}
+
+\PYG{c+c1}{\PYGZsh{} If true, the current module name will be prepended to all description}
+\PYG{c+c1}{\PYGZsh{} unit titles (such as .. function::).}
+\PYG{c+c1}{\PYGZsh{}add\PYGZus{}module\PYGZus{}names = True}
+
+\PYG{c+c1}{\PYGZsh{} If true, sectionauthor and moduleauthor directives will be shown in the}
+\PYG{c+c1}{\PYGZsh{} output. They are ignored by default.}
+\PYG{c+c1}{\PYGZsh{}show\PYGZus{}authors = False}
+
+\PYG{c+c1}{\PYGZsh{} The name of the Pygments (syntax highlighting) style to use.}
+\PYG{n}{pygments\PYGZus{}style} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sphinx}\PYG{l+s+s1}{\PYGZsq{}}
+
+
+\PYG{c+c1}{\PYGZsh{} Options for HTML output}
+\PYG{c+c1}{\PYGZsh{} \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+
+\PYG{c+c1}{\PYGZsh{} The style sheet to use for HTML and HTML Help pages. A file of that name}
+\PYG{c+c1}{\PYGZsh{} must exist either in Sphinx\PYGZsq{} static/ path, or in one of the custom paths}
+\PYG{c+c1}{\PYGZsh{} given in html\PYGZus{}static\PYGZus{}path.}
+\PYG{c+c1}{\PYGZsh{}html\PYGZus{}style = \PYGZsq{}default.css\PYGZsq{}}
+\PYG{c+c1}{\PYGZsh{} html\PYGZus{}theme = \PYGZsq{}sphinxdoc\PYGZsq{}}
+
+\PYG{c+c1}{\PYGZsh{} Read the docs style:}
+\PYG{k}{if} \PYG{n}{os}\PYG{o}{.}\PYG{n}{environ}\PYG{o}{.}\PYG{n}{get}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{READTHEDOCS}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)} \PYG{o}{!=} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{True}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}
+    \PYG{k}{try}\PYG{p}{:}
+        \PYG{k+kn}{import} \PYG{n+nn}{sphinx\PYGZus{}rtd\PYGZus{}theme}
+    \PYG{k}{except} \PYG{n+ne}{ImportError}\PYG{p}{:}
+        \PYG{k}{pass}  \PYG{c+c1}{\PYGZsh{} assume we have sphinx \PYGZgt{}= 1.3}
+    \PYG{k}{else}\PYG{p}{:}
+        \PYG{n}{html\PYGZus{}theme\PYGZus{}path} \PYG{o}{=} \PYG{p}{[}\PYG{n}{sphinx\PYGZus{}rtd\PYGZus{}theme}\PYG{o}{.}\PYG{n}{get\PYGZus{}html\PYGZus{}theme\PYGZus{}path}\PYG{p}{(}\PYG{p}{)}\PYG{p}{]}
+    \PYG{n}{html\PYGZus{}theme} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sphinx\PYGZus{}rtd\PYGZus{}theme}\PYG{l+s+s1}{\PYGZsq{}}
+
+\PYG{k}{def} \PYG{n+nf}{setup}\PYG{p}{(}\PYG{n}{app}\PYG{p}{)}\PYG{p}{:}
+    \PYG{n}{app}\PYG{o}{.}\PYG{n}{add\PYGZus{}stylesheet}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{fix\PYGZus{}rtd.css}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} The name for this set of Sphinx documents.  If None, it defaults to}
+\PYG{c+c1}{\PYGZsh{} \PYGZdq{}\PYGZlt{}project\PYGZgt{} v\PYGZlt{}release\PYGZgt{} documentation\PYGZdq{}.}
+\PYG{c+c1}{\PYGZsh{}html\PYGZus{}title = None}
+
+\PYG{c+c1}{\PYGZsh{} A shorter title for the navigation bar.  Default is the same as html\PYGZus{}title.}
+\PYG{c+c1}{\PYGZsh{}html\PYGZus{}short\PYGZus{}title = None}
+
+\PYG{c+c1}{\PYGZsh{} The name of an image file (within the static path) to place at the top of}
+\PYG{c+c1}{\PYGZsh{} the sidebar.}
+\PYG{c+c1}{\PYGZsh{}html\PYGZus{}logo = \PYGZsq{}images/theano\PYGZus{}logo\PYGZus{}allwhite\PYGZus{}210x70.png\PYGZsq{}}
+
+\PYG{c+c1}{\PYGZsh{} The name of an image file (within the static path) to use as favicon of the}
+\PYG{c+c1}{\PYGZsh{} docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32}
+\PYG{c+c1}{\PYGZsh{} pixels large.}
+\PYG{c+c1}{\PYGZsh{}html\PYGZus{}favicon = None}
+
+\PYG{c+c1}{\PYGZsh{} Add any paths that contain custom static files (such as style sheets) here,}
+\PYG{c+c1}{\PYGZsh{} relative to this directory. They are copied after the builtin static files,}
+\PYG{c+c1}{\PYGZsh{} so a file named \PYGZdq{}default.css\PYGZdq{} will overwrite the builtin \PYGZdq{}default.css\PYGZdq{}.}
+\PYG{n}{html\PYGZus{}static\PYGZus{}path} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{images}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}
+
+\PYG{c+c1}{\PYGZsh{} If not \PYGZsq{}\PYGZsq{}, a \PYGZsq{}Last updated on:\PYGZsq{} timestamp is inserted at every page bottom,}
+\PYG{c+c1}{\PYGZsh{} using the given strftime format.}
+\PYG{n}{html\PYGZus{}last\PYGZus{}updated\PYGZus{}fmt} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZpc{}}\PYG{l+s+s1}{b }\PYG{l+s+si}{\PYGZpc{}d}\PYG{l+s+s1}{, }\PYG{l+s+s1}{\PYGZpc{}}\PYG{l+s+s1}{Y}\PYG{l+s+s1}{\PYGZsq{}}
+
+\PYG{c+c1}{\PYGZsh{} If true, SmartyPants will be used to convert quotes and dashes to}
+\PYG{c+c1}{\PYGZsh{} typographically correct entities.}
+\PYG{n}{html\PYGZus{}use\PYGZus{}smartypants} \PYG{o}{=} \PYG{n+nb+bp}{True}
+
+\PYG{c+c1}{\PYGZsh{} Custom sidebar templates, maps document names to template names.}
+\PYG{c+c1}{\PYGZsh{}html\PYGZus{}sidebars = \PYGZob{}\PYGZcb{}}
+
+\PYG{c+c1}{\PYGZsh{} Additional templates that should be rendered to pages, maps page names to}
+\PYG{c+c1}{\PYGZsh{} template names.}
+\PYG{c+c1}{\PYGZsh{}html\PYGZus{}additional\PYGZus{}pages = \PYGZob{}\PYGZcb{}}
+
+\PYG{c+c1}{\PYGZsh{} If false, no module index is generated.}
+\PYG{c+c1}{\PYGZsh{}html\PYGZus{}use\PYGZus{}modindex = True}
+
+\PYG{c+c1}{\PYGZsh{} If false, no index is generated.}
+\PYG{c+c1}{\PYGZsh{}html\PYGZus{}use\PYGZus{}index = True}
+
+\PYG{c+c1}{\PYGZsh{} If true, the index is split into individual pages for each letter.}
+\PYG{c+c1}{\PYGZsh{}html\PYGZus{}split\PYGZus{}index = False}
+
+\PYG{c+c1}{\PYGZsh{} If true, the reST sources are included in the HTML build as \PYGZus{}sources/\PYGZlt{}name\PYGZgt{}.}
+\PYG{c+c1}{\PYGZsh{}html\PYGZus{}copy\PYGZus{}source = True}
+
+\PYG{c+c1}{\PYGZsh{} If true, an OpenSearch description file will be output, and all pages will}
+\PYG{c+c1}{\PYGZsh{} contain a \PYGZlt{}link\PYGZgt{} tag referring to it.  The value of this option must be the}
+\PYG{c+c1}{\PYGZsh{} base URL from which the finished HTML is served.}
+\PYG{c+c1}{\PYGZsh{}html\PYGZus{}use\PYGZus{}opensearch = \PYGZsq{}\PYGZsq{}}
+
+\PYG{c+c1}{\PYGZsh{} If nonempty, this is the file name suffix for HTML files (e.g. \PYGZdq{}.xhtml\PYGZdq{}).}
+\PYG{c+c1}{\PYGZsh{}html\PYGZus{}file\PYGZus{}suffix = \PYGZsq{}\PYGZsq{}}
+
+\PYG{c+c1}{\PYGZsh{} Output file base name for HTML help builder.}
+\PYG{n}{htmlhelp\PYGZus{}basename} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{spnixgitdoc}\PYG{l+s+s1}{\PYGZsq{}}
+
+\PYG{c+c1}{\PYGZsh{} Options for the linkcode extension}
+\PYG{c+c1}{\PYGZsh{} \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\PYG{c+c1}{\PYGZsh{} Resolve function}
+\PYG{c+c1}{\PYGZsh{} This function is used to populate the (source) links in the API}
+\PYG{k}{def} \PYG{n+nf}{linkcode\PYGZus{}resolve}\PYG{p}{(}\PYG{n}{domain}\PYG{p}{,} \PYG{n}{info}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{def} \PYG{n+nf}{find\PYGZus{}source}\PYG{p}{(}\PYG{p}{)}\PYG{p}{:}
+        \PYG{c+c1}{\PYGZsh{} try to find the file and line number, based on code from numpy:}
+        \PYG{c+c1}{\PYGZsh{} https://github.com/numpy/numpy/blob/master/doc/source/conf.py\PYGZsh{}L286}
+        \PYG{n}{obj} \PYG{o}{=} \PYG{n}{sys}\PYG{o}{.}\PYG{n}{modules}\PYG{p}{[}\PYG{n}{info}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{module}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{]}
+        \PYG{k}{for} \PYG{n}{part} \PYG{o+ow}{in} \PYG{n}{info}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{fullname}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{split}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{.}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}\PYG{p}{:}
+            \PYG{n}{obj} \PYG{o}{=} \PYG{n+nb}{getattr}\PYG{p}{(}\PYG{n}{obj}\PYG{p}{,} \PYG{n}{part}\PYG{p}{)}
+        \PYG{k+kn}{import} \PYG{n+nn}{inspect}
+        \PYG{k+kn}{import} \PYG{n+nn}{os}
+        \PYG{n}{fn} \PYG{o}{=} \PYG{n}{inspect}\PYG{o}{.}\PYG{n}{getsourcefile}\PYG{p}{(}\PYG{n}{obj}\PYG{p}{)}
+        \PYG{n}{fn} \PYG{o}{=} \PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{relpath}\PYG{p}{(}\PYG{n}{fn}\PYG{p}{,} \PYG{n}{start}\PYG{o}{=}\PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{dirname}\PYG{p}{(}\PYG{n}{theano}\PYG{o}{.}\PYG{n+nv+vm}{\PYGZus{}\PYGZus{}file\PYGZus{}\PYGZus{}}\PYG{p}{)}\PYG{p}{)}
+        \PYG{n}{source}\PYG{p}{,} \PYG{n}{lineno} \PYG{o}{=} \PYG{n}{inspect}\PYG{o}{.}\PYG{n}{getsourcelines}\PYG{p}{(}\PYG{n}{obj}\PYG{p}{)}
+        \PYG{k}{return} \PYG{n}{fn}\PYG{p}{,} \PYG{n}{lineno}\PYG{p}{,} \PYG{n}{lineno} \PYG{o}{+} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{source}\PYG{p}{)} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}
+
+    \PYG{k}{if} \PYG{n}{domain} \PYG{o}{!=} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{py}\PYG{l+s+s1}{\PYGZsq{}} \PYG{o+ow}{or} \PYG{o+ow}{not} \PYG{n}{info}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{module}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{:}
+        \PYG{k}{return} \PYG{n+nb+bp}{None}
+    \PYG{k}{try}\PYG{p}{:}
+        \PYG{n}{filename} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{theano/}\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s1}{\PYGZsh{}L}\PYG{l+s+si}{\PYGZpc{}d}\PYG{l+s+s1}{\PYGZhy{}L}\PYG{l+s+si}{\PYGZpc{}d}\PYG{l+s+s1}{\PYGZsq{}} \PYG{o}{\PYGZpc{}} \PYG{n}{find\PYGZus{}source}\PYG{p}{(}\PYG{p}{)}
+    \PYG{k}{except} \PYG{n+ne}{Exception}\PYG{p}{:}
+        \PYG{n}{filename} \PYG{o}{=} \PYG{n}{info}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{module}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{replace}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{.}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{/}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)} \PYG{o}{+} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{.py}\PYG{l+s+s1}{\PYGZsq{}}
+    \PYG{k+kn}{import} \PYG{n+nn}{subprocess}
+    \PYG{n}{tag} \PYG{o}{=} \PYG{n}{subprocess}\PYG{o}{.}\PYG{n}{Popen}\PYG{p}{(}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{git}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{rev\PYGZhy{}parse}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{HEAD}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{,}
+                           \PYG{n}{stdout}\PYG{o}{=}\PYG{n}{subprocess}\PYG{o}{.}\PYG{n}{PIPE}\PYG{p}{,}
+                           \PYG{n}{universal\PYGZus{}newlines}\PYG{o}{=}\PYG{n+nb+bp}{True}\PYG{p}{)}\PYG{o}{.}\PYG{n}{communicate}\PYG{p}{(}\PYG{p}{)}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{[}\PYG{p}{:}\PYG{o}{\PYGZhy{}}\PYG{l+m+mi}{1}\PYG{p}{]}
+    \PYG{k}{return} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{https://github.com/runawayhorse001/}\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{/}\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{\PYGZdq{}} \PYG{o}{\PYGZpc{}} \PYG{p}{(}\PYG{n}{tag}\PYG{p}{,} \PYG{n}{filename}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} Options for LaTeX output}
+\PYG{c+c1}{\PYGZsh{} \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+
+\PYG{n}{latex\PYGZus{}elements} \PYG{o}{=} \PYG{p}{\PYGZob{}}
+    \PYG{c+c1}{\PYGZsh{} The paper size (\PYGZsq{}letter\PYGZsq{} or \PYGZsq{}a4\PYGZsq{}).}
+    \PYG{c+c1}{\PYGZsh{}latex\PYGZus{}paper\PYGZus{}size = \PYGZsq{}a4\PYGZsq{},}
+
+    \PYG{c+c1}{\PYGZsh{} The font size (\PYGZsq{}10pt\PYGZsq{}, \PYGZsq{}11pt\PYGZsq{} or \PYGZsq{}12pt\PYGZsq{}).}
+    \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{pointsize}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{12pt}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+
+    \PYG{c+c1}{\PYGZsh{} Additional stuff for the LaTeX preamble.}
+    \PYG{c+c1}{\PYGZsh{}latex\PYGZus{}preamble = \PYGZsq{}\PYGZsq{},}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{c+c1}{\PYGZsh{} Grouping the document tree into LaTeX files. List of tuples}
+\PYG{c+c1}{\PYGZsh{} (source start file, target name, title, author, document class}
+\PYG{c+c1}{\PYGZsh{} [howto/manual]).}
+\PYG{n}{latex\PYGZus{}documents} \PYG{o}{=} \PYG{p}{[}
+  \PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{index}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sphinxgithub.tex}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Sphinx Github Webpage Tutorials}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+   \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Wenqiang Feng}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{manual}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}\PYG{p}{,}
+\PYG{p}{]}
+\PYG{c+c1}{\PYGZsh{} The name of an image file (relative to this directory) to place at the top of}
+\PYG{c+c1}{\PYGZsh{} the title page.}
+\PYG{n}{latex\PYGZus{}logo} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{images/logo.png}\PYG{l+s+s1}{\PYGZsq{}}
+\PYG{c+c1}{\PYGZsh{} The name of an image file (relative to this directory) to place at the top of}
+\PYG{c+c1}{\PYGZsh{} the title page.}
+\PYG{c+c1}{\PYGZsh{}latex\PYGZus{}logo = \PYGZsq{}images/snake\PYGZus{}theta2\PYGZhy{}trans.png\PYGZsq{}}
+\PYG{c+c1}{\PYGZsh{}latex\PYGZus{}logo = \PYGZsq{}images/theano\PYGZus{}logo\PYGZus{}allblue\PYGZus{}200x46.png\PYGZsq{}}
+
+\PYG{c+c1}{\PYGZsh{} For \PYGZdq{}manual\PYGZdq{} documents, if this is true, then toplevel headings are parts,}
+\PYG{c+c1}{\PYGZsh{} not chapters.}
+\PYG{c+c1}{\PYGZsh{}latex\PYGZus{}use\PYGZus{}parts = False}
+
+\PYG{c+c1}{\PYGZsh{} Documents to append as an appendix to all manuals.}
+\PYG{c+c1}{\PYGZsh{}latex\PYGZus{}appendices = []}
+
+\PYG{c+c1}{\PYGZsh{} If false, no module index is generated.}
+\PYG{c+c1}{\PYGZsh{}latex\PYGZus{}use\PYGZus{}modindex = True}
+
+
+\PYG{c+c1}{\PYGZsh{}latex\PYGZus{}elements[\PYGZsq{}preamble\PYGZsq{}] = \PYGZsq{}\PYGZbs{}usepackage\PYGZob{}xcolor\PYGZcb{}\PYGZsq{}}
+\PYG{c+c1}{\PYGZsh{} Additional stuff for the LaTeX preamble.}
+\PYG{c+c1}{\PYGZsh{}latex\PYGZus{}preamble}
+\PYG{n}{latex\PYGZus{}elements}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{preamble}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]} \PYG{o}{=}  \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{usepackage\PYGZob{}amsmath\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{usepackage\PYGZob{}mathtools\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{usepackage\PYGZob{}amsfonts\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{usepackage\PYGZob{}amssymb\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{usepackage\PYGZob{}dsfont\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{Z\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbb\PYGZob{}Z\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{R\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbb\PYGZob{}R\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{bX\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}X\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{X\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}X\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{By\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}y\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{Bbeta\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{boldsymbol\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{beta\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{bU\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}U\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{bV\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}V\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{V1\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathds\PYGZob{}1\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{hU\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}}\PYG{l+s+s1}{\PYGZbs{}}\PYG{l+s+s1}{hat\PYGZob{}U\PYGZcb{}\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{hS\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}}\PYG{l+s+s1}{\PYGZbs{}}\PYG{l+s+s1}{hat\PYGZob{}}\PYG{l+s+s1}{\PYGZbs{}}\PYG{l+s+s1}{Sigma\PYGZcb{}\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{hV\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}}\PYG{l+s+s1}{\PYGZbs{}}\PYG{l+s+s1}{hat\PYGZob{}V\PYGZcb{}\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{E\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}E\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{F\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}F\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{x\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}x\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{h\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}h\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{v\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}v\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{nv\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}v\PYGZca{}\PYGZob{}\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}b}\PYG{l+s+s1}{f \PYGZhy{}\PYGZcb{}\PYGZcb{}\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{nh\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}h\PYGZca{}\PYGZob{}\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}b}\PYG{l+s+s1}{f \PYGZhy{}\PYGZcb{}\PYGZcb{}\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{s\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}s\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{b\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}b\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{c\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}c\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{W\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}W\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{C\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}C\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{P\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}P\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{T\PYGZob{}\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{bf }\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathcal T\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{B\PYGZob{}\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{bf }\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathcal B\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}
+
+\PYG{c+c1}{\PYGZsh{} Documents to append as an appendix to all manuals.}
+\PYG{c+c1}{\PYGZsh{}latex\PYGZus{}appendices = []}
+
+\PYG{c+c1}{\PYGZsh{} If false, no module index is generated.}
+\PYG{c+c1}{\PYGZsh{}latex\PYGZus{}use\PYGZus{}modindex = True}
+
+\PYG{n}{default\PYGZus{}role} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{math}\PYG{l+s+s1}{\PYGZsq{}}
+\PYG{n}{ingmath\PYGZus{}divpng\PYGZus{}args} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}gamma 1.5}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}D 110}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}
+\PYG{c+c1}{\PYGZsh{}pngmath\PYGZus{}divpng\PYGZus{}args = [\PYGZsq{}\PYGZhy{}gamma\PYGZsq{}, \PYGZsq{}1.5\PYGZsq{}, \PYGZsq{}\PYGZhy{}D\PYGZsq{}, \PYGZsq{}110\PYGZsq{}, \PYGZsq{}\PYGZhy{}bg\PYGZsq{}, \PYGZsq{}Transparent\PYGZsq{}]}
+\PYG{n}{imgmath\PYGZus{}latex\PYGZus{}preamble} \PYG{o}{=}  \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{usepackage\PYGZob{}amsmath\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{usepackage\PYGZob{}mathtools\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{usepackage\PYGZob{}amsfonts\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{usepackage\PYGZob{}amssymb\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{usepackage\PYGZob{}dsfont\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{Z\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbb\PYGZob{}Z\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{R\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbb\PYGZob{}R\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{bX\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}X\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{X\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}X\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{By\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}y\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{Bbeta\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{boldsymbol\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{beta\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{U\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}U\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{V\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}V\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{V1\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathds\PYGZob{}1\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{hU\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}}\PYG{l+s+s1}{\PYGZbs{}}\PYG{l+s+s1}{hat\PYGZob{}U\PYGZcb{}\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{hS\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}}\PYG{l+s+s1}{\PYGZbs{}}\PYG{l+s+s1}{hat\PYGZob{}}\PYG{l+s+s1}{\PYGZbs{}}\PYG{l+s+s1}{Sigma\PYGZcb{}\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{hV\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}}\PYG{l+s+s1}{\PYGZbs{}}\PYG{l+s+s1}{hat\PYGZob{}V\PYGZcb{}\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{E\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}E\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{F\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}F\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{x\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}x\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{h\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}h\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{v\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}v\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{nv\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}v\PYGZca{}\PYGZob{}\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}b}\PYG{l+s+s1}{f \PYGZhy{}\PYGZcb{}\PYGZcb{}\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{nh\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}h\PYGZca{}\PYGZob{}\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}b}\PYG{l+s+s1}{f \PYGZhy{}\PYGZcb{}\PYGZcb{}\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{s\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}s\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{b\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}b\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{c\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}c\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{W\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}W\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{C\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}C\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{P\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathbf\PYGZob{}P\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{T\PYGZob{}\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{bf }\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathcal T\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYGZbs{}
+                          \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{def}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{B\PYGZob{}\PYGZob{}}\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{bf }\PYG{l+s+se}{\PYGZbs{}\PYGZbs{}}\PYG{l+s+s1}{mathcal B\PYGZcb{}\PYGZcb{}}\PYG{l+s+se}{\PYGZbs{}n}\PYG{l+s+s1}{\PYGZsq{}}
+\end{sphinxVerbatim}
+
+
+\section{General Documentation Generator Configuration}
+\label{\detokenize{sphinx:general-documentation-generator-configuration}}
+
+\subsection{Output Options}
+\label{\detokenize{sphinx:output-options}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n}{throot} \PYG{o}{=} \PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{abspath}\PYG{p}{(}
+     \PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{join}\PYG{p}{(}\PYG{n}{sys}\PYG{o}{.}\PYG{n}{path}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{,} \PYG{n}{os}\PYG{o}{.}\PYG{n}{pardir}\PYG{p}{,} \PYG{n}{os}\PYG{o}{.}\PYG{n}{pardir}\PYG{p}{)}\PYG{p}{)}
+
+ \PYG{n}{options} \PYG{o}{=} \PYG{n}{defaultdict}\PYG{p}{(}\PYG{n+nb}{bool}\PYG{p}{)}
+ \PYG{n}{opts}\PYG{p}{,} \PYG{n}{args} \PYG{o}{=} \PYG{n}{getopt}\PYG{o}{.}\PYG{n}{getopt}\PYG{p}{(}
+     \PYG{n}{sys}\PYG{o}{.}\PYG{n}{argv}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{p}{]}\PYG{p}{,}
+     \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{o:f:}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+     \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{rst}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{help}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{nopdf}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{cache}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{check}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{test}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{)}
+ \PYG{n}{options}\PYG{o}{.}\PYG{n}{update}\PYG{p}{(}\PYG{n+nb}{dict}\PYG{p}{(}\PYG{p}{[}\PYG{n}{x}\PYG{p}{,} \PYG{n}{y} \PYG{o+ow}{or} \PYG{n+nb+bp}{True}\PYG{p}{]} \PYG{k}{for} \PYG{n}{x}\PYG{p}{,} \PYG{n}{y} \PYG{o+ow}{in} \PYG{n}{opts}\PYG{p}{)}\PYG{p}{)}
+ \PYG{k}{if} \PYG{n}{options}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}\PYGZhy{}help}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{:}
+     \PYG{k}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Usage: }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s1}{ [OPTIONS] [files...]}\PYG{l+s+s1}{\PYGZsq{}} \PYG{o}{\PYGZpc{}} \PYG{n}{sys}\PYG{o}{.}\PYG{n}{argv}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{)}
+     \PYG{k}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{  \PYGZhy{}o \PYGZlt{}dir\PYGZgt{}: output the html files in the specified dir}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+     \PYG{k}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{  \PYGZhy{}\PYGZhy{}cache: use the doctree cache}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+     \PYG{k}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{  \PYGZhy{}\PYGZhy{}rst: only compile the doc (requires sphinx)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+     \PYG{k}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{  \PYGZhy{}\PYGZhy{}nopdf: do not produce a PDF file from the doc, only HTML}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+     \PYG{k}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{  \PYGZhy{}\PYGZhy{}test: run all the code samples in the documentaton}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+     \PYG{k}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{  \PYGZhy{}\PYGZhy{}check: treat warnings as errors}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+     \PYG{k}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{  \PYGZhy{}\PYGZhy{}help: this help}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+     \PYG{k}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{If one or more files are specified after the options then only }\PYG{l+s+s1}{\PYGZsq{}}
+           \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{those files will be built. Otherwise the whole tree is }\PYG{l+s+s1}{\PYGZsq{}}
+           \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{processed. Specifying files will implies \PYGZhy{}\PYGZhy{}cache.}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+     \PYG{n}{sys}\PYG{o}{.}\PYG{n}{exit}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}
+
+ \PYG{k}{if} \PYG{o+ow}{not}\PYG{p}{(}\PYG{n}{options}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}\PYGZhy{}rst}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]} \PYG{o+ow}{or} \PYG{n}{options}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}\PYGZhy{}test}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{)}\PYG{p}{:}
+     \PYG{c+c1}{\PYGZsh{} Default is now rst}
+     \PYG{n}{options}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}\PYGZhy{}rst}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n+nb+bp}{True}
+\end{sphinxVerbatim}
+
+
+\subsection{Output Directory}
+\label{\detokenize{sphinx:output-directory}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{mkdir}\PYG{p}{(}\PYG{n}{path}\PYG{p}{)}\PYG{p}{:}
+    \PYG{k}{try}\PYG{p}{:}
+        \PYG{n}{os}\PYG{o}{.}\PYG{n}{mkdir}\PYG{p}{(}\PYG{n}{path}\PYG{p}{)}
+    \PYG{k}{except} \PYG{n+ne}{OSError}\PYG{p}{:}
+        \PYG{k}{pass}
+
+\PYG{c+c1}{\PYGZsh{} create the putput folder docs, since github page will use /docs folder for Github page.}
+\PYG{n}{outdir} \PYG{o}{=} \PYG{n}{options}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}o}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]} \PYG{o+ow}{or} \PYG{p}{(}\PYG{n}{throot} \PYG{o}{+} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{/docs}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} create the output folder latex}
+\PYG{n}{latexdir} \PYG{o}{=} \PYG{n}{options}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}o}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]} \PYG{o+ow}{or} \PYG{p}{(}\PYG{n}{throot} \PYG{o}{+} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{/latex}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+
+\PYG{n}{files} \PYG{o}{=} \PYG{n+nb+bp}{None}
+\PYG{k}{if} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{args}\PYG{p}{)} \PYG{o}{!=} \PYG{l+m+mi}{0}\PYG{p}{:}
+    \PYG{n}{files} \PYG{o}{=} \PYG{p}{[}\PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{abspath}\PYG{p}{(}\PYG{n}{f}\PYG{p}{)} \PYG{k}{for} \PYG{n}{f} \PYG{o+ow}{in} \PYG{n}{args}\PYG{p}{]}
+\PYG{n}{currentdir} \PYG{o}{=} \PYG{n}{os}\PYG{o}{.}\PYG{n}{getcwd}\PYG{p}{(}\PYG{p}{)}
+\PYG{n}{mkdir}\PYG{p}{(}\PYG{n}{outdir}\PYG{p}{)}
+\PYG{n}{mkdir}\PYG{p}{(}\PYG{n}{latexdir}\PYG{p}{)}
+\PYG{n}{os}\PYG{o}{.}\PYG{n}{chdir}\PYG{p}{(}\PYG{n}{outdir}\PYG{p}{)}
+\end{sphinxVerbatim}
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-sudo apt update \PYG{o}{\PYGZam{}\PYGZam{}} sudo apt install texlive\PYGZhy{}full
+
+\end{sphinxVerbatim}
+
+
+\subsection{Documentation Compiler}
+\label{\detokenize{sphinx:documentation-compiler}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{k}{def} \PYG{n+nf}{call\PYGZus{}sphinx}\PYG{p}{(}\PYG{n}{builder}\PYG{p}{,} \PYG{n}{workdir}\PYG{p}{)}\PYG{p}{:}
+     \PYG{k+kn}{import} \PYG{n+nn}{sphinx}
+     \PYG{k}{if} \PYG{n}{options}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}\PYGZhy{}check}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{:}
+         \PYG{n}{extraopts} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}W}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}
+     \PYG{k}{else}\PYG{p}{:}
+         \PYG{n}{extraopts} \PYG{o}{=} \PYG{p}{[}\PYG{p}{]}
+     \PYG{k}{if} \PYG{o+ow}{not} \PYG{n}{options}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}\PYGZhy{}cache}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]} \PYG{o+ow}{and} \PYG{n}{files} \PYG{o+ow}{is} \PYG{n+nb+bp}{None}\PYG{p}{:}
+         \PYG{n}{extraopts}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}E}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+     \PYG{n}{docpath} \PYG{o}{=} \PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{join}\PYG{p}{(}\PYG{n}{throot}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{doc}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+     \PYG{n}{inopt} \PYG{o}{=} \PYG{p}{[}\PYG{n}{docpath}\PYG{p}{,} \PYG{n}{workdir}\PYG{p}{]}
+     \PYG{k}{if} \PYG{n}{files} \PYG{o+ow}{is} \PYG{o+ow}{not} \PYG{n+nb+bp}{None}\PYG{p}{:}
+         \PYG{n}{inopt}\PYG{o}{.}\PYG{n}{extend}\PYG{p}{(}\PYG{n}{files}\PYG{p}{)}
+     \PYG{n}{ret} \PYG{o}{=} \PYG{n}{sphinx}\PYG{o}{.}\PYG{n}{build\PYGZus{}main}\PYG{p}{(}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}b}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{builder}\PYG{p}{]} \PYG{o}{+} \PYG{n}{extraopts} \PYG{o}{+} \PYG{n}{inopt}\PYG{p}{)}
+     \PYG{k}{if} \PYG{n}{ret} \PYG{o}{!=} \PYG{l+m+mi}{0}\PYG{p}{:}
+         \PYG{n}{sys}\PYG{o}{.}\PYG{n}{exit}\PYG{p}{(}\PYG{n}{ret}\PYG{p}{)}
+
+ \PYG{k}{if} \PYG{n}{options}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}\PYGZhy{}all}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]} \PYG{o+ow}{or} \PYG{n}{options}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}\PYGZhy{}rst}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{:}
+     \PYG{n}{mkdir}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{doc}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+     \PYG{n}{sys}\PYG{o}{.}\PYG{n}{path}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{:}\PYG{l+m+mi}{0}\PYG{p}{]} \PYG{o}{=} \PYG{p}{[}\PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{join}\PYG{p}{(}\PYG{n}{throot}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{doc}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}\PYG{p}{]}
+     \PYG{n}{call\PYGZus{}sphinx}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{html}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{.}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+
+     \PYG{k}{if} \PYG{o+ow}{not} \PYG{n}{options}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}\PYGZhy{}nopdf}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{:}
+         \PYG{c+c1}{\PYGZsh{} Generate latex file in a temp directory}
+         \PYG{k+kn}{import} \PYG{n+nn}{tempfile}
+         \PYG{c+c1}{\PYGZsh{}workdir = tempfile.mkdtemp()}
+         \PYG{n}{workdir} \PYG{o}{=} \PYG{n}{latexdir}
+         \PYG{n}{call\PYGZus{}sphinx}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{latex}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{workdir}\PYG{p}{)}
+         \PYG{c+c1}{\PYGZsh{} Compile to PDF}
+         \PYG{n}{os}\PYG{o}{.}\PYG{n}{chdir}\PYG{p}{(}\PYG{n}{workdir}\PYG{p}{)}
+         \PYG{n}{os}\PYG{o}{.}\PYG{n}{system}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{make}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+         \PYG{k}{try}\PYG{p}{:}
+             \PYG{n}{shutil}\PYG{o}{.}\PYG{n}{copy}\PYG{p}{(}\PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{join}\PYG{p}{(}\PYG{n}{workdir}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sphinxgithub.pdf}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}\PYG{p}{,} \PYG{n}{outdir}\PYG{p}{)}
+             \PYG{n}{os}\PYG{o}{.}\PYG{n}{chdir}\PYG{p}{(}\PYG{n}{outdir}\PYG{p}{)}
+             \PYG{c+c1}{\PYGZsh{} remove the workdir folder}
+             \PYG{c+c1}{\PYGZsh{}shutil.rmtree(workdir)}
+         \PYG{k}{except} \PYG{n+ne}{OSError} \PYG{k}{as} \PYG{n}{e}\PYG{p}{:}
+             \PYG{k}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{OSError:}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{e}\PYG{p}{)}
+         \PYG{k}{except} \PYG{n+ne}{IOError} \PYG{k}{as} \PYG{n}{e}\PYG{p}{:}
+             \PYG{k}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{IOError:}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{e}\PYG{p}{)}
+
+ \PYG{k}{if} \PYG{n}{options}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}\PYGZhy{}test}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{:}
+     \PYG{n}{mkdir}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{doc}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+     \PYG{n}{sys}\PYG{o}{.}\PYG{n}{path}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{:}\PYG{l+m+mi}{0}\PYG{p}{]} \PYG{o}{=} \PYG{p}{[}\PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{join}\PYG{p}{(}\PYG{n}{throot}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{doc}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}\PYG{p}{]}
+     \PYG{n}{call\PYGZus{}sphinx}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{doctest}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{.}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+
+ \PYG{c+c1}{\PYGZsh{} To go back to the original current directory.}
+ \PYG{n}{os}\PYG{o}{.}\PYG{n}{chdir}\PYG{p}{(}\PYG{n}{currentdir}\PYG{p}{)}
+
+ \PYG{c+c1}{\PYGZsh{} Reset THEANO\PYGZus{}FLAGS}
+ \PYG{n}{os}\PYG{o}{.}\PYG{n}{environ}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{THEANO\PYGZus{}FLAGS}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{env\PYGZus{}th\PYGZus{}flags}
+\end{sphinxVerbatim}
+
+
+\subsection{\sphinxstyleliteralintitle{\sphinxupquote{Makefile}} Wrapper}
+\label{\detokenize{sphinx:makefile-wrapper}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n+nb}{all}\PYG{p}{:}
+        \PYG{n}{python} \PYG{n}{scripts}\PYG{o}{/}\PYG{n}{docgen}\PYG{o}{.}\PYG{n}{py}
+\end{sphinxVerbatim}
+
+
+\section{Full \sphinxstyleliteralintitle{\sphinxupquote{docgen.py}} Script}
+\label{\detokenize{sphinx:full-docgen-py-script}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}}
+\PYG{c+c1}{\PYGZsh{} I heavily borrowed, modified and used the configuration in docgen.py of Theano}
+\PYG{c+c1}{\PYGZsh{} package project. I will keep all the comments from Theano team and the}
+\PYG{c+c1}{\PYGZsh{} coryright of this file belongs to Theano team.}
+\PYG{c+c1}{\PYGZsh{} reference:}
+\PYG{c+c1}{\PYGZsh{}}
+\PYG{c+c1}{\PYGZsh{} Theano repository: https://github.com/Theano/Theano}
+\PYG{c+c1}{\PYGZsh{} docgen.py: https://github.com/Theano/Theano/blob/master/doc/scripts/docgen.py}
+\PYG{c+c1}{\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}\PYGZsh{}}
+\PYG{k+kn}{from} \PYG{n+nn}{\PYGZus{}\PYGZus{}future\PYGZus{}\PYGZus{}} \PYG{k+kn}{import} \PYG{n}{print\PYGZus{}function}
+\PYG{k+kn}{import} \PYG{n+nn}{sys}
+\PYG{k+kn}{import} \PYG{n+nn}{os}
+\PYG{k+kn}{import} \PYG{n+nn}{shutil}
+\PYG{k+kn}{import} \PYG{n+nn}{inspect}
+\PYG{k+kn}{import} \PYG{n+nn}{getopt}
+\PYG{k+kn}{from} \PYG{n+nn}{collections} \PYG{k+kn}{import} \PYG{n}{defaultdict}
+
+\PYG{k}{if} \PYG{n+nv+vm}{\PYGZus{}\PYGZus{}name\PYGZus{}\PYGZus{}} \PYG{o}{==} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZus{}\PYGZus{}main\PYGZus{}\PYGZus{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}
+
+    \PYG{n}{throot} \PYG{o}{=} \PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{abspath}\PYG{p}{(}
+        \PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{join}\PYG{p}{(}\PYG{n}{sys}\PYG{o}{.}\PYG{n}{path}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{,} \PYG{n}{os}\PYG{o}{.}\PYG{n}{pardir}\PYG{p}{,} \PYG{n}{os}\PYG{o}{.}\PYG{n}{pardir}\PYG{p}{)}\PYG{p}{)}
+
+    \PYG{n}{options} \PYG{o}{=} \PYG{n}{defaultdict}\PYG{p}{(}\PYG{n+nb}{bool}\PYG{p}{)}
+    \PYG{n}{opts}\PYG{p}{,} \PYG{n}{args} \PYG{o}{=} \PYG{n}{getopt}\PYG{o}{.}\PYG{n}{getopt}\PYG{p}{(}
+        \PYG{n}{sys}\PYG{o}{.}\PYG{n}{argv}\PYG{p}{[}\PYG{l+m+mi}{1}\PYG{p}{:}\PYG{p}{]}\PYG{p}{,}
+        \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{o:f:}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+        \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{rst}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{help}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{nopdf}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{cache}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{check}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{test}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{)}
+    \PYG{n}{options}\PYG{o}{.}\PYG{n}{update}\PYG{p}{(}\PYG{n+nb}{dict}\PYG{p}{(}\PYG{p}{[}\PYG{n}{x}\PYG{p}{,} \PYG{n}{y} \PYG{o+ow}{or} \PYG{n+nb+bp}{True}\PYG{p}{]} \PYG{k}{for} \PYG{n}{x}\PYG{p}{,} \PYG{n}{y} \PYG{o+ow}{in} \PYG{n}{opts}\PYG{p}{)}\PYG{p}{)}
+    \PYG{k}{if} \PYG{n}{options}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}\PYGZhy{}help}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{:}
+        \PYG{k}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Usage: }\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s1}{ [OPTIONS] [files...]}\PYG{l+s+s1}{\PYGZsq{}} \PYG{o}{\PYGZpc{}} \PYG{n}{sys}\PYG{o}{.}\PYG{n}{argv}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{]}\PYG{p}{)}
+        \PYG{k}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{  \PYGZhy{}o \PYGZlt{}dir\PYGZgt{}: output the html files in the specified dir}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+        \PYG{k}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{  \PYGZhy{}\PYGZhy{}cache: use the doctree cache}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+        \PYG{k}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{  \PYGZhy{}\PYGZhy{}rst: only compile the doc (requires sphinx)}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+        \PYG{k}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{  \PYGZhy{}\PYGZhy{}nopdf: do not produce a PDF file from the doc, only HTML}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+        \PYG{k}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{  \PYGZhy{}\PYGZhy{}test: run all the code samples in the documentaton}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+        \PYG{k}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{  \PYGZhy{}\PYGZhy{}check: treat warnings as errors}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+        \PYG{k}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{  \PYGZhy{}\PYGZhy{}help: this help}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+        \PYG{k}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{If one or more files are specified after the options then only }\PYG{l+s+s1}{\PYGZsq{}}
+              \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{those files will be built. Otherwise the whole tree is }\PYG{l+s+s1}{\PYGZsq{}}
+              \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{processed. Specifying files will implies \PYGZhy{}\PYGZhy{}cache.}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+        \PYG{n}{sys}\PYG{o}{.}\PYG{n}{exit}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{)}
+
+    \PYG{k}{if} \PYG{o+ow}{not}\PYG{p}{(}\PYG{n}{options}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}\PYGZhy{}rst}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]} \PYG{o+ow}{or} \PYG{n}{options}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}\PYGZhy{}test}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{)}\PYG{p}{:}
+        \PYG{c+c1}{\PYGZsh{} Default is now rst}
+        \PYG{n}{options}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}\PYGZhy{}rst}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n+nb+bp}{True}
+
+    \PYG{k}{def} \PYG{n+nf}{mkdir}\PYG{p}{(}\PYG{n}{path}\PYG{p}{)}\PYG{p}{:}
+        \PYG{k}{try}\PYG{p}{:}
+            \PYG{n}{os}\PYG{o}{.}\PYG{n}{mkdir}\PYG{p}{(}\PYG{n}{path}\PYG{p}{)}
+        \PYG{k}{except} \PYG{n+ne}{OSError}\PYG{p}{:}
+            \PYG{k}{pass}
+
+    \PYG{c+c1}{\PYGZsh{} create the putput folder docs, since github page will use /docs folder for Github page.}
+    \PYG{n}{outdir} \PYG{o}{=} \PYG{n}{options}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}o}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]} \PYG{o+ow}{or} \PYG{p}{(}\PYG{n}{throot} \PYG{o}{+} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{/docs}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+    \PYG{c+c1}{\PYGZsh{} create the output folder latex}
+    \PYG{n}{latexdir} \PYG{o}{=} \PYG{n}{options}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}o}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]} \PYG{o+ow}{or} \PYG{p}{(}\PYG{n}{throot} \PYG{o}{+} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{/latex}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+
+    \PYG{n}{files} \PYG{o}{=} \PYG{n+nb+bp}{None}
+    \PYG{k}{if} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{args}\PYG{p}{)} \PYG{o}{!=} \PYG{l+m+mi}{0}\PYG{p}{:}
+        \PYG{n}{files} \PYG{o}{=} \PYG{p}{[}\PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{abspath}\PYG{p}{(}\PYG{n}{f}\PYG{p}{)} \PYG{k}{for} \PYG{n}{f} \PYG{o+ow}{in} \PYG{n}{args}\PYG{p}{]}
+    \PYG{n}{currentdir} \PYG{o}{=} \PYG{n}{os}\PYG{o}{.}\PYG{n}{getcwd}\PYG{p}{(}\PYG{p}{)}
+    \PYG{n}{mkdir}\PYG{p}{(}\PYG{n}{outdir}\PYG{p}{)}
+    \PYG{n}{mkdir}\PYG{p}{(}\PYG{n}{latexdir}\PYG{p}{)}
+    \PYG{n}{os}\PYG{o}{.}\PYG{n}{chdir}\PYG{p}{(}\PYG{n}{outdir}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{} add .nojekyll file to fix the github pages issues}
+    \PYG{n}{nojekyll\PYGZus{}path} \PYG{o}{=} \PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{join}\PYG{p}{(}\PYG{n}{outdir}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{.nojekyll}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+    \PYG{k}{if} \PYG{o+ow}{not} \PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{exists}\PYG{p}{(}\PYG{n}{nojekyll\PYGZus{}path}\PYG{p}{)}\PYG{p}{:}
+        \PYG{n}{os}\PYG{o}{.}\PYG{n}{makedirs}\PYG{p}{(}\PYG{n}{nojekyll\PYGZus{}path}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{} Make sure the appropriate \PYGZsq{}theano\PYGZsq{} directory is in the PYTHONPATH}
+    \PYG{n}{pythonpath} \PYG{o}{=} \PYG{n}{os}\PYG{o}{.}\PYG{n}{environ}\PYG{o}{.}\PYG{n}{get}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{PYTHONPATH}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+    \PYG{n}{pythonpath} \PYG{o}{=} \PYG{n}{os}\PYG{o}{.}\PYG{n}{pathsep}\PYG{o}{.}\PYG{n}{join}\PYG{p}{(}\PYG{p}{[}\PYG{n}{throot}\PYG{p}{,} \PYG{n}{pythonpath}\PYG{p}{]}\PYG{p}{)}
+    \PYG{n}{sys}\PYG{o}{.}\PYG{n}{path}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{:}\PYG{l+m+mi}{0}\PYG{p}{]} \PYG{o}{=} \PYG{p}{[}\PYG{n}{throot}\PYG{p}{]}  \PYG{c+c1}{\PYGZsh{} We must not use os.environ.}
+
+    \PYG{c+c1}{\PYGZsh{} Make sure we don\PYGZsq{}t use gpu to compile documentation}
+    \PYG{n}{env\PYGZus{}th\PYGZus{}flags} \PYG{o}{=} \PYG{n}{os}\PYG{o}{.}\PYG{n}{environ}\PYG{o}{.}\PYG{n}{get}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{THEANO\PYGZus{}FLAGS}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+    \PYG{n}{os}\PYG{o}{.}\PYG{n}{environ}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{THEANO\PYGZus{}FLAGS}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{device=cpu,force\PYGZus{}device=True}\PYG{l+s+s1}{\PYGZsq{}}
+
+
+
+    \PYG{k}{def} \PYG{n+nf}{call\PYGZus{}sphinx}\PYG{p}{(}\PYG{n}{builder}\PYG{p}{,} \PYG{n}{workdir}\PYG{p}{)}\PYG{p}{:}
+        \PYG{k+kn}{import} \PYG{n+nn}{sphinx}
+        \PYG{k}{if} \PYG{n}{options}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}\PYGZhy{}check}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{:}
+            \PYG{n}{extraopts} \PYG{o}{=} \PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}W}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}
+        \PYG{k}{else}\PYG{p}{:}
+            \PYG{n}{extraopts} \PYG{o}{=} \PYG{p}{[}\PYG{p}{]}
+        \PYG{k}{if} \PYG{o+ow}{not} \PYG{n}{options}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}\PYGZhy{}cache}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]} \PYG{o+ow}{and} \PYG{n}{files} \PYG{o+ow}{is} \PYG{n+nb+bp}{None}\PYG{p}{:}
+            \PYG{n}{extraopts}\PYG{o}{.}\PYG{n}{append}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}E}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+        \PYG{n}{docpath} \PYG{o}{=} \PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{join}\PYG{p}{(}\PYG{n}{throot}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{doc}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+        \PYG{n}{inopt} \PYG{o}{=} \PYG{p}{[}\PYG{n}{docpath}\PYG{p}{,} \PYG{n}{workdir}\PYG{p}{]}
+        \PYG{k}{if} \PYG{n}{files} \PYG{o+ow}{is} \PYG{o+ow}{not} \PYG{n+nb+bp}{None}\PYG{p}{:}
+            \PYG{n}{inopt}\PYG{o}{.}\PYG{n}{extend}\PYG{p}{(}\PYG{n}{files}\PYG{p}{)}
+        \PYG{n}{ret} \PYG{o}{=} \PYG{n}{sphinx}\PYG{o}{.}\PYG{n}{build\PYGZus{}main}\PYG{p}{(}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}b}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{builder}\PYG{p}{]} \PYG{o}{+} \PYG{n}{extraopts} \PYG{o}{+} \PYG{n}{inopt}\PYG{p}{)}
+        \PYG{k}{if} \PYG{n}{ret} \PYG{o}{!=} \PYG{l+m+mi}{0}\PYG{p}{:}
+            \PYG{n}{sys}\PYG{o}{.}\PYG{n}{exit}\PYG{p}{(}\PYG{n}{ret}\PYG{p}{)}
+
+    \PYG{k}{if} \PYG{n}{options}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}\PYGZhy{}all}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]} \PYG{o+ow}{or} \PYG{n}{options}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}\PYGZhy{}rst}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{:}
+        \PYG{n}{mkdir}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{doc}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+        \PYG{n}{sys}\PYG{o}{.}\PYG{n}{path}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{:}\PYG{l+m+mi}{0}\PYG{p}{]} \PYG{o}{=} \PYG{p}{[}\PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{join}\PYG{p}{(}\PYG{n}{throot}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{doc}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}\PYG{p}{]}
+        \PYG{n}{call\PYGZus{}sphinx}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{html}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{.}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+
+        \PYG{k}{if} \PYG{o+ow}{not} \PYG{n}{options}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}\PYGZhy{}nopdf}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{:}
+            \PYG{c+c1}{\PYGZsh{} Generate latex file in a temp directory}
+            \PYG{k+kn}{import} \PYG{n+nn}{tempfile}
+            \PYG{c+c1}{\PYGZsh{}workdir = tempfile.mkdtemp()}
+            \PYG{n}{workdir} \PYG{o}{=} \PYG{n}{latexdir}
+            \PYG{n}{call\PYGZus{}sphinx}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{latex}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{workdir}\PYG{p}{)}
+            \PYG{c+c1}{\PYGZsh{} Compile to PDF}
+            \PYG{n}{os}\PYG{o}{.}\PYG{n}{chdir}\PYG{p}{(}\PYG{n}{workdir}\PYG{p}{)}
+            \PYG{n}{os}\PYG{o}{.}\PYG{n}{system}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{make}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+            \PYG{k}{try}\PYG{p}{:}
+                \PYG{n}{shutil}\PYG{o}{.}\PYG{n}{copy}\PYG{p}{(}\PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{join}\PYG{p}{(}\PYG{n}{workdir}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sphinxgithub.pdf}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}\PYG{p}{,} \PYG{n}{outdir}\PYG{p}{)}
+                \PYG{n}{os}\PYG{o}{.}\PYG{n}{chdir}\PYG{p}{(}\PYG{n}{outdir}\PYG{p}{)}
+                \PYG{c+c1}{\PYGZsh{} remove the workdir folder}
+                \PYG{c+c1}{\PYGZsh{}shutil.rmtree(workdir)}
+            \PYG{k}{except} \PYG{n+ne}{OSError} \PYG{k}{as} \PYG{n}{e}\PYG{p}{:}
+                \PYG{k}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{OSError:}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{e}\PYG{p}{)}
+            \PYG{k}{except} \PYG{n+ne}{IOError} \PYG{k}{as} \PYG{n}{e}\PYG{p}{:}
+                \PYG{k}{print}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{IOError:}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{n}{e}\PYG{p}{)}
+
+    \PYG{k}{if} \PYG{n}{options}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZhy{}\PYGZhy{}test}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{:}
+        \PYG{n}{mkdir}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{doc}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+        \PYG{n}{sys}\PYG{o}{.}\PYG{n}{path}\PYG{p}{[}\PYG{l+m+mi}{0}\PYG{p}{:}\PYG{l+m+mi}{0}\PYG{p}{]} \PYG{o}{=} \PYG{p}{[}\PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{join}\PYG{p}{(}\PYG{n}{throot}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{doc}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}\PYG{p}{]}
+        \PYG{n}{call\PYGZus{}sphinx}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{doctest}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{.}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{} To go back to the original current directory.}
+    \PYG{n}{os}\PYG{o}{.}\PYG{n}{chdir}\PYG{p}{(}\PYG{n}{currentdir}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{} Reset THEANO\PYGZus{}FLAGS}
+    \PYG{n}{os}\PYG{o}{.}\PYG{n}{environ}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{THEANO\PYGZus{}FLAGS}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{env\PYGZus{}th\PYGZus{}flags}
 \end{sphinxVerbatim}
 
 

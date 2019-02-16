@@ -13,15 +13,15 @@ Python Installation
 
 1. Install ``pip``:
 
-.. code-block:: bash
+   .. code-block:: bash
 
-   sudo easy_install pip
+	  sudo easy_install pip
 
 2. In stall ``python``:
 
-.. code-block:: bash
+   .. code-block:: bash
 
-   pip install python
+      pip install python
 
 
 Sphinx Installation

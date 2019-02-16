@@ -1,6 +1,6 @@
 #############################################################################
 # I heavily borrowed, modified and used the configuration in docgen.py of Theano
-# package progject. I will keep all the comments from Theano team and the 
+# package project. I will keep all the comments from Theano team and the 
 # coryright of this file belongs to Theano team. 
 # reference: 
 #           
