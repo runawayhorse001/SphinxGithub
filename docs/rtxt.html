@@ -95,6 +95,21 @@
 <li class="toctree-l1"><a class="reference internal" href="pkgs.html">Packages Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="sphinx.html">Sphinx Configuration</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">reStructuredText Markup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#sections">Sections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#paragraphs">Paragraphs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#general-paragraphs">General Paragraphs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bullet-lists-paragraphs">Bullet Lists Paragraphs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Bullet Lists Paragraphs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#blocked-paragraphs">Blocked Paragraphs</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#table">Table</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#grid-tables">Grid Tables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#simple-tables">Simple Tables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#csv-tables">CSV Tables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#list-tables">List Tables</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#directives">Directives</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#admonitions">Admonitions</a></li>
 </ul>
@@ -171,7 +186,559 @@
 <p class="first admonition-title">Chinese proverb</p>
 <p class="last">Making full preparation will not delay your job but quicken the process. – old Chinese proverb</p>
 </div>
-<p>TODO ……</p>
+<div class="section" id="sections">
+<h2>Sections<a class="headerlink" href="#sections" title="Permalink to this headline">¶</a></h2>
+<p>Sections are identified through their titles, which are marked up with adornment: “underlines” below the title text, or underlines and matching “overlines” above the title. More details can be found at: <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#sections">http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#sections</a></p>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="gh">===============</span>
+<span class="gh"> Section Title</span>
+<span class="gh">===============</span>
+
+<span class="gh">Subsection Title</span>
+<span class="gh">++++++++++++++++</span>
+
+<span class="gh">Subsubection Title</span>
+<span class="gh">------------------</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="paragraphs">
+<h2>Paragraphs<a class="headerlink" href="#paragraphs" title="Permalink to this headline">¶</a></h2>
+<p>The paragraph is the most basic block in a reST document.
+Paragraphs are simply chunks of text separated by one or
+more blank lines. As in Python, indentation is significant
+in reST, so all lines of the same paragraph must be
+left-aligned to the <strong>same level of indentation</strong>. More
+details can be found at: <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#paragraphs">http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#paragraphs</a></p>
+<div class="section" id="general-paragraphs">
+<h3>General Paragraphs<a class="headerlink" href="#general-paragraphs" title="Permalink to this headline">¶</a></h3>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>This is the first demo paragraph. The blank line above
+the first line is required; The blank line below the last
+line is required.
+
+This is the second demo paragraph. The blank line above
+the first line is required; The blank line below the last
+line is required.
+</pre></div>
+</div>
+<p>Syntax diagram:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>+------------------------------+
+<span class="o">|</span> paragraph                    |
+<span class="o">|</span>                              |
++------------------------------+
+
++------------------------------+
+<span class="o">|</span> paragraph                    |
+<span class="o">|</span>                              |
++------------------------------+
+</pre></div>
+</div>
+<p>Result:</p>
+<p>This is the first demo paragraph. The blank line above the first
+line is required; The blank line below the last line is required.</p>
+<p>This is the second demo paragraph. The blank line above the first
+line is required; The blank line below the last line is required.</p>
+</div>
+<div class="section" id="bullet-lists-paragraphs">
+<h3>Bullet Lists Paragraphs<a class="headerlink" href="#bullet-lists-paragraphs" title="Permalink to this headline">¶</a></h3>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="m">-</span> This is the first bullet list item.  The blank line above the
+  first list item is required; blank lines between list items
+  (such as below this paragraph) are optional.
+
+<span class="m">-</span> This is the first paragraph in the second item in the list.
+
+  This is the second paragraph in the second item in the list.
+  The blank line above this paragraph is required.  The left edge
+  of this paragraph lines up with the paragraph above, both
+  indented relative to the bullet.
+
+  <span class="m">-</span> This is a sublist.  The bullet lines up with the left edge of
+    the text blocks above.  A sublist is a new list so requires a
+    blank line above and below.
+
+  <span class="m">-</span> This is a sublist.  The bullet lines up with the left edge of
+the text blocks above.  A sublist is a new list so requires a
+blank line above and below.
+
+<span class="m">-</span> This is the third item of the main list.
+
+This paragraph is not part of the list.
+</pre></div>
+</div>
+<p>Syntax diagram:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>+------+-----------------------+
+<span class="o">|</span> &quot;- &quot; | list item             |
++------| (body elements)+      |
+       +-----------------------+
+</pre></div>
+</div>
+<p>Result:</p>
+<ul>
+<li><p class="first">This is the first bullet list item.  The blank line above the
+first list item is required; blank lines between list items
+(such as below this paragraph) are optional.</p>
+</li>
+<li><p class="first">This is the first paragraph in the second item in the list.</p>
+<p>This is the second paragraph in the second item in the list.
+The blank line above this paragraph is required.  The left edge
+of this paragraph lines up with the paragraph above, both
+indented relative to the bullet.</p>
+<ul class="simple">
+<li>This is a sublist.  The bullet lines up with the left edge of
+the text blocks above.  A sublist is a new list so requires a
+blank line above and below.</li>
+<li>This is a sublist.  The bullet lines up with the left edge of
+the text blocks above.  A sublist is a new list so requires a
+blank line above and below.</li>
+</ul>
+</li>
+<li><p class="first">This is the third item of the main list.</p>
+</li>
+</ul>
+<p>This paragraph is not part of the list.</p>
+</div>
+<div class="section" id="id1">
+<h3>Bullet Lists Paragraphs<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="m">1.</span> This is the first bullet list item.  The blank line above the
+   first list item is required; blank lines between list items
+   (such as below this paragraph) are optional.
+
+<span class="m">2.</span> This is the first paragraph in the second item in the list.
+
+   This is the second paragraph in the second item in the list.
+   The blank line above this paragraph is required.  The left edge
+   of this paragraph lines up with the paragraph above, both
+   indented relative to the bullet.
+
+   a. This is a sublist.  The bullet lines up with the left edge of
+      the text blocks above.  A sublist is a new list so requires a
+      blank line above and below.
+
+   b. This is a sublist.  The bullet lines up with the left edge of
+      the text blocks above.  A sublist is a new list so requires a
+      blank line above and below.
+
+
+<span class="m">3.</span> This is the third item of the main list.
+</pre></div>
+</div>
+<p>Syntax diagram:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>+-------+----------------------+
+<span class="o">|</span> &quot;1. &quot; | list item            |
++-------| (body elements)+     |
+        +----------------------+
+</pre></div>
+</div>
+<p>Result:</p>
+<ol class="arabic">
+<li><p class="first">This is the first bullet list item.  The blank line above the
+first list item is required; blank lines between list items
+(such as below this paragraph) are optional.</p>
+</li>
+<li><p class="first">This is the first paragraph in the second item in the list.</p>
+<p>This is the second paragraph in the second item in the list.
+The blank line above this paragraph is required.  The left edge
+of this paragraph lines up with the paragraph above, both
+indented relative to the bullet.</p>
+<ol class="loweralpha simple">
+<li>This is a sublist.  The bullet lines up with the left edge of
+the text blocks above.  A sublist is a new list so requires a
+blank line above and below.</li>
+<li>This is a sublist.  The bullet lines up with the left edge of
+the text blocks above.  A sublist is a new list so requires a
+blank line above and below.</li>
+</ol>
+</li>
+<li><p class="first">This is the third item of the main list.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="blocked-paragraphs">
+<h3>Blocked Paragraphs<a class="headerlink" href="#blocked-paragraphs" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><strong>Line Blocks</strong></li>
+</ol>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>Take it away, Eric the Orchestra Leader!
+
+    <span class="o">|</span> A one, two, a one two three four
+    |
+    <span class="o">|</span> Half a bee, philosophically,
+    <span class="o">|</span>     must, <span class="ge">*ipso facto*</span>, half not be.
+    <span class="o">|</span> But half the bee has got to be,
+    <span class="o">|</span>     <span class="ge">*vis a vis*</span> its entity.  D&#39;you see?
+    |
+    <span class="o">|</span> But can a bee be said to be
+    <span class="o">|</span>     or not to be an entire bee,
+    <span class="o">|</span>         when half the bee is not a bee,
+    <span class="o">|</span>             due to some ancient injury?
+    |
+    <span class="o">|</span> Singing...
+</pre></div>
+</div>
+<p>Syntax diagram:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>+------+-----------------------+
+<span class="o">|</span> &quot;| &quot; | line                  |
++------| continuation line     |
+       +-----------------------+
+</pre></div>
+</div>
+<p>Result:</p>
+<p>Take it away, Eric the Orchestra Leader!</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line">A one, two, a one two three four</div>
+<div class="line"><br /></div>
+<div class="line">Half a bee, philosophically,</div>
+<div class="line-block">
+<div class="line">must, <em>ipso facto</em>, half not be.</div>
+</div>
+<div class="line">But half the bee has got to be,</div>
+<div class="line-block">
+<div class="line"><em>vis a vis</em> its entity.  D’you see?</div>
+<div class="line"><br /></div>
+</div>
+<div class="line">But can a bee be said to be</div>
+<div class="line-block">
+<div class="line">or not to be an entire bee,</div>
+<div class="line-block">
+<div class="line">when half the bee is not a bee,</div>
+<div class="line-block">
+<div class="line">due to some ancient injury?</div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+<div class="line">Singing…</div>
+</div>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><strong>Doctest Blocks</strong></li>
+</ol>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>This is an ordinary paragraph.
+
+&gt;&gt;&gt; print &#39;this is a Doctest block&#39;
+this is a Doctest block
+
+The following is a literal block<span class="se">::</span>
+
+<span class="s">    &gt;&gt;&gt; This is not recognized as a doctest block by</span>
+<span class="s">    reStructuredText.  It *will* be recognized by the doctest</span>
+<span class="s">    module, though!</span>
+</pre></div>
+</div>
+<p>Result:</p>
+<p>This is an ordinary paragraph.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="s1">&#39;this is a Doctest block&#39;</span>
+<span class="go">this is a Doctest block</span>
+</pre></div>
+</div>
+<p>The following is a literal block:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">This</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">recognized</span> <span class="k">as</span> <span class="n">a</span> <span class="n">doctest</span> <span class="n">block</span> <span class="n">by</span>
+<span class="go">reStructuredText.  It *will* be recognized by the doctest</span>
+<span class="go">module, though!</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><strong>Field Lists</strong></li>
+</ol>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="nc">:Date:</span> <span class="nf">2001-08-16</span>
+<span class="nc">:Version:</span> <span class="nf">1</span>
+<span class="nc">:Authors:</span> <span class="nf">- Me</span>
+          <span class="m">-</span> Myself
+          <span class="m">-</span> I
+<span class="nc">:Indentation:</span> <span class="nf">Since the field marker may be quite long, the second</span>
+   and subsequent lines of the field body do not have to line up
+   with the first line, but they must be indented relative to the
+   field name marker, and they must line up with each other.
+<span class="nc">:Parameter i:</span> <span class="nf">integer</span>
+</pre></div>
+</div>
+<p>Result:</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Date:</th><td class="field-body"><p class="first">2001-08-16</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Version:</th><td class="field-body"><p class="first">1</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Authors:</th><td class="field-body"><ul class="first simple">
+<li>Me</li>
+<li>Myself</li>
+<li>I</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Indentation:</th><td class="field-body"><p class="first">Since the field marker may be quite long, the second
+and subsequent lines of the field body do not have to line up
+with the first line, but they must be indented relative to the
+field name marker, and they must line up with each other.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Parameter i:</th><td class="field-body"><p class="first last">integer</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="table">
+<h2>Table<a class="headerlink" href="#table" title="Permalink to this headline">¶</a></h2>
+<p>More details can be found at: <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#grid-tables">http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#grid-tables</a></p>
+<div class="section" id="grid-tables">
+<h3>Grid Tables<a class="headerlink" href="#grid-tables" title="Permalink to this headline">¶</a></h3>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>+------------------------+------------+----------+----------+
+<span class="o">|</span> Header row, column 1   | Header 2   | Header 3 | Header 4 |
+<span class="o">|</span> (header rows optional) |            |          |          |
++========================+============+==========+==========+
+<span class="o">|</span> body row 1, column 1   | column 2   | column 3 | column 4 |
++------------------------+------------+----------+----------+
+<span class="o">|</span> body row 2             | Cells may span columns.          |
++------------------------+------------+---------------------+
+<span class="o">|</span> body row 3             | Cells may  | - Table cells       |
++------------------------+ span rows. | - contain           |
+<span class="o">|</span> body row 4             |            | - body elements.    |
++------------------------+------------+---------------------+
+</pre></div>
+</div>
+<p>Result:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="43%" />
+<col width="21%" />
+<col width="18%" />
+<col width="18%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Header row, column 1
+(header rows optional)</th>
+<th class="head">Header 2</th>
+<th class="head">Header 3</th>
+<th class="head">Header 4</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>body row 1, column 1</td>
+<td>column 2</td>
+<td>column 3</td>
+<td>column 4</td>
+</tr>
+<tr class="row-odd"><td>body row 2</td>
+<td colspan="3">Cells may span columns.</td>
+</tr>
+<tr class="row-even"><td>body row 3</td>
+<td rowspan="2">Cells may
+span rows.</td>
+<td colspan="2" rowspan="2"><ul class="first last simple">
+<li>Table cells</li>
+<li>contain</li>
+<li>body elements.</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>body row 4</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="simple-tables">
+<h3>Simple Tables<a class="headerlink" href="#simple-tables" title="Permalink to this headline">¶</a></h3>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>=====  =====  =======
+  A      B    A and B
+=====  =====  =======
+False  False  False
+True   False  False
+False  True   False
+True   True   True
+=====  =====  =======
+</pre></div>
+</div>
+<p>Result:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="29%" />
+<col width="29%" />
+<col width="41%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">A</th>
+<th class="head">B</th>
+<th class="head">A and B</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>False</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr class="row-odd"><td>True</td>
+<td>False</td>
+<td>False</td>
+</tr>
+<tr class="row-even"><td>False</td>
+<td>True</td>
+<td>False</td>
+</tr>
+<tr class="row-odd"><td>True</td>
+<td>True</td>
+<td>True</td>
+</tr>
+</tbody>
+</table>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>=====  =====
+col 1  col 2
+=====  =====
+1      Second column of row 1.
+2      Second column of row 2.
+       Second line of paragraph.
+3      - Second column of row 3.
+
+       <span class="m">-</span> Second item in bullet
+         list (row 3, column 2).
+\      Row 4; column 1 will be empty.
+=====  =====
+</pre></div>
+</div>
+<p>Result:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="14%" />
+<col width="86%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">col 1</th>
+<th class="head">col 2</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>1</td>
+<td>Second column of row 1.</td>
+</tr>
+<tr class="row-odd"><td>2</td>
+<td>Second column of row 2.
+Second line of paragraph.</td>
+</tr>
+<tr class="row-even"><td>3</td>
+<td><ul class="first last simple">
+<li>Second column of row 3.</li>
+<li>Second item in bullet
+list (row 3, column 2).</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td></td>
+<td>Row 4; column 1 will be empty.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="csv-tables">
+<h3>CSV Tables<a class="headerlink" href="#csv-tables" title="Permalink to this headline">¶</a></h3>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">csv-table</span><span class="p">::</span> Frozen Delights!
+   <span class="nc">:header:</span> <span class="nf">&quot;Treat&quot;, &quot;Quantity&quot;, &quot;Description&quot;</span>
+   <span class="nc">:widths:</span> <span class="nf">15, 10, 30</span>
+
+   &quot;Albatross&quot;, 2.99, &quot;On a stick!&quot;
+   &quot;Crunchy Frog&quot;, 1.49, &quot;If we took the bones out, it wouldn&#39;t be
+   crunchy, now would it?&quot;
+   &quot;Gannet Ripple&quot;, 1.99, &quot;On a stick!&quot;
+</pre></div>
+</div>
+<table border="1" class="colwidths-given docutils" id="id6">
+<caption><span class="caption-text">Frozen Delights!</span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="27%" />
+<col width="18%" />
+<col width="55%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Treat</th>
+<th class="head">Quantity</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Albatross</td>
+<td>2.99</td>
+<td>On a stick!</td>
+</tr>
+<tr class="row-odd"><td>Crunchy Frog</td>
+<td>1.49</td>
+<td>If we took the bones out, it wouldn’t be
+crunchy, now would it?</td>
+</tr>
+<tr class="row-even"><td>Gannet Ripple</td>
+<td>1.99</td>
+<td>On a stick!</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="list-tables">
+<h3>List Tables<a class="headerlink" href="#list-tables" title="Permalink to this headline">¶</a></h3>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">list-table</span><span class="p">::</span> Frozen Delights!
+   <span class="nc">:widths:</span> <span class="nf">15 10 30</span>
+   <span class="nc">:header-rows:</span> <span class="nf">1</span>
+
+   <span class="m">*</span> - Treat
+     <span class="m">-</span> Quantity
+     <span class="m">-</span> Description
+   <span class="m">*</span> - Albatross
+     <span class="m">-</span> 2.99
+     <span class="m">-</span> On a stick!
+   <span class="m">*</span> - Crunchy Frog
+     <span class="m">-</span> 1.49
+     <span class="m">-</span> If we took the bones out, it wouldn&#39;t be
+       crunchy, now would it?
+   <span class="m">*</span> - Gannet Ripple
+     <span class="m">-</span> 1.99
+     <span class="m">-</span> On a stick!
+</pre></div>
+</div>
+<table border="1" class="colwidths-given docutils" id="id7">
+<caption><span class="caption-text">Frozen Delights!</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="27%" />
+<col width="18%" />
+<col width="55%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Treat</th>
+<th class="head">Quantity</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Albatross</td>
+<td>2.99</td>
+<td>On a stick!</td>
+</tr>
+<tr class="row-odd"><td>Crunchy Frog</td>
+<td>1.49</td>
+<td>If we took the bones out, it wouldn’t be
+crunchy, now would it?</td>
+</tr>
+<tr class="row-even"><td>Gannet Ripple</td>
+<td>1.99</td>
+<td>On a stick!</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <div class="section" id="directives">
 <h2>Directives<a class="headerlink" href="#directives" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="admonitions">
@@ -216,7 +783,7 @@
 <p class="last">This is a caution alert!</p>
 </div>
 <ul class="simple">
-<li><strong>caution</strong></li>
+<li><strong>important</strong></li>
 </ul>
 <p>reStructuredText:</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">important</span><span class="p">::</span>
@@ -263,25 +830,25 @@ document link to the description of the individual constructs in the reST
 reference.</p>
 </div>
 <p>See more details at <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#admonitions">Admonitions</a>.</p>
-<p>Lorem ipsum <a class="footnote-reference" href="#f1" id="id1">[1]</a> dolor sit amet … <a class="footnote-reference" href="#f2" id="id2">[2]</a></p>
-<p>Lorem ipsum <a class="reference internal" href="#ref" id="id3">[Ref]</a> dolor sit amet.</p>
+<p>Lorem ipsum <a class="footnote-reference" href="#f1" id="id2">[1]</a> dolor sit amet … <a class="footnote-reference" href="#f2" id="id3">[2]</a></p>
+<p>Lorem ipsum <a class="reference internal" href="#ref" id="id4">[Ref]</a> dolor sit amet.</p>
 <p class="rubric">Footnotes</p>
 <table class="docutils footnote" frame="void" id="f1" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Text of the first footnote.</td></tr>
+<tr><td class="label"><a class="fn-backref" href="#id2">[1]</a></td><td>Text of the first footnote.</td></tr>
 </tbody>
 </table>
 <table class="docutils footnote" frame="void" id="f2" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>Text of the second footnote.</td></tr>
+<tr><td class="label"><a class="fn-backref" href="#id3">[2]</a></td><td>Text of the second footnote.</td></tr>
 </tbody>
 </table>
 <table class="docutils citation" frame="void" id="ref" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id3">[Ref]</a></td><td>Book or article reference, URL or whatever.</td></tr>
+<tr><td class="label"><a class="fn-backref" href="#id4">[Ref]</a></td><td>Book or article reference, URL or whatever.</td></tr>
 </tbody>
 </table>
 </div>
@@ -307,7 +874,7 @@ reference.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2019, Wenqiang Feng
-      Last updated on Feb 16, 2019.
+      Last updated on Feb 17, 2019.
 
     </p>
   </div>

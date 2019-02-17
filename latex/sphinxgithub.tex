@@ -90,7 +90,7 @@
 
 
 \title{Sphinx Github Webpage Tutorials}
-\date{February 16, 2019}
+\date{February 17, 2019}
 \release{1.00}
 \author{Wenqiang Feng}
 \newcommand{\sphinxlogo}{\sphinxincludegraphics{logo.png}\par}
@@ -1227,7 +1227,741 @@ Version and date format
 Making full preparation will not delay your job but quicken the process. \textendash{} old Chinese proverb
 \end{sphinxadmonition}
 
-TODO ……
+
+\section{Sections}
+\label{\detokenize{rtxt:sections}}
+Sections are identified through their titles, which are marked up with adornment: “underlines” below the title text, or underlines and matching “overlines” above the title. More details can be found at: \sphinxurl{http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html\#sections}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{g+gh}{===============}
+\PYG{g+gh}{ Section Title}
+\PYG{g+gh}{===============}
+
+\PYG{g+gh}{Subsection Title}
+\PYG{g+gh}{++++++++++++++++}
+
+\PYG{g+gh}{Subsubection Title}
+\PYG{g+gh}{\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
+\end{sphinxVerbatim}
+
+
+\section{Paragraphs}
+\label{\detokenize{rtxt:paragraphs}}
+The paragraph is the most basic block in a reST document.
+Paragraphs are simply chunks of text separated by one or
+more blank lines. As in Python, indentation is significant
+in reST, so all lines of the same paragraph must be
+left-aligned to the \sphinxstylestrong{same level of indentation}. More
+details can be found at: \sphinxurl{http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html\#paragraphs}
+
+
+\subsection{General Paragraphs}
+\label{\detokenize{rtxt:general-paragraphs}}
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+This is the first demo paragraph. The blank line above
+the first line is required; The blank line below the last
+line is required.
+
+This is the second demo paragraph. The blank line above
+the first line is required; The blank line below the last
+line is required.
+\end{sphinxVerbatim}
+
+Syntax diagram:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
++\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+
+\PYG{o}{\textbar{}} paragraph                    \textbar{}
+\PYG{o}{\textbar{}}                              \textbar{}
++\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+
+
++\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+
+\PYG{o}{\textbar{}} paragraph                    \textbar{}
+\PYG{o}{\textbar{}}                              \textbar{}
++\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+
+\end{sphinxVerbatim}
+
+Result:
+
+This is the first demo paragraph. The blank line above the first
+line is required; The blank line below the last line is required.
+
+This is the second demo paragraph. The blank line above the first
+line is required; The blank line below the last line is required.
+
+
+\subsection{Bullet Lists Paragraphs}
+\label{\detokenize{rtxt:bullet-lists-paragraphs}}
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{l+m}{\PYGZhy{}} This is the first bullet list item.  The blank line above the
+  first list item is required; blank lines between list items
+  (such as below this paragraph) are optional.
+
+\PYG{l+m}{\PYGZhy{}} This is the first paragraph in the second item in the list.
+
+  This is the second paragraph in the second item in the list.
+  The blank line above this paragraph is required.  The left edge
+  of this paragraph lines up with the paragraph above, both
+  indented relative to the bullet.
+
+  \PYG{l+m}{\PYGZhy{}} This is a sublist.  The bullet lines up with the left edge of
+    the text blocks above.  A sublist is a new list so requires a
+    blank line above and below.
+
+  \PYG{l+m}{\PYGZhy{}} This is a sublist.  The bullet lines up with the left edge of
+the text blocks above.  A sublist is a new list so requires a
+blank line above and below.
+
+\PYG{l+m}{\PYGZhy{}} This is the third item of the main list.
+
+This paragraph is not part of the list.
+\end{sphinxVerbatim}
+
+Syntax diagram:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
++\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+
+\PYG{o}{\textbar{}} \PYGZdq{}\PYGZhy{} \PYGZdq{} \textbar{} list item             \textbar{}
++\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\textbar{} (body elements)+      \textbar{}
+       +\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+
+\end{sphinxVerbatim}
+
+Result:
+\begin{itemize}
+\item {} 
+This is the first bullet list item.  The blank line above the
+first list item is required; blank lines between list items
+(such as below this paragraph) are optional.
+
+\item {} 
+This is the first paragraph in the second item in the list.
+
+This is the second paragraph in the second item in the list.
+The blank line above this paragraph is required.  The left edge
+of this paragraph lines up with the paragraph above, both
+indented relative to the bullet.
+\begin{itemize}
+\item {} 
+This is a sublist.  The bullet lines up with the left edge of
+the text blocks above.  A sublist is a new list so requires a
+blank line above and below.
+
+\item {} 
+This is a sublist.  The bullet lines up with the left edge of
+the text blocks above.  A sublist is a new list so requires a
+blank line above and below.
+
+\end{itemize}
+
+\item {} 
+This is the third item of the main list.
+
+\end{itemize}
+
+This paragraph is not part of the list.
+
+
+\subsection{Bullet Lists Paragraphs}
+\label{\detokenize{rtxt:id1}}
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{l+m}{1.} This is the first bullet list item.  The blank line above the
+   first list item is required; blank lines between list items
+   (such as below this paragraph) are optional.
+
+\PYG{l+m}{2.} This is the first paragraph in the second item in the list.
+
+   This is the second paragraph in the second item in the list.
+   The blank line above this paragraph is required.  The left edge
+   of this paragraph lines up with the paragraph above, both
+   indented relative to the bullet.
+
+   a. This is a sublist.  The bullet lines up with the left edge of
+      the text blocks above.  A sublist is a new list so requires a
+      blank line above and below.
+
+   b. This is a sublist.  The bullet lines up with the left edge of
+      the text blocks above.  A sublist is a new list so requires a
+      blank line above and below.
+
+
+\PYG{l+m}{3.} This is the third item of the main list.
+\end{sphinxVerbatim}
+
+Syntax diagram:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
++\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+
+\PYG{o}{\textbar{}} \PYGZdq{}1. \PYGZdq{} \textbar{} list item            \textbar{}
++\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\textbar{} (body elements)+     \textbar{}
+        +\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+
+\end{sphinxVerbatim}
+
+Result:
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\item {} 
+This is the first bullet list item.  The blank line above the
+first list item is required; blank lines between list items
+(such as below this paragraph) are optional.
+
+\item {} 
+This is the first paragraph in the second item in the list.
+
+This is the second paragraph in the second item in the list.
+The blank line above this paragraph is required.  The left edge
+of this paragraph lines up with the paragraph above, both
+indented relative to the bullet.
+\begin{enumerate}
+\def\theenumii{\alph{enumii}}
+\def\labelenumii{\theenumii .}
+\makeatletter\def\p@enumiii{\p@enumii \theenumii .}\makeatother
+\item {} 
+This is a sublist.  The bullet lines up with the left edge of
+the text blocks above.  A sublist is a new list so requires a
+blank line above and below.
+
+\item {} 
+This is a sublist.  The bullet lines up with the left edge of
+the text blocks above.  A sublist is a new list so requires a
+blank line above and below.
+
+\end{enumerate}
+
+\item {} 
+This is the third item of the main list.
+
+\end{enumerate}
+
+
+\subsection{Blocked Paragraphs}
+\label{\detokenize{rtxt:blocked-paragraphs}}\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\item {} 
+\sphinxstylestrong{Line Blocks}
+
+\end{enumerate}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+Take it away, Eric the Orchestra Leader!
+
+    \PYG{o}{\textbar{}} A one, two, a one two three four
+    \textbar{}
+    \PYG{o}{\textbar{}} Half a bee, philosophically,
+    \PYG{o}{\textbar{}}     must, \PYG{g+ge}{*ipso facto*}, half not be.
+    \PYG{o}{\textbar{}} But half the bee has got to be,
+    \PYG{o}{\textbar{}}     \PYG{g+ge}{*vis a vis*} its entity.  D\PYGZsq{}you see?
+    \textbar{}
+    \PYG{o}{\textbar{}} But can a bee be said to be
+    \PYG{o}{\textbar{}}     or not to be an entire bee,
+    \PYG{o}{\textbar{}}         when half the bee is not a bee,
+    \PYG{o}{\textbar{}}             due to some ancient injury?
+    \textbar{}
+    \PYG{o}{\textbar{}} Singing...
+\end{sphinxVerbatim}
+
+Syntax diagram:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
++\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+
+\PYG{o}{\textbar{}} \PYGZdq{}\textbar{} \PYGZdq{} \textbar{} line                  \textbar{}
++\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\textbar{} continuation line     \textbar{}
+       +\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+
+\end{sphinxVerbatim}
+
+Result:
+
+Take it away, Eric the Orchestra Leader!
+\begin{quote}
+
+\begin{DUlineblock}{0em}
+\item[] A one, two, a one two three four
+\item[] 
+\item[] Half a bee, philosophically,
+\item[]
+\begin{DUlineblock}{\DUlineblockindent}
+\item[] must, \sphinxstyleemphasis{ipso facto}, half not be.
+\end{DUlineblock}
+\item[] But half the bee has got to be,
+\item[]
+\begin{DUlineblock}{\DUlineblockindent}
+\item[] \sphinxstyleemphasis{vis a vis} its entity.  D’you see?
+\item[] 
+\end{DUlineblock}
+\item[] But can a bee be said to be
+\item[]
+\begin{DUlineblock}{\DUlineblockindent}
+\item[] or not to be an entire bee,
+\item[]
+\begin{DUlineblock}{\DUlineblockindent}
+\item[] when half the bee is not a bee,
+\item[]
+\begin{DUlineblock}{\DUlineblockindent}
+\item[] due to some ancient injury?
+\item[] 
+\end{DUlineblock}
+\end{DUlineblock}
+\end{DUlineblock}
+\item[] Singing…
+\end{DUlineblock}
+\end{quote}
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\setcounter{enumi}{1}
+\item {} 
+\sphinxstylestrong{Doctest Blocks}
+
+\end{enumerate}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+This is an ordinary paragraph.
+
+\PYGZgt{}\PYGZgt{}\PYGZgt{} print \PYGZsq{}this is a Doctest block\PYGZsq{}
+this is a Doctest block
+
+The following is a literal block\PYG{l+s+se}{::}
+
+\PYG{l+s}{    }\PYG{l+s}{\PYGZgt{}\PYGZgt{}\PYGZgt{} This is not recognized as a doctest block by}
+\PYG{l+s}{    reStructuredText.  It *will* be recognized by the doctest}
+\PYG{l+s}{    module, though!}
+\end{sphinxVerbatim}
+
+Result:
+
+This is an ordinary paragraph.
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n+nb}{print} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{this is a Doctest block}\PYG{l+s+s1}{\PYGZsq{}}
+\PYG{g+go}{this is a Doctest block}
+\end{sphinxVerbatim}
+
+The following is a literal block:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{g+gp}{\PYGZgt{}\PYGZgt{}\PYGZgt{} }\PYG{n}{This} \PYG{o+ow}{is} \PYG{o+ow}{not} \PYG{n}{recognized} \PYG{k}{as} \PYG{n}{a} \PYG{n}{doctest} \PYG{n}{block} \PYG{n}{by}
+\PYG{g+go}{reStructuredText.  It *will* be recognized by the doctest}
+\PYG{g+go}{module, though!}
+\end{sphinxVerbatim}
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\setcounter{enumi}{2}
+\item {} 
+\sphinxstylestrong{Field Lists}
+
+\end{enumerate}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n+nc}{:Date:} \PYG{n+nf}{2001\PYGZhy{}08\PYGZhy{}16}
+\PYG{n+nc}{:Version:} \PYG{n+nf}{1}
+\PYG{n+nc}{:Authors:} \PYG{n+nf}{\PYGZhy{} Me}
+          \PYG{l+m}{\PYGZhy{}} Myself
+          \PYG{l+m}{\PYGZhy{}} I
+\PYG{n+nc}{:Indentation:} \PYG{n+nf}{Since the field marker may be quite long, the second}
+   and subsequent lines of the field body do not have to line up
+   with the first line, but they must be indented relative to the
+   field name marker, and they must line up with each other.
+\PYG{n+nc}{:Parameter i:} \PYG{n+nf}{integer}
+\end{sphinxVerbatim}
+
+Result:
+\begin{quote}\begin{description}
+\item[{Date}] \leavevmode
+2001-08-16
+
+\item[{Version}] \leavevmode
+1
+
+\item[{Authors}] \leavevmode\begin{itemize}
+\item {} 
+Me
+
+\item {} 
+Myself
+
+\item {} 
+I
+
+\end{itemize}
+
+\item[{Indentation}] \leavevmode
+Since the field marker may be quite long, the second
+and subsequent lines of the field body do not have to line up
+with the first line, but they must be indented relative to the
+field name marker, and they must line up with each other.
+
+\item[{Parameter i}] \leavevmode
+integer
+
+\end{description}\end{quote}
+
+
+\section{Table}
+\label{\detokenize{rtxt:table}}
+More details can be found at: \sphinxurl{http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html\#grid-tables}
+
+
+\subsection{Grid Tables}
+\label{\detokenize{rtxt:grid-tables}}
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
++\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+
+\PYG{o}{\textbar{}} Header row, column 1   \textbar{} Header 2   \textbar{} Header 3 \textbar{} Header 4 \textbar{}
+\PYG{o}{\textbar{}} (header rows optional) \textbar{}            \textbar{}          \textbar{}          \textbar{}
++========================+============+==========+==========+
+\PYG{o}{\textbar{}} body row 1, column 1   \textbar{} column 2   \textbar{} column 3 \textbar{} column 4 \textbar{}
++\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+
+\PYG{o}{\textbar{}} body row 2             \textbar{} Cells may span columns.          \textbar{}
++\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+
+\PYG{o}{\textbar{}} body row 3             \textbar{} Cells may  \textbar{} \PYGZhy{} Table cells       \textbar{}
++\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+ span rows. \textbar{} \PYGZhy{} contain           \textbar{}
+\PYG{o}{\textbar{}} body row 4             \textbar{}            \textbar{} \PYGZhy{} body elements.    \textbar{}
++\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+
+\end{sphinxVerbatim}
+
+Result:
+
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabular}[t]{|*{4}{\X{1}{4}|}}
+\hline
+\sphinxstyletheadfamily 
+Header row, column 1
+(header rows optional)
+&\sphinxstyletheadfamily 
+Header 2
+&\sphinxstyletheadfamily 
+Header 3
+&\sphinxstyletheadfamily 
+Header 4
+\\
+\hline
+body row 1, column 1
+&
+column 2
+&
+column 3
+&
+column 4
+\\
+\hline
+body row 2
+&\sphinxstartmulticolumn{3}%
+\begin{varwidth}[t]{\sphinxcolwidth{3}{4}}
+Cells may span columns.
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\hline
+body row 3
+&\sphinxmultirow{2}{12}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
+Cells may
+span rows.
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+&\sphinxstartmulticolumn{2}%
+\sphinxmultirow{2}{13}{%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
+\begin{itemize}
+\item {} 
+Table cells
+
+\item {} 
+contain
+
+\item {} 
+body elements.
+
+\end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+\sphinxstopmulticolumn
+\\
+\cline{1-1}
+body row 4
+&\sphinxtablestrut{12}&\multicolumn{2}{l|}{\sphinxtablestrut{13}}\\
+\hline
+\end{tabular}
+\par
+\sphinxattableend\end{savenotes}
+
+
+\subsection{Simple Tables}
+\label{\detokenize{rtxt:simple-tables}}
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+=====  =====  =======
+  A      B    A and B
+=====  =====  =======
+False  False  False
+True   False  False
+False  True   False
+True   True   True
+=====  =====  =======
+\end{sphinxVerbatim}
+
+Result:
+
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|T|T|}
+\hline
+\sphinxstyletheadfamily 
+A
+&\sphinxstyletheadfamily 
+B
+&\sphinxstyletheadfamily 
+A and B
+\\
+\hline
+False
+&
+False
+&
+False
+\\
+\hline
+True
+&
+False
+&
+False
+\\
+\hline
+False
+&
+True
+&
+False
+\\
+\hline
+True
+&
+True
+&
+True
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+=====  =====
+col 1  col 2
+=====  =====
+1      Second column of row 1.
+2      Second column of row 2.
+       Second line of paragraph.
+3      \PYGZhy{} Second column of row 3.
+
+       \PYG{l+m}{\PYGZhy{}} Second item in bullet
+         list (row 3, column 2).
+\PYGZbs{}      Row 4; column 1 will be empty.
+=====  =====
+\end{sphinxVerbatim}
+
+Result:
+
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabular}[t]{|*{2}{\X{1}{2}|}}
+\hline
+\sphinxstyletheadfamily 
+col 1
+&\sphinxstyletheadfamily 
+col 2
+\\
+\hline
+1
+&
+Second column of row 1.
+\\
+\hline
+2
+&
+Second column of row 2.
+Second line of paragraph.
+\\
+\hline
+3
+&\begin{itemize}
+\item {} 
+Second column of row 3.
+
+\item {} 
+Second item in bullet
+list (row 3, column 2).
+
+\end{itemize}
+\\
+\hline
+
+&
+Row 4; column 1 will be empty.
+\\
+\hline
+\end{tabular}
+\par
+\sphinxattableend\end{savenotes}
+
+
+\subsection{CSV Tables}
+\label{\detokenize{rtxt:csv-tables}}
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{o+ow}{csv\PYGZhy{}table}\PYG{p}{::} Frozen Delights!
+   \PYG{n+nc}{:header:} \PYG{n+nf}{\PYGZdq{}Treat\PYGZdq{}, \PYGZdq{}Quantity\PYGZdq{}, \PYGZdq{}Description\PYGZdq{}}
+   \PYG{n+nc}{:widths:} \PYG{n+nf}{15, 10, 30}
+
+   \PYGZdq{}Albatross\PYGZdq{}, 2.99, \PYGZdq{}On a stick!\PYGZdq{}
+   \PYGZdq{}Crunchy Frog\PYGZdq{}, 1.49, \PYGZdq{}If we took the bones out, it wouldn\PYGZsq{}t be
+   crunchy, now would it?\PYGZdq{}
+   \PYGZdq{}Gannet Ripple\PYGZdq{}, 1.99, \PYGZdq{}On a stick!\PYGZdq{}
+\end{sphinxVerbatim}
+
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\sphinxcapstartof{table}
+\sphinxthecaptionisattop
+\sphinxcaption{Frozen Delights!}\label{\detokenize{rtxt:id6}}
+\sphinxaftertopcaption
+\begin{tabular}[t]{|\X{15}{55}|\X{10}{55}|\X{30}{55}|}
+\hline
+\sphinxstyletheadfamily 
+Treat
+&\sphinxstyletheadfamily 
+Quantity
+&\sphinxstyletheadfamily 
+Description
+\\
+\hline
+Albatross
+&
+2.99
+&
+On a stick!
+\\
+\hline
+Crunchy Frog
+&
+1.49
+&
+If we took the bones out, it wouldn’t be
+crunchy, now would it?
+\\
+\hline
+Gannet Ripple
+&
+1.99
+&
+On a stick!
+\\
+\hline
+\end{tabular}
+\par
+\sphinxattableend\end{savenotes}
+
+
+\subsection{List Tables}
+\label{\detokenize{rtxt:list-tables}}
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{o+ow}{list\PYGZhy{}table}\PYG{p}{::} Frozen Delights!
+   \PYG{n+nc}{:widths:} \PYG{n+nf}{15 10 30}
+   \PYG{n+nc}{:header\PYGZhy{}rows:} \PYG{n+nf}{1}
+
+   \PYG{l+m}{*} \PYGZhy{} Treat
+     \PYG{l+m}{\PYGZhy{}} Quantity
+     \PYG{l+m}{\PYGZhy{}} Description
+   \PYG{l+m}{*} \PYGZhy{} Albatross
+     \PYG{l+m}{\PYGZhy{}} 2.99
+     \PYG{l+m}{\PYGZhy{}} On a stick!
+   \PYG{l+m}{*} \PYGZhy{} Crunchy Frog
+     \PYG{l+m}{\PYGZhy{}} 1.49
+     \PYG{l+m}{\PYGZhy{}} If we took the bones out, it wouldn\PYGZsq{}t be
+       crunchy, now would it?
+   \PYG{l+m}{*} \PYGZhy{} Gannet Ripple
+     \PYG{l+m}{\PYGZhy{}} 1.99
+     \PYG{l+m}{\PYGZhy{}} On a stick!
+\end{sphinxVerbatim}
+
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\sphinxcapstartof{table}
+\sphinxthecaptionisattop
+\sphinxcaption{Frozen Delights!}\label{\detokenize{rtxt:id7}}
+\sphinxaftertopcaption
+\begin{tabular}[t]{|\X{15}{55}|\X{10}{55}|\X{30}{55}|}
+\hline
+\sphinxstyletheadfamily 
+Treat
+&\sphinxstyletheadfamily 
+Quantity
+&\sphinxstyletheadfamily 
+Description
+\\
+\hline
+Albatross
+&
+2.99
+&
+On a stick!
+\\
+\hline
+Crunchy Frog
+&
+1.49
+&
+If we took the bones out, it wouldn’t be
+crunchy, now would it?
+\\
+\hline
+Gannet Ripple
+&
+1.99
+&
+On a stick!
+\\
+\hline
+\end{tabular}
+\par
+\sphinxattableend\end{savenotes}
 
 
 \section{Directives}
@@ -1306,7 +2040,7 @@ This is a caution alert!
 \end{sphinxadmonition}
 \begin{itemize}
 \item {} 
-\sphinxstylestrong{caution}
+\sphinxstylestrong{important}
 
 \end{itemize}
 
