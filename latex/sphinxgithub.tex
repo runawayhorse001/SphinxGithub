@@ -119,6 +119,10 @@ Welcome to my \sphinxstylestrong{Sphinx gihub webpage} tutorials! In those tutor
 
 \chapter{Preface}
 \label{\detokenize{preface:preface}}\label{\detokenize{preface:id1}}\label{\detokenize{preface::doc}}
+\begin{sphinxadmonition}{note}{Note:}
+Good tools are prerequisite to the successful execution of a job. \textendash{} old Chinese proverb
+\end{sphinxadmonition}
+
 
 \section{About this tutorial}
 \label{\detokenize{preface:about-this-tutorial}}
@@ -207,6 +211,12 @@ corrections, suggestions or feedbacks through email (Wenqiang Feng: \sphinxhref{
 
 \chapter{Introduction}
 \label{\detokenize{intro:introduction}}\label{\detokenize{intro:intro}}\label{\detokenize{intro::doc}}
+\begin{sphinxadmonition}{note}{Note:}
+If you only know yourself, but not your opponent, you may win or may lose.
+If you know neither yourself nor your enemy, you will always endanger yourself.
+\textendash{} idiom, from Sunzi’s Art of War
+\end{sphinxadmonition}
+
 
 \section{Sphnix: Python Documentation Generator}
 \label{\detokenize{intro:sphnix-python-documentation-generator}}
@@ -262,6 +272,10 @@ More information can be get from \sphinxhref{https://en.wikipedia.org/wiki/LaTeX
 
 \chapter{Packages Installation}
 \label{\detokenize{pkgs:packages-installation}}\label{\detokenize{pkgs:pkgs}}\label{\detokenize{pkgs::doc}}
+\begin{sphinxadmonition}{note}{Note:}
+A journey of a thousand miles begins with a single step \textendash{} old Chinese proverb
+\end{sphinxadmonition}
+
 \begin{sphinxadmonition}{warning}{Warning:}
 It’s been 10 years since I abandoned \sphinxcode{\sphinxupquote{Windows}} operating systems. So I am a noob for \sphinxcode{\sphinxupquote{Windows}} operating systems and I really do not know how to install \sphinxcode{\sphinxupquote{some packages}} on \sphinxcode{\sphinxupquote{Windows}} operating systems.
 \end{sphinxadmonition}
@@ -1204,6 +1218,178 @@ Version and date format
     \PYG{c+c1}{\PYGZsh{} Reset THEANO\PYGZus{}FLAGS}
     \PYG{n}{os}\PYG{o}{.}\PYG{n}{environ}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{THEANO\PYGZus{}FLAGS}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]} \PYG{o}{=} \PYG{n}{env\PYGZus{}th\PYGZus{}flags}
 \end{sphinxVerbatim}
+
+
+\chapter{reStructuredText Markup}
+\label{\detokenize{rtxt:restructuredtext-markup}}\label{\detokenize{rtxt:rtext}}\label{\detokenize{rtxt::doc}}
+\begin{sphinxadmonition}{note}{Chinese proverb}
+
+Making full preparation will not delay your job but quicken the process. \textendash{} old Chinese proverb
+\end{sphinxadmonition}
+
+TODO ……
+
+
+\section{Directives}
+\label{\detokenize{rtxt:directives}}
+
+\subsection{Admonitions}
+\label{\detokenize{rtxt:admonitions}}\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\item {} 
+attention
+
+\item {} 
+caution
+
+\item {} 
+danger
+
+\item {} 
+error
+
+\item {} 
+hint
+
+\item {} 
+important
+
+\item {} 
+note
+
+\item {} 
+tip
+
+\item {} 
+warning
+
+\end{enumerate}
+\begin{itemize}
+\item {} 
+\sphinxstylestrong{attention}
+
+\end{itemize}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{o+ow}{attention}\PYG{p}{::}
+
+   You neen to pay attention at here!
+\end{sphinxVerbatim}
+
+Result:
+
+\begin{sphinxadmonition}{attention}{Attention:}
+You neen to pay attention at here!
+\end{sphinxadmonition}
+\begin{itemize}
+\item {} 
+\sphinxstylestrong{caution}
+
+\end{itemize}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{o+ow}{caution}\PYG{p}{::}
+
+   This is a caution alert!
+\end{sphinxVerbatim}
+
+Restlut:
+
+\begin{sphinxadmonition}{caution}{Caution:}
+This is a caution alert!
+\end{sphinxadmonition}
+\begin{itemize}
+\item {} 
+\sphinxstylestrong{caution}
+
+\end{itemize}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{o+ow}{important}\PYG{p}{::}
+
+        This is important!
+\end{sphinxVerbatim}
+
+Result:
+
+\begin{sphinxadmonition}{important}{Important:}
+This is important!
+\end{sphinxadmonition}
+\begin{itemize}
+\item {} 
+\sphinxstylestrong{User defined admonition}
+
+\end{itemize}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{o+ow}{admonition}\PYG{p}{::} User defined name
+
+   You can make up your own admonition too.
+\end{sphinxVerbatim}
+
+Result:
+
+\begin{sphinxadmonition}{note}{User defined name}
+
+You can make up your own admonition too.
+\end{sphinxadmonition}
+\begin{itemize}
+\item {} 
+\sphinxstylestrong{seealso}
+
+\end{itemize}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{o+ow}{seealso}\PYG{p}{::}
+
+   The authoritative {}`reStructuredText User Documentation
+   \PYGZlt{}http://docutils.sourceforge.net/rst.html\PYGZgt{}{}`\PYGZus{}.  The \PYGZdq{}ref\PYGZdq{} links in this
+   document link to the description of the individual constructs in the reST
+   reference.
+\end{sphinxVerbatim}
+
+Result:
+
+
+\sphinxstrong{See also:}
+
+
+The authoritative \sphinxhref{http://docutils.sourceforge.net/rst.html}{reStructuredText User Documentation}.  The “ref” links in this
+document link to the description of the individual constructs in the reST
+reference.
+
+
+
+See more details at \sphinxhref{http://docutils.sourceforge.net/docs/ref/rst/directives.html\#admonitions}{Admonitions}.
+
+Lorem ipsum %
+\begin{footnote}[1]\sphinxAtStartFootnote
+Text of the first footnote.
+%
+\end{footnote} dolor sit amet … %
+\begin{footnote}[2]\sphinxAtStartFootnote
+Text of the second footnote.
+%
+\end{footnote}
+
+Lorem ipsum \sphinxcite{rtxt:ref} dolor sit amet.
+
+\begin{sphinxthebibliography}{Ref}
+\bibitem[Ref]{rtxt:ref}
+Book or article reference, URL or whatever.
+\end{sphinxthebibliography}
 
 
 

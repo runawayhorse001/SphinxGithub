@@ -318,6 +318,17 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/courier/pcrb8r.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/courier/pcrb8t.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/courier/pcrb8t.vf
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/courier/pcrb8r.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmr8t.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/times/ptmr8t.vf
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/vf/adobe/times/ptmr8t.vf
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmr8r.tfm
 INPUT sphinxgithub.ind
 INPUT sphinxgithub.ind
 INPUT sphinxgithub.aux

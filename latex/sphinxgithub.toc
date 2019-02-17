@@ -26,3 +26,7 @@
 \contentsline {subsection}{\numberline {4.4.3}Documentation Compiler}{26}{subsection.4.4.3}
 \contentsline {subsection}{\numberline {4.4.4}\sphinxstyleliteralintitle {\sphinxupquote {Makefile}} Wrapper}{27}{subsection.4.4.4}
 \contentsline {section}{\numberline {4.5}Full \sphinxstyleliteralintitle {\sphinxupquote {docgen.py}} Script}{27}{section.4.5}
+\contentsline {chapter}{\numberline {5}reStructuredText Markup}{31}{chapter.5}
+\contentsline {section}{\numberline {5.1}Directives}{31}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Admonitions}{31}{subsection.5.1.1}
+\contentsline {chapter}{Bibliography}{35}{chapter*.3}

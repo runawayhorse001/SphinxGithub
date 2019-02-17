@@ -1,0 +1,360 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>reStructuredText Markup &mdash; Sphinx with Github Webpages 1.00 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/fix_rtd.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Sphinx Configuration" href="sphinx.html" />
+ 
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-168290-9']);
+  _gaq.push(['_trackPageview']);
+</script>
+
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Sphinx with Github Webpages
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.00
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="preface.html">Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pkgs.html">Packages Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sphinx.html">Sphinx Configuration</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">reStructuredText Markup</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#directives">Directives</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#admonitions">Admonitions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Sphinx with Github Webpages</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>reStructuredText Markup</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/rtxt.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="restructuredtext-markup">
+<span id="rtext"></span><h1>reStructuredText Markup<a class="headerlink" href="#restructuredtext-markup" title="Permalink to this headline">¶</a></h1>
+<div class="admonition-chinese-proverb admonition">
+<p class="first admonition-title">Chinese proverb</p>
+<p class="last">Making full preparation will not delay your job but quicken the process. – old Chinese proverb</p>
+</div>
+<p>TODO ……</p>
+<div class="section" id="directives">
+<h2>Directives<a class="headerlink" href="#directives" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="admonitions">
+<h3>Admonitions<a class="headerlink" href="#admonitions" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>attention</li>
+<li>caution</li>
+<li>danger</li>
+<li>error</li>
+<li>hint</li>
+<li>important</li>
+<li>note</li>
+<li>tip</li>
+<li>warning</li>
+</ol>
+<ul class="simple">
+<li><strong>attention</strong></li>
+</ul>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">attention</span><span class="p">::</span>
+
+   You neen to pay attention at here!
+</pre></div>
+</div>
+<p>Result:</p>
+<div class="admonition attention">
+<p class="first admonition-title">Attention</p>
+<p class="last">You neen to pay attention at here!</p>
+</div>
+<ul class="simple">
+<li><strong>caution</strong></li>
+</ul>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">caution</span><span class="p">::</span>
+
+   This is a caution alert!
+</pre></div>
+</div>
+<p>Restlut:</p>
+<div class="admonition caution">
+<p class="first admonition-title">Caution</p>
+<p class="last">This is a caution alert!</p>
+</div>
+<ul class="simple">
+<li><strong>caution</strong></li>
+</ul>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">important</span><span class="p">::</span>
+
+        This is important!
+</pre></div>
+</div>
+<p>Result:</p>
+<div class="admonition important">
+<p class="first admonition-title">Important</p>
+<p class="last">This is important!</p>
+</div>
+<ul class="simple">
+<li><strong>User defined admonition</strong></li>
+</ul>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">admonition</span><span class="p">::</span> User defined name
+
+   You can make up your own admonition too.
+</pre></div>
+</div>
+<p>Result:</p>
+<div class="admonition-user-defined-name admonition">
+<p class="first admonition-title">User defined name</p>
+<p class="last">You can make up your own admonition too.</p>
+</div>
+<ul class="simple">
+<li><strong>seealso</strong></li>
+</ul>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">seealso</span><span class="p">::</span>
+
+   The authoritative `reStructuredText User Documentation
+   &lt;http://docutils.sourceforge.net/rst.html&gt;`_.  The &quot;ref&quot; links in this
+   document link to the description of the individual constructs in the reST
+   reference.
+</pre></div>
+</div>
+<p>Result:</p>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last">The authoritative <a class="reference external" href="http://docutils.sourceforge.net/rst.html">reStructuredText User Documentation</a>.  The “ref” links in this
+document link to the description of the individual constructs in the reST
+reference.</p>
+</div>
+<p>See more details at <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#admonitions">Admonitions</a>.</p>
+<p>Lorem ipsum <a class="footnote-reference" href="#f1" id="id1">[1]</a> dolor sit amet … <a class="footnote-reference" href="#f2" id="id2">[2]</a></p>
+<p>Lorem ipsum <a class="reference internal" href="#ref" id="id3">[Ref]</a> dolor sit amet.</p>
+<p class="rubric">Footnotes</p>
+<table class="docutils footnote" frame="void" id="f1" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Text of the first footnote.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="f2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>Text of the second footnote.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="ref" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[Ref]</a></td><td>Book or article reference, URL or whatever.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="sphinx.html" class="btn btn-neutral" title="Sphinx Configuration" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Wenqiang Feng
+      Last updated on Feb 16, 2019.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+
+  
+
+  <script type="text/javascript" src="_static/js/theme.js"></script>
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+ 
+<script type="text/javascript">
+  (function() {
+    var ga = document.createElement('script');
+    ga.src = ('https:' == document.location.protocol ?
+              'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    ga.setAttribute('async', 'true');
+    document.documentElement.firstChild.appendChild(ga);
+  })();
+</script>
+
+
+</body>
+</html>

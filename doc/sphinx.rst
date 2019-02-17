@@ -8,6 +8,7 @@ Sphinx Configuration
 
 	I heavily borrowed, modified and used the configuration in ``conf.py`` and ``docgen.py`` of `Theano package project`_. I will keep all the comments from Theano team and the coryrights of those files belong to Theano team. 
 
+
 General HTML Configuration
 ++++++++++++++++++++++++++
 

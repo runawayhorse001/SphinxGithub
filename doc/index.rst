@@ -19,4 +19,5 @@ Contents
    intro
    pkgs
    sphinx
+   rtxt
 

@@ -1,0 +1,11 @@
+.. _rtxt:
+
+=======================
+reStructuredText Markup
+=======================
+
+.. note::
+
+	Making full preparation will not delay your job but quicken the process
+
+TODO ...

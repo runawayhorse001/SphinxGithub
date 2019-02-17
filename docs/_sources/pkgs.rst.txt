@@ -4,6 +4,10 @@
 Packages Installation
 =====================
 
+.. note::
+
+   A journey of a thousand miles begins with a single step -- old Chinese proverb
+   
 .. warning::
 
 	It's been 10 years since I abandoned ``Windows`` operating systems. So I am a noob for ``Windows`` operating systems and I really do not know how to install ``some packages`` on ``Windows`` operating systems. 

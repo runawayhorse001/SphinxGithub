@@ -4,6 +4,10 @@
 Preface
 =======
 
+.. note::
+
+	Good tools are prerequisite to the successful execution of a job. – old Chinese proverb
+
 About this tutorial
 +++++++++++++++++++
 
