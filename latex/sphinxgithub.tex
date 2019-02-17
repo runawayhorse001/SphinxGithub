@@ -1616,6 +1616,74 @@ integer
 \end{description}\end{quote}
 
 
+\section{Roles}
+\label{\detokenize{rtxt:roles}}
+A role or “custom interpreted text role” is an inline piece of explicit markup. It signifies that that the enclosed text should be interpreted in a specific way. Sphinx uses this to provide semantic markup and cross-referencing of identifiers, as described in the appropriate section. More details can be found at: \sphinxurl{http://docutils.sourceforge.net/docs/ref/rst/roles.html\#customization}
+
+
+\subsection{Standard Roles}
+\label{\detokenize{rtxt:standard-roles}}
+H$_{\text{2}}$O
+E = mc$^{\text{2}}$
+
+
+\subsection{Specialized Roles}
+\label{\detokenize{rtxt:specialized-roles}}\begin{itemize}
+\item {} 
+\sphinxstylestrong{raw}
+
+\end{itemize}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{o+ow}{raw}\PYG{p}{::} html
+
+    \PYGZlt{}iframe width=\PYGZdq{}700\PYGZdq{} height=\PYGZdq{}315\PYGZdq{}
+    src=\PYGZdq{}https://www.youtube.com/embed/2Mg8QD0F1dQ\PYGZdq{}
+    frameborder=\PYGZdq{}0\PYGZdq{} allowfullscreen\PYGZgt{}\PYGZlt{}/iframe\PYGZgt{}
+\end{sphinxVerbatim}
+
+Result:
+
+
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{o+ow}{role}\PYG{p}{::} raw\PYGZhy{}html(raw)
+   \PYG{n+nc}{:format:} \PYG{n+nf}{html}
+
+If there just \PYG{g+ge}{*has*} to be a line break here,
+\PYG{n+na}{:raw\PYGZhy{}html:}\PYG{n+nv}{{}`\PYGZlt{}br /\PYGZgt{}{}`}
+it can be accomplished with a \PYGZdq{}raw\PYGZdq{}\PYGZhy{}derived role.
+But the line block syntax should be considered first.
+\end{sphinxVerbatim}
+
+Result:
+
+If there just \sphinxstyleemphasis{has} to be a line break here,
+
+it can be accomplished with a “raw”-derived role.
+But the line block syntax should be considered first.
+\begin{itemize}
+\item {} 
+\sphinxstylestrong{replace}
+
+\end{itemize}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{n+nt}{\textbar{}sphx\textbar{}} \PYG{o+ow}{replace}\PYG{p}{::} Sphinx
+\PYG{p}{..} \PYG{n+nt}{\textbar{}reST\textbar{}} \PYG{o+ow}{replace}\PYG{p}{::} reStructuredText
+
+\textbar{}reST\textbar{} is awesome!
+\end{sphinxVerbatim}
+
+Sphinx and reStructuredText are awesome!
+
+
 \section{Table}
 \label{\detokenize{rtxt:table}}
 More details can be found at: \sphinxurl{http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html\#grid-tables}
@@ -1966,40 +2034,12 @@ On a stick!
 
 \section{Directives}
 \label{\detokenize{rtxt:directives}}
+A directive is a generic block of explicit markup. Along with roles, it is one of the extension mechanisms of reST, and Sphinx makes heavy use of it.
+
 
 \subsection{Admonitions}
-\label{\detokenize{rtxt:admonitions}}\begin{enumerate}
-\def\theenumi{\arabic{enumi}}
-\def\labelenumi{\theenumi .}
-\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
-\item {} 
-attention
-
-\item {} 
-caution
-
-\item {} 
-danger
-
-\item {} 
-error
-
-\item {} 
-hint
-
-\item {} 
-important
-
-\item {} 
-note
-
-\item {} 
-tip
-
-\item {} 
-warning
-
-\end{enumerate}
+\label{\detokenize{rtxt:admonitions}}
+Admonitions: \sphinxcode{\sphinxupquote{attention}}, \sphinxcode{\sphinxupquote{caution}}, \sphinxcode{\sphinxupquote{danger}}, \sphinxcode{\sphinxupquote{error}}, \sphinxcode{\sphinxupquote{hint}}, \sphinxcode{\sphinxupquote{important}}, \sphinxcode{\sphinxupquote{note}}, \sphinxcode{\sphinxupquote{tip}}, \sphinxcode{\sphinxupquote{warning}}
 \begin{itemize}
 \item {} 
 \sphinxstylestrong{attention}

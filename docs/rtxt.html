@@ -103,6 +103,11 @@
 <li class="toctree-l3"><a class="reference internal" href="#blocked-paragraphs">Blocked Paragraphs</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#roles">Roles</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#standard-roles">Standard Roles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#specialized-roles">Specialized Roles</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#table">Table</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#grid-tables">Grid Tables</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#simple-tables">Simple Tables</a></li>
@@ -490,6 +495,58 @@ field name marker, and they must line up with each other.</p>
 </table>
 </div>
 </div>
+<div class="section" id="roles">
+<h2>Roles<a class="headerlink" href="#roles" title="Permalink to this headline">¶</a></h2>
+<p>A role or “custom interpreted text role” is an inline piece of explicit markup. It signifies that that the enclosed text should be interpreted in a specific way. Sphinx uses this to provide semantic markup and cross-referencing of identifiers, as described in the appropriate section. More details can be found at: <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/roles.html#customization">http://docutils.sourceforge.net/docs/ref/rst/roles.html#customization</a></p>
+<div class="section" id="standard-roles">
+<h3>Standard Roles<a class="headerlink" href="#standard-roles" title="Permalink to this headline">¶</a></h3>
+<p>H<sub>2</sub>O
+E = mc<sup>2</sup></p>
+</div>
+<div class="section" id="specialized-roles">
+<h3>Specialized Roles<a class="headerlink" href="#specialized-roles" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>raw</strong></li>
+</ul>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">raw</span><span class="p">::</span> html
+
+    &lt;iframe width=&quot;700&quot; height=&quot;315&quot;
+    src=&quot;https://www.youtube.com/embed/2Mg8QD0F1dQ&quot;
+    frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+</pre></div>
+</div>
+<p>Result:</p>
+<iframe width="700" height="315"
+src="https://www.youtube.com/embed/2Mg8QD0F1dQ"
+frameborder="0" allowfullscreen></iframe><p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">role</span><span class="p">::</span> raw-html(raw)
+   <span class="nc">:format:</span> <span class="nf">html</span>
+
+If there just <span class="ge">*has*</span> to be a line break here,
+<span class="na">:raw-html:</span><span class="nv">`&lt;br /&gt;`</span>
+it can be accomplished with a &quot;raw&quot;-derived role.
+But the line block syntax should be considered first.
+</pre></div>
+</div>
+<p>Result:</p>
+<p>If there just <em>has</em> to be a line break here,
+<span class="raw-html"><br /></span>
+it can be accomplished with a “raw”-derived role.
+But the line block syntax should be considered first.</p>
+<ul class="simple">
+<li><strong>replace</strong></li>
+</ul>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">|sphx|</span> <span class="ow">replace</span><span class="p">::</span> Sphinx
+<span class="p">..</span> <span class="nt">|reST|</span> <span class="ow">replace</span><span class="p">::</span> reStructuredText
+
+|reST| is awesome!
+</pre></div>
+</div>
+<p>Sphinx and reStructuredText are awesome!</p>
+</div>
+</div>
 <div class="section" id="table">
 <h2>Table<a class="headerlink" href="#table" title="Permalink to this headline">¶</a></h2>
 <p>More details can be found at: <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#grid-tables">http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html#grid-tables</a></p>
@@ -741,19 +798,10 @@ crunchy, now would it?</td>
 </div>
 <div class="section" id="directives">
 <h2>Directives<a class="headerlink" href="#directives" title="Permalink to this headline">¶</a></h2>
+<p>A directive is a generic block of explicit markup. Along with roles, it is one of the extension mechanisms of reST, and Sphinx makes heavy use of it.</p>
 <div class="section" id="admonitions">
 <h3>Admonitions<a class="headerlink" href="#admonitions" title="Permalink to this headline">¶</a></h3>
-<ol class="arabic simple">
-<li>attention</li>
-<li>caution</li>
-<li>danger</li>
-<li>error</li>
-<li>hint</li>
-<li>important</li>
-<li>note</li>
-<li>tip</li>
-<li>warning</li>
-</ol>
+<p>Admonitions: <code class="docutils literal notranslate"><span class="pre">attention</span></code>, <code class="docutils literal notranslate"><span class="pre">caution</span></code>, <code class="docutils literal notranslate"><span class="pre">danger</span></code>, <code class="docutils literal notranslate"><span class="pre">error</span></code>, <code class="docutils literal notranslate"><span class="pre">hint</span></code>, <code class="docutils literal notranslate"><span class="pre">important</span></code>, <code class="docutils literal notranslate"><span class="pre">note</span></code>, <code class="docutils literal notranslate"><span class="pre">tip</span></code>, <code class="docutils literal notranslate"><span class="pre">warning</span></code></p>
 <ul class="simple">
 <li><strong>attention</strong></li>
 </ul>

@@ -316,6 +316,84 @@ Result:
    field name marker, and they must line up with each other.
 :Parameter i: integer
 
+Roles
++++++
+
+A role or “custom interpreted text role” is an inline piece of explicit markup. It signifies that that the enclosed text should be interpreted in a specific way. Sphinx uses this to provide semantic markup and cross-referencing of identifiers, as described in the appropriate section. More details can be found at: http://docutils.sourceforge.net/docs/ref/rst/roles.html#customization
+
+
+Standard Roles
+--------------
+
+H\ :sub:`2`\ O
+E = mc\ :sup:`2`
+
+
+
+Specialized Roles
+-----------------
+
+* **raw**
+
+reStructuredText:
+
+.. code-block:: rst
+
+	.. raw:: html
+
+	    <iframe width="700" height="315" 
+	    src="https://www.youtube.com/embed/2Mg8QD0F1dQ" 
+	    frameborder="0" allowfullscreen></iframe>
+
+Result:
+
+.. raw:: html
+
+    <iframe width="700" height="315" 
+    src="https://www.youtube.com/embed/2Mg8QD0F1dQ" 
+    frameborder="0" allowfullscreen></iframe>
+
+reStructuredText:
+
+.. code-block:: rst
+
+	.. role:: raw-html(raw)
+	   :format: html
+
+	If there just *has* to be a line break here,
+	:raw-html:`<br />`
+	it can be accomplished with a "raw"-derived role.
+	But the line block syntax should be considered first.
+
+Result:
+
+.. role:: raw-html(raw)
+   :format: html
+
+If there just *has* to be a line break here,
+:raw-html:`<br />`
+it can be accomplished with a "raw"-derived role.
+But the line block syntax should be considered first.
+
+* **replace**
+
+reStructuredText:
+
+.. code-block:: rst
+
+	.. |sphx| replace:: Sphinx 
+	.. |reST| replace:: reStructuredText
+
+	|reST| is awesome!
+
+.. |sphx| replace:: Sphinx 
+.. |reST| replace:: reStructuredText
+
+|sphx| and |reST| are awesome!
+
+
+
+
 Table
 +++++
 
@@ -491,18 +569,12 @@ reStructuredText:
 Directives
 ++++++++++
 
+A directive is a generic block of explicit markup. Along with roles, it is one of the extension mechanisms of reST, and Sphinx makes heavy use of it.
+
 Admonitions
 -----------
 
-#. attention
-#. caution
-#. danger
-#. error
-#. hint
-#. important
-#. note
-#. tip
-#. warning
+Admonitions: ``attention``, ``caution``, ``danger``, ``error``, ``hint``, ``important``, ``note``, ``tip``, ``warning``
 
 * **attention**
 
