@@ -27,20 +27,16 @@
 \contentsline {subsection}{\numberline {4.4.4}\sphinxstyleliteralintitle {\sphinxupquote {Makefile}} Wrapper}{27}{subsection.4.4.4}
 \contentsline {section}{\numberline {4.5}Full \sphinxstyleliteralintitle {\sphinxupquote {docgen.py}} Script}{27}{section.4.5}
 \contentsline {chapter}{\numberline {5}reStructuredText Markup}{31}{chapter.5}
-\contentsline {section}{\numberline {5.1}Sections}{31}{section.5.1}
-\contentsline {section}{\numberline {5.2}Paragraphs}{31}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}General Paragraphs}{32}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Bullet Lists Paragraphs}{32}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Bullet Lists Paragraphs}{33}{subsection.5.2.3}
-\contentsline {subsection}{\numberline {5.2.4}Blocked Paragraphs}{35}{subsection.5.2.4}
-\contentsline {section}{\numberline {5.3}Roles}{37}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Standard Roles}{37}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Specialized Roles}{37}{subsection.5.3.2}
-\contentsline {section}{\numberline {5.4}Table}{38}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Grid Tables}{38}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Simple Tables}{39}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}CSV Tables}{40}{subsection.5.4.3}
-\contentsline {subsection}{\numberline {5.4.4}List Tables}{40}{subsection.5.4.4}
-\contentsline {section}{\numberline {5.5}Directives}{41}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Admonitions}{41}{subsection.5.5.1}
-\contentsline {chapter}{Bibliography}{45}{chapter*.3}
+\contentsline {section}{\numberline {5.1}reStructuredText Primer}{31}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Sections}{31}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Paragraphs}{32}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Table}{37}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Images and Figures}{40}{subsection.5.1.4}
+\contentsline {subsection}{\numberline {5.1.5}Math}{46}{subsection.5.1.5}
+\contentsline {section}{\numberline {5.2}Roles}{49}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Standard Roles}{49}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Specialized Roles}{49}{subsection.5.2.2}
+\contentsline {section}{\numberline {5.3}Directives}{50}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Admonitions}{51}{subsection.5.3.1}
+\contentsline {chapter}{\numberline {6}Main Reference}{53}{chapter.6}
+\contentsline {chapter}{Bibliography}{55}{chapter*.3}

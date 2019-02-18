@@ -20,4 +20,5 @@ Contents
    pkgs
    sphinx
    rtxt
+   reference
 

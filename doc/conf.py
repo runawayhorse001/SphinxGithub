@@ -304,7 +304,8 @@ latex_elements['preamble'] =  '\\usepackage{amsmath}\n'+\
                           '\\def\\C{\\mathbf{C}}\n'+\
                           '\\def\\P{\\mathbf{P}}\n'+\
                           '\\def\\T{{\\bf \\mathcal T}}\n'+\
-                          '\\def\\B{{\\bf \\mathcal B}}\n'
+                          '\\def\\B{{\\bf \\mathcal B}}\n'+\
+                          '\\def\\euler{\ e^{i\pi} + 1 = 0}\n'
 
 # Documents to append as an appendix to all manuals.
 #latex_appendices = []
@@ -346,5 +347,6 @@ imgmath_latex_preamble =  '\\usepackage{amsmath}\n'+\
                           '\\def\\C{\\mathbf{C}}\n'+\
                           '\\def\\P{\\mathbf{P}}\n'+\
                           '\\def\\T{{\\bf \\mathcal T}}\n'+\
-                          '\\def\\B{{\\bf \\mathcal B}}\n'
+                          '\\def\\B{{\\bf \\mathcal B}}\n'+\
+                          '\\def\\euler{\ e^{i\pi} + 1 = 0}\n'
 

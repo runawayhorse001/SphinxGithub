@@ -87,10 +87,11 @@
 \def\P{\mathbf{P}}
 \def\T{{\bf \mathcal T}}
 \def\B{{\bf \mathcal B}}
+\def\euler{\ e^{i\pi} + 1 = 0}
 
 
 \title{Sphinx Github Webpage Tutorials}
-\date{February 17, 2019}
+\date{February 18, 2019}
 \release{1.00}
 \author{Wenqiang Feng}
 \newcommand{\sphinxlogo}{\sphinxincludegraphics{logo.png}\par}
@@ -1228,7 +1229,12 @@ Making full preparation will not delay your job but quicken the process. \texten
 \end{sphinxadmonition}
 
 
-\section{Sections}
+\section{reStructuredText Primer}
+\label{\detokenize{rtxt:restructuredtext-primer}}
+I would refer the reader to \sphinxcite{reference:sphinx2019} for more details.
+
+
+\subsection{Sections}
 \label{\detokenize{rtxt:sections}}
 Sections are identified through their titles, which are marked up with adornment: “underlines” below the title text, or underlines and matching “overlines” above the title. More details can be found at: \sphinxurl{http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html\#sections}
 
@@ -1247,7 +1253,7 @@ reStructuredText:
 \end{sphinxVerbatim}
 
 
-\section{Paragraphs}
+\subsection{Paragraphs}
 \label{\detokenize{rtxt:paragraphs}}
 The paragraph is the most basic block in a reST document.
 Paragraphs are simply chunks of text separated by one or
@@ -1255,10 +1261,15 @@ more blank lines. As in Python, indentation is significant
 in reST, so all lines of the same paragraph must be
 left-aligned to the \sphinxstylestrong{same level of indentation}. More
 details can be found at: \sphinxurl{http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html\#paragraphs}
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\item {} 
+\sphinxstylestrong{General Paragraphs}
 
+\end{enumerate}
 
-\subsection{General Paragraphs}
-\label{\detokenize{rtxt:general-paragraphs}}
 reStructuredText:
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
@@ -1292,10 +1303,16 @@ line is required; The blank line below the last line is required.
 
 This is the second demo paragraph. The blank line above the first
 line is required; The blank line below the last line is required.
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\setcounter{enumi}{1}
+\item {} 
+\sphinxstylestrong{Bullet Lists Paragraphs}
 
+\end{enumerate}
 
-\subsection{Bullet Lists Paragraphs}
-\label{\detokenize{rtxt:bullet-lists-paragraphs}}
 reStructuredText:
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
@@ -1365,10 +1382,16 @@ This is the third item of the main list.
 \end{itemize}
 
 This paragraph is not part of the list.
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\setcounter{enumi}{2}
+\item {} 
+\sphinxstylestrong{Bullet Lists Paragraphs}
 
+\end{enumerate}
 
-\subsection{Bullet Lists Paragraphs}
-\label{\detokenize{rtxt:id1}}
 reStructuredText:
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
@@ -1394,6 +1417,48 @@ reStructuredText:
 
 \PYG{l+m}{3.} This is the third item of the main list.
 \end{sphinxVerbatim}
+
+Result:
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\item {} 
+This is the first bullet list item.  The blank line above the
+first list item is required; blank lines between list items
+(such as below this paragraph) are optional.
+
+\item {} 
+This is the first paragraph in the second item in the list.
+
+This is the second paragraph in the second item in the list.
+The blank line above this paragraph is required.  The left edge
+of this paragraph lines up with the paragraph above, both
+indented relative to the bullet.
+\begin{enumerate}
+\def\theenumii{\alph{enumii}}
+\def\labelenumii{\theenumii .}
+\makeatletter\def\p@enumiii{\p@enumii \theenumii .}\makeatother
+\item {} \begin{description}
+\item[{This is a sublist.  The bullet lines up with the left edge of}] \leavevmode
+the text blocks above.  A sublist is a new list so requires a
+blank line above and below.
+
+\end{description}
+
+\item {} \begin{description}
+\item[{This is a sublist.  The bullet lines up with the left edge of}] \leavevmode
+the text blocks above.  A sublist is a new list so requires a
+blank line above and below.
+
+\end{description}
+
+\end{enumerate}
+
+\item {} 
+This is the third item of the main list.
+
+\end{enumerate}
 
 Syntax diagram:
 
@@ -1440,12 +1505,12 @@ blank line above and below.
 \item {} 
 This is the third item of the main list.
 
+\item {} 
+\sphinxstylestrong{Blocked Paragraphs}
+
 \end{enumerate}
-
-
-\subsection{Blocked Paragraphs}
-\label{\detokenize{rtxt:blocked-paragraphs}}\begin{enumerate}
-\def\theenumi{\arabic{enumi}}
+\begin{enumerate}
+\def\theenumi{\alph{enumi}}
 \def\labelenumi{\theenumi .}
 \makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
 \item {} 
@@ -1522,7 +1587,7 @@ Take it away, Eric the Orchestra Leader!
 \def\theenumi{\arabic{enumi}}
 \def\labelenumi{\theenumi .}
 \makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
-\setcounter{enumi}{1}
+\setcounter{enumi}{4}
 \item {} 
 \sphinxstylestrong{Doctest Blocks}
 
@@ -1616,81 +1681,18 @@ integer
 \end{description}\end{quote}
 
 
-\section{Roles}
-\label{\detokenize{rtxt:roles}}
-A role or “custom interpreted text role” is an inline piece of explicit markup. It signifies that that the enclosed text should be interpreted in a specific way. Sphinx uses this to provide semantic markup and cross-referencing of identifiers, as described in the appropriate section. More details can be found at: \sphinxurl{http://docutils.sourceforge.net/docs/ref/rst/roles.html\#customization}
-
-
-\subsection{Standard Roles}
-\label{\detokenize{rtxt:standard-roles}}
-H$_{\text{2}}$O
-E = mc$^{\text{2}}$
-
-
-\subsection{Specialized Roles}
-\label{\detokenize{rtxt:specialized-roles}}\begin{itemize}
-\item {} 
-\sphinxstylestrong{raw}
-
-\end{itemize}
-
-reStructuredText:
-
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{p}{..} \PYG{o+ow}{raw}\PYG{p}{::} html
-
-    \PYGZlt{}iframe width=\PYGZdq{}700\PYGZdq{} height=\PYGZdq{}315\PYGZdq{}
-    src=\PYGZdq{}https://www.youtube.com/embed/2Mg8QD0F1dQ\PYGZdq{}
-    frameborder=\PYGZdq{}0\PYGZdq{} allowfullscreen\PYGZgt{}\PYGZlt{}/iframe\PYGZgt{}
-\end{sphinxVerbatim}
-
-Result:
-
-
-
-reStructuredText:
-
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{p}{..} \PYG{o+ow}{role}\PYG{p}{::} raw\PYGZhy{}html(raw)
-   \PYG{n+nc}{:format:} \PYG{n+nf}{html}
-
-If there just \PYG{g+ge}{*has*} to be a line break here,
-\PYG{n+na}{:raw\PYGZhy{}html:}\PYG{n+nv}{{}`\PYGZlt{}br /\PYGZgt{}{}`}
-it can be accomplished with a \PYGZdq{}raw\PYGZdq{}\PYGZhy{}derived role.
-But the line block syntax should be considered first.
-\end{sphinxVerbatim}
-
-Result:
-
-If there just \sphinxstyleemphasis{has} to be a line break here,
-
-it can be accomplished with a “raw”-derived role.
-But the line block syntax should be considered first.
-\begin{itemize}
-\item {} 
-\sphinxstylestrong{replace}
-
-\end{itemize}
-
-reStructuredText:
-
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-\PYG{p}{..} \PYG{n+nt}{\textbar{}sphx\textbar{}} \PYG{o+ow}{replace}\PYG{p}{::} Sphinx
-\PYG{p}{..} \PYG{n+nt}{\textbar{}reST\textbar{}} \PYG{o+ow}{replace}\PYG{p}{::} reStructuredText
-
-\textbar{}reST\textbar{} is awesome!
-\end{sphinxVerbatim}
-
-Sphinx and reStructuredText are awesome!
-
-
-\section{Table}
+\subsection{Table}
 \label{\detokenize{rtxt:table}}
 More details can be found at: \sphinxurl{http://docutils.sourceforge.net/docs/ref/rst/restructuredtext.html\#grid-tables}
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\item {} 
+\sphinxstylestrong{Grid Tables}
 
+\end{enumerate}
 
-\subsection{Grid Tables}
-\label{\detokenize{rtxt:grid-tables}}
 reStructuredText:
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
@@ -1778,10 +1780,16 @@ body row 4
 \end{tabular}
 \par
 \sphinxattableend\end{savenotes}
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\setcounter{enumi}{1}
+\item {} 
+\sphinxstylestrong{Simple Tables}
 
+\end{enumerate}
 
-\subsection{Simple Tables}
-\label{\detokenize{rtxt:simple-tables}}
 reStructuredText:
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
@@ -1903,10 +1911,16 @@ Row 4; column 1 will be empty.
 \end{tabular}
 \par
 \sphinxattableend\end{savenotes}
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\setcounter{enumi}{2}
+\item {} 
+\sphinxstylestrong{CSV Tables}
 
+\end{enumerate}
 
-\subsection{CSV Tables}
-\label{\detokenize{rtxt:csv-tables}}
 reStructuredText:
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
@@ -1962,10 +1976,16 @@ On a stick!
 \end{tabular}
 \par
 \sphinxattableend\end{savenotes}
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\setcounter{enumi}{3}
+\item {} 
+\sphinxstylestrong{List Tables}
 
+\end{enumerate}
 
-\subsection{List Tables}
-\label{\detokenize{rtxt:list-tables}}
 reStructuredText:
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
@@ -2030,6 +2050,449 @@ On a stick!
 \end{tabular}
 \par
 \sphinxattableend\end{savenotes}
+
+
+\subsection{Images and Figures}
+\label{\detokenize{rtxt:images-and-figures}}
+There are two image directives: \sphinxcode{\sphinxupquote{imag}} and \sphinxcode{\sphinxupquote{figure}}. More details can be found at: \sphinxurl{http://docutils.sourceforge.net/docs/ref/rst/directives.html\#image}.
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\item {} 
+\sphinxstylestrong{Simple import}
+
+\end{enumerate}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{o+ow}{image}\PYG{p}{::} images/boxp.png
+\end{sphinxVerbatim}
+
+\noindent\sphinxincludegraphics{{boxp}.png}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{o+ow}{figure}\PYG{p}{::} images/avg\PYGZus{}rating\PYGZus{}mon.png
+   \PYG{n+nc}{:scale:} \PYG{n+nf}{50 \PYGZpc{}}
+   \PYG{n+nc}{:alt:} \PYG{n+nf}{map to buried treasure}
+
+   This is the caption of the figure (a simple paragraph).
+\end{sphinxVerbatim}
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[scale=0.5]{{avg_rating_mon}.png}
+\caption{This is the caption of the figure (a simple paragraph).}\label{\detokenize{rtxt:id8}}\end{figure}
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\setcounter{enumi}{1}
+\item {} 
+\sphinxstylestrong{Complex import}
+
+\end{enumerate}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{o+ow}{figure}\PYG{p}{::} images/boxp.png
+   \PYG{n+nc}{:height:} \PYG{n+nf}{400 px}
+   \PYG{n+nc}{:width:} \PYG{n+nf}{800 px}
+   \PYG{n+nc}{:scale:} \PYG{n+nf}{50 \PYGZpc{}}
+   \PYG{n+nc}{:alt:} \PYG{n+nf}{alternate text}
+   \PYG{n+nc}{:align:} \PYG{n+nf}{right}
+
+   This is the caption of the figure (a simple paragraph).
+
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+
+\PYG{p}{..} \PYG{o+ow}{figure}\PYG{p}{::} images/boxp.png
+   \PYG{n+nc}{:height:} \PYG{n+nf}{400 px}
+   \PYG{n+nc}{:width:} \PYG{n+nf}{800 px}
+   \PYG{n+nc}{:scale:} \PYG{n+nf}{50 \PYGZpc{}}
+   \PYG{n+nc}{:alt:} \PYG{n+nf}{alternate text}
+   \PYG{n+nc}{:align:} \PYG{n+nf}{center}
+
+   This is the caption of the figure (a simple paragraph).
+
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+
+
+\PYG{p}{..} \PYG{o+ow}{figure}\PYG{p}{::} images/boxp.png
+   \PYG{n+nc}{:height:} \PYG{n+nf}{400 px}
+   \PYG{n+nc}{:width:} \PYG{n+nf}{800 px}
+   \PYG{n+nc}{:scale:} \PYG{n+nf}{50 \PYGZpc{}}
+   \PYG{n+nc}{:alt:} \PYG{n+nf}{alternate text}
+   \PYG{n+nc}{:align:} \PYG{n+nf}{left}
+
+   This is the caption of the figure (a simple paragraph).
+
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+\end{sphinxVerbatim}
+
+Result:
+\begin{wrapfigure}{r}{800\sphinxpxdimen}
+\centering
+\noindent\sphinxincludegraphics[width=400.00000\sphinxpxdimen,height=200.00000\sphinxpxdimen]{{boxp}.png}
+\caption{This is the caption of the figure (a simple paragraph).}\label{\detokenize{rtxt:id9}}\end{wrapfigure}
+
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[width=400.00000\sphinxpxdimen,height=200.00000\sphinxpxdimen]{{boxp}.png}
+\caption{This is the caption of the figure (a simple paragraph).}\label{\detokenize{rtxt:id10}}\end{figure}
+
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+\begin{wrapfigure}{l}{800\sphinxpxdimen}
+\centering
+\noindent\sphinxincludegraphics[width=400.00000\sphinxpxdimen,height=200.00000\sphinxpxdimen]{{boxp}.png}
+\caption{This is the caption of the figure (a simple paragraph).}\label{\detokenize{rtxt:id11}}\end{wrapfigure}
+
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\setcounter{enumi}{2}
+\item {} 
+\sphinxstylestrong{Figures in table}
+
+\end{enumerate}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
++\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+
+\PYG{o}{\textbar{}} Figures                      \textbar{} Description           \textbar{}
++==============================+=======================+
+\PYG{o}{\textbar{}} .. figure:: images/corr.png  \textbar{} Figure 1: test        \textbar{}
+\PYG{o}{\textbar{}}    :scale: 20 \PYGZpc{}              \textbar{}                       \textbar{}
++\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+
+\PYG{o}{\textbar{}} .. image:: images/corr.png   \textbar{} Figure 2: test        \textbar{}
+\PYG{o}{\textbar{}}    :scale: 20 \PYGZpc{}              \textbar{}                       \textbar{}
++\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+
+\PYG{o}{\textbar{}} .. image:: images/corr.png   \textbar{} Figure 3: test        \textbar{}
+\PYG{o}{\textbar{}}    :scale: 20 \PYGZpc{}              \textbar{}                       \textbar{}
++\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+
+\end{sphinxVerbatim}
+
+Result:
+\begin{quote}
+
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\begin{tabulary}{\linewidth}[t]{|T|T|}
+\hline
+\sphinxstyletheadfamily 
+Figures
+&\sphinxstyletheadfamily 
+Description
+\\
+\hline\begin{sphinxfigure-in-table}
+\centering
+
+\noindent\sphinxincludegraphics[scale=0.2]{{corr}.png}
+\end{sphinxfigure-in-table}\relax
+&
+Figure 1: test
+\\
+\hline
+\noindent\sphinxincludegraphics[scale=0.2]{{corr}.png}
+&
+Figure 2: test
+\\
+\hline
+\noindent\sphinxincludegraphics[scale=0.2]{{corr}.png}
+&
+Figure 3: test
+\\
+\hline
+\end{tabulary}
+\par
+\sphinxattableend\end{savenotes}
+\end{quote}
+
+
+\subsection{Math}
+\label{\detokenize{rtxt:math}}
+The math role marks its content as mathematical notation (inline formula). More details can be found at: \sphinxurl{http://www.sphinx-doc.org/es/stable/ext/math.html}.
+
+The input language for mathematics is LaTeX markup. I will not do a LaTex tutorial as here.
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\item {} 
+\sphinxstylestrong{Inline formula}
+
+\end{enumerate}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+The area of a circle is \PYG{n+na}{:math:}\PYG{n+nv}{{}`A\PYGZus{}\PYGZbs{}text\PYGZob{}c\PYGZcb{} = (\PYGZbs{}pi/4) d\PYGZca{}2{}`}.
+\end{sphinxVerbatim}
+
+RFesult:
+
+The area of a circle is \(A_\text{c} = (\pi/4) d^2\).
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\setcounter{enumi}{1}
+\item {} 
+\sphinxstylestrong{Equations}
+
+\end{enumerate}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{    ..} \PYG{o+ow}{math}\PYG{p}{::}
+       \PYG{n+nc}{:label:} \PYG{n+nf}{eq\PYGZus{}lin\PYGZus{}cost\PYGZus{}func}
+
+       \PYGZbs{}min \PYGZus{}\PYGZob{}\PYGZbs{}beta\PYGZbs{}in \PYGZbs{}mathbb \PYGZob{}R\PYGZcb{} \PYGZca{}\PYGZob{}p\PYGZcb{}\PYGZcb{}\PYGZob{}\PYGZbs{}frac \PYGZob{}1\PYGZcb{}\PYGZob{}n\PYGZcb{}\PYGZcb{}\PYGZbs{}\textbar{}\PYGZob{}\PYGZbs{}hat \PYGZob{}X\PYGZcb{}\PYGZcb{}\PYGZbs{}beta\PYGZhy{}\PYGZob{}\PYGZbs{}hat \PYGZob{}Y\PYGZcb{}\PYGZcb{}\PYGZbs{}\textbar{}\PYGZca{}\PYGZob{}2\PYGZcb{}
+
+The equation \PYG{n+na}{:eq:}\PYG{n+nv}{{}`eq\PYGZus{}lin\PYGZus{}cost\PYGZus{}func{}`} is the cost function for linear regression.
+\end{sphinxVerbatim}
+
+Result:
+\begin{equation}\label{equation:rtxt:eq_cost_function}
+\begin{split}\min _{\beta\in \mathbb {R} ^{p}}{\frac {1}{n}}\|{\hat {X}}\beta-{\hat {Y}}\|^{2}\end{split}
+\end{equation}
+The equation \eqref{equation:rtxt:eq_cost_function} is the cost function for linear regression.
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\setcounter{enumi}{2}
+\item {} 
+\sphinxstylestrong{User defined symbol and equation}
+
+\end{enumerate}
+
+Add your definitions to the \sphinxcode{\sphinxupquote{latex\_elements{[}'preamble'{]}}} and \sphinxcode{\sphinxupquote{imgmath\_latex\_preamble}}, then you can apply your own notations for symbol and equtions.
+
+my definitions for \(\B\) symbol and \(\euler\) equation:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYGZsq{}\PYG{k}{\PYGZbs{}\PYGZbs{}}def\PYG{k}{\PYGZbs{}\PYGZbs{}}B\PYG{n+nb}{\PYGZob{}}\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{}\PYGZbs{}}bf \PYG{k}{\PYGZbs{}\PYGZbs{}}mathcal B\PYG{n+nb}{\PYGZcb{}}\PYG{n+nb}{\PYGZcb{}}\PYG{k}{\PYGZbs{}n}\PYGZsq{}+ \PYG{k}{\PYGZbs{}}
+\PYGZsq{}\PYG{k}{\PYGZbs{}\PYGZbs{}}def\PYG{k}{\PYGZbs{}\PYGZbs{}}euler\PYG{n+nb}{\PYGZob{}}\PYG{k}{\PYGZbs{} }e\PYG{n+nb}{\PYGZca{}}\PYG{n+nb}{\PYGZob{}}i\PYG{k}{\PYGZbs{}pi}\PYG{n+nb}{\PYGZcb{}} + 1 = 0\PYG{n+nb}{\PYGZcb{}}\PYG{k}{\PYGZbs{}n}\PYGZsq{}
+\end{sphinxVerbatim}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+The is a test for the user defined math symbol: \PYG{n+na}{:math:}\PYG{n+nv}{{}`\PYGZbs{}B{}`}.
+
+The is a test for the user defined math equation:
+
+\PYG{p}{..} \PYG{o+ow}{math}\PYG{p}{::}
+
+        \PYGZbs{}euler
+\end{sphinxVerbatim}
+
+The is a test for the user defined math symbol: \(\B\).
+
+The is a test for the user defined math equation:
+\begin{equation*}
+\begin{split}\euler\end{split}
+\end{equation*}\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\setcounter{enumi}{3}
+\item {} 
+\sphinxstylestrong{More examples}
+
+\end{enumerate}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{o+ow}{math}\PYG{p}{::}
+
+        f(x)
+        =
+        \PYGZbs{}Biggl \PYGZbs{}lbrace
+        \PYGZob{}
+        0,\PYGZbs{}text\PYGZob{} if \PYGZcb{}
+           \PYGZob{} x \PYGZgt{}0\PYGZcb{}
+        \PYGZbs{}atop
+        1 \PYGZbs{}text\PYGZob{} otherwise \PYGZcb{}
+        \PYGZcb{}
+
+\PYG{p}{..} \PYG{o+ow}{math}\PYG{p}{::}
+
+   (a + b)\PYGZca{}2  \PYGZam{}=  (a + b)(a + b) \PYGZbs{}\PYGZbs{}
+              \PYGZam{}=  a\PYGZca{}2 + 2ab + b\PYGZca{}2
+
+\PYG{p}{..} \PYG{o+ow}{math}\PYG{p}{::}
+   \PYG{n+nc}{:nowrap:}
+
+   \PYGZbs{}begin\PYGZob{}eqnarray\PYGZcb{}
+      y    \PYGZam{} = \PYGZam{} ax\PYGZca{}2 + bx + c \PYGZbs{}nonumber\PYGZbs{}\PYGZbs{}
+      f(x) \PYGZam{} = \PYGZam{} x\PYGZca{}2 + 2xy + y\PYGZca{}2\PYGZbs{}nonumber
+   \PYGZbs{}end\PYGZob{}eqnarray\PYGZcb{}
+
+\PYG{p}{..} \PYG{o+ow}{math}\PYG{p}{::} e\PYGZca{}\PYGZob{}i\PYGZbs{}pi\PYGZcb{} + 1 = 0
+   \PYG{n+nc}{:label:} \PYG{n+nf}{euler}
+\end{sphinxVerbatim}
+
+Result:
+\begin{equation*}
+\begin{split}f(x)
+=
+\Biggl \lbrace
+{
+0,\text{ if }
+   { x >0}
+\atop
+1 \text{ otherwise }
+}\end{split}
+\end{equation*}\begin{equation*}
+\begin{split}(a + b)^2  &=  (a + b)(a + b) \\
+           &=  a^2 + 2ab + b^2\end{split}
+\end{equation*}\begin{eqnarray}
+   y    & = & ax^2 + bx + c \nonumber\\
+   f(x) & = & x^2 + 2xy + y^2\nonumber
+\end{eqnarray}\begin{equation}\label{equation:rtxt:euler}
+\begin{split}e^{i\pi} + 1 = 0\end{split}
+\end{equation}
+
+\section{Roles}
+\label{\detokenize{rtxt:roles}}
+A role or “custom interpreted text role” is an inline piece of explicit markup. It signifies that that the enclosed text should be interpreted in a specific way. Sphinx uses this to provide semantic markup and cross-referencing of identifiers, as described in the appropriate section. More details can be found at: \sphinxurl{http://docutils.sourceforge.net/docs/ref/rst/roles.html\#customization}
+
+
+\subsection{Standard Roles}
+\label{\detokenize{rtxt:standard-roles}}\begin{itemize}
+\item {} 
+\sphinxstylestrong{Line markup}
+
+\end{itemize}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+emphasis \textendash{} equivalent of \PYG{g+ge}{*emphasis*}
+
+strong \textendash{} equivalent of \PYG{g+gs}{**strong**}
+
+literal \textendash{} equivalent of \PYG{l+s}{{}`{}`}\PYG{l+s}{literal}\PYG{l+s}{{}`{}`}
+
+subscript \textendash{} H\PYGZbs{} \PYG{n+na}{:sub:}\PYG{n+nv}{{}`2{}`}\PYGZbs{} O
+
+superscript \textendash{} E = mc\PYGZbs{} \PYG{n+na}{:sup:}\PYG{n+nv}{{}`2{}`}
+
+title\PYGZhy{}reference \textendash{} for titles of books, periodicals, and other materials
+\end{sphinxVerbatim}
+
+emphasis \textendash{} equivalent of \sphinxstyleemphasis{emphasis}
+
+strong \textendash{} equivalent of \sphinxstylestrong{strong}
+
+literal \textendash{} equivalent of \sphinxcode{\sphinxupquote{literal}}
+
+subscript \textendash{} H$_{\text{2}}$O
+
+superscript \textendash{} E = mc$^{\text{2}}$
+
+title-reference \textendash{} for titles of books, periodicals, and other materials
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+
+\end{sphinxVerbatim}
+
+Result:
+
+
+\subsection{Specialized Roles}
+\label{\detokenize{rtxt:specialized-roles}}\begin{itemize}
+\item {} 
+\sphinxstylestrong{raw}
+
+\end{itemize}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{o+ow}{raw}\PYG{p}{::} html
+
+    \PYGZlt{}iframe width=\PYGZdq{}700\PYGZdq{} height=\PYGZdq{}315\PYGZdq{}
+    src=\PYGZdq{}https://www.youtube.com/embed/2Mg8QD0F1dQ\PYGZdq{}
+    frameborder=\PYGZdq{}0\PYGZdq{} allowfullscreen\PYGZgt{}\PYGZlt{}/iframe\PYGZgt{}
+\end{sphinxVerbatim}
+
+Result:
+
+
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{o+ow}{role}\PYG{p}{::} raw\PYGZhy{}html(raw)
+   \PYG{n+nc}{:format:} \PYG{n+nf}{html}
+
+If there just \PYG{g+ge}{*has*} to be a line break here,
+\PYG{n+na}{:raw\PYGZhy{}html:}\PYG{n+nv}{{}`\PYGZlt{}br /\PYGZgt{}{}`}
+it can be accomplished with a \PYGZdq{}raw\PYGZdq{}\PYGZhy{}derived role.
+But the line block syntax should be considered first.
+\end{sphinxVerbatim}
+
+Result:
+
+If there just \sphinxstyleemphasis{has} to be a line break here,
+
+it can be accomplished with a “raw”-derived role.
+But the line block syntax should be considered first.
+\begin{itemize}
+\item {} 
+\sphinxstylestrong{replace}
+
+\end{itemize}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{n+nt}{\textbar{}sphx\textbar{}} \PYG{o+ow}{replace}\PYG{p}{::} Sphinx
+\PYG{p}{..} \PYG{n+nt}{\textbar{}reST\textbar{}} \PYG{o+ow}{replace}\PYG{p}{::} reStructuredText
+
+\textbar{}reST\textbar{} is awesome!
+\end{sphinxVerbatim}
+
+Sphinx and reStructuredText are awesome!
 
 
 \section{Directives}
@@ -2160,9 +2623,14 @@ Text of the second footnote.
 
 Lorem ipsum \sphinxcite{rtxt:ref} dolor sit amet.
 
-\begin{sphinxthebibliography}{Ref}
+
+\chapter{Main Reference}
+\label{\detokenize{reference:main-reference}}\label{\detokenize{reference:reference}}\label{\detokenize{reference::doc}}
+\begin{sphinxthebibliography}{Sphinx20}
 \bibitem[Ref]{rtxt:ref}
 Book or article reference, URL or whatever.
+\bibitem[Sphinx2019]{reference:sphinx2019}
+Sphinx Team. \sphinxhref{http://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html}{SPHINX: Python Documentation Generator}.
 \end{sphinxthebibliography}
 
 
