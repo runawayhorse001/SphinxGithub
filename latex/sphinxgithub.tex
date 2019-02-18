@@ -1939,7 +1939,7 @@ reStructuredText:
 \centering
 \sphinxcapstartof{table}
 \sphinxthecaptionisattop
-\sphinxcaption{Frozen Delights!}\label{\detokenize{rtxt:id6}}
+\sphinxcaption{Frozen Delights!}\label{\detokenize{rtxt:id7}}
 \sphinxaftertopcaption
 \begin{tabular}[t]{|\X{15}{55}|\X{10}{55}|\X{30}{55}|}
 \hline
@@ -2013,7 +2013,7 @@ reStructuredText:
 \centering
 \sphinxcapstartof{table}
 \sphinxthecaptionisattop
-\sphinxcaption{Frozen Delights!}\label{\detokenize{rtxt:id7}}
+\sphinxcaption{Frozen Delights!}\label{\detokenize{rtxt:id8}}
 \sphinxaftertopcaption
 \begin{tabular}[t]{|\X{15}{55}|\X{10}{55}|\X{30}{55}|}
 \hline
@@ -2087,7 +2087,7 @@ reStructuredText:
 \capstart
 
 \noindent\sphinxincludegraphics[scale=0.5]{{avg_rating_mon}.png}
-\caption{This is the caption of the figure (a simple paragraph).}\label{\detokenize{rtxt:id8}}\end{figure}
+\caption{This is the caption of the figure (a simple paragraph).}\label{\detokenize{rtxt:id9}}\end{figure}
 \begin{enumerate}
 \def\theenumi{\arabic{enumi}}
 \def\labelenumi{\theenumi .}
@@ -2149,7 +2149,7 @@ Result:
 \begin{wrapfigure}{r}{800\sphinxpxdimen}
 \centering
 \noindent\sphinxincludegraphics[width=400.00000\sphinxpxdimen,height=200.00000\sphinxpxdimen]{{boxp}.png}
-\caption{This is the caption of the figure (a simple paragraph).}\label{\detokenize{rtxt:id9}}\end{wrapfigure}
+\caption{This is the caption of the figure (a simple paragraph).}\label{\detokenize{rtxt:id10}}\end{wrapfigure}
 
 Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
 Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
@@ -2161,7 +2161,7 @@ Images and Figures Images and Figures Images and Figures Images and Figures Imag
 \capstart
 
 \noindent\sphinxincludegraphics[width=400.00000\sphinxpxdimen,height=200.00000\sphinxpxdimen]{{boxp}.png}
-\caption{This is the caption of the figure (a simple paragraph).}\label{\detokenize{rtxt:id10}}\end{figure}
+\caption{This is the caption of the figure (a simple paragraph).}\label{\detokenize{rtxt:id11}}\end{figure}
 
 Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
 Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
@@ -2170,7 +2170,7 @@ Images and Figures Images and Figures Images and Figures Images and Figures Imag
 \begin{wrapfigure}{l}{800\sphinxpxdimen}
 \centering
 \noindent\sphinxincludegraphics[width=400.00000\sphinxpxdimen,height=200.00000\sphinxpxdimen]{{boxp}.png}
-\caption{This is the caption of the figure (a simple paragraph).}\label{\detokenize{rtxt:id11}}\end{wrapfigure}
+\caption{This is the caption of the figure (a simple paragraph).}\label{\detokenize{rtxt:id12}}\end{wrapfigure}
 
 Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
 Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
@@ -2389,6 +2389,467 @@ Result:
 \begin{split}e^{i\pi} + 1 = 0\end{split}
 \end{equation}
 
+\subsection{Source Codes}
+\label{\detokenize{rtxt:source-codes}}\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\item {} 
+\sphinxstylestrong{Source code block}
+
+\end{enumerate}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{o+ow}{code\PYGZhy{}block}\PYG{p}{::} \PYG{k}{python}
+
+        \PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}}
+        \PYG{l+s+sd}{This is a source Python code demo for Sphinx.}
+        \PYG{l+s+sd}{@date:  Apr 25, 2016}
+        \PYG{l+s+sd}{@author: Wenqiang Feng}
+        \PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}}
+        \PYG{k+kn}{import} \PYG{n+nn}{pandas} \PYG{k+kn}{as} \PYG{n+nn}{pd}
+        \PYG{k+kn}{import} \PYG{n+nn}{numpy} \PYG{k+kn}{as} \PYG{n+nn}{np}
+        \PYG{k+kn}{import} \PYG{n+nn}{matplotlib.pyplot} \PYG{k+kn}{as} \PYG{n+nn}{plt}
+        \PYG{k+kn}{from} \PYG{n+nn}{pandas.tools.plotting} \PYG{k+kn}{import} \PYG{n}{scatter\PYGZus{}matrix}
+        \PYG{k+kn}{from} \PYG{n+nn}{docutils.parsers.rst.directives} \PYG{k+kn}{import} \PYG{n}{path}
+
+
+        \PYG{k}{if} \PYG{n+nv+vm}{\PYGZus{}\PYGZus{}name\PYGZus{}\PYGZus{}} \PYG{o}{==} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZus{}\PYGZus{}main\PYGZus{}\PYGZus{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}
+
+            \PYG{k}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{This is a source Python code demo for Sphinx.}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\end{sphinxVerbatim}
+
+Result:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}}
+\PYG{l+s+sd}{This is a source Python code demo for Sphinx.}
+\PYG{l+s+sd}{@date:  Apr 25, 2016}
+\PYG{l+s+sd}{@author: Wenqiang Feng}
+\PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}}
+\PYG{k+kn}{import} \PYG{n+nn}{pandas} \PYG{k+kn}{as} \PYG{n+nn}{pd}
+\PYG{k+kn}{import} \PYG{n+nn}{numpy} \PYG{k+kn}{as} \PYG{n+nn}{np}
+\PYG{k+kn}{import} \PYG{n+nn}{matplotlib.pyplot} \PYG{k+kn}{as} \PYG{n+nn}{plt}
+\PYG{k+kn}{from} \PYG{n+nn}{pandas.tools.plotting} \PYG{k+kn}{import} \PYG{n}{scatter\PYGZus{}matrix}
+\PYG{k+kn}{from} \PYG{n+nn}{docutils.parsers.rst.directives} \PYG{k+kn}{import} \PYG{n}{path}
+
+
+\PYG{k}{if} \PYG{n+nv+vm}{\PYGZus{}\PYGZus{}name\PYGZus{}\PYGZus{}} \PYG{o}{==} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZus{}\PYGZus{}main\PYGZus{}\PYGZus{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}
+
+    \PYG{k}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{This is a source Python code demo for Sphinx.}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\end{sphinxVerbatim}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{o+ow}{code\PYGZhy{}block}\PYG{p}{::} \PYG{k}{r}
+
+        \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{\PYGZsq{}}
+        \PYG{l+s}{This is a source R code demo for Sphinx.}
+        \PYG{l+s}{@date:  Apr 25, 2016}
+        \PYG{l+s}{@author: Wenqiang Feng}
+        \PYG{l+s}{\PYGZsq{}}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{\PYGZsq{}}
+
+        \PYG{n+nf}{library}\PYG{p}{(}\PYG{n}{reshape2}\PYG{p}{)}
+        \PYG{n+nf}{library}\PYG{p}{(}\PYG{n}{ggplot2}\PYG{p}{)}
+
+        \PYG{c+c1}{\PYGZsh{} import data}
+        \PYG{n}{d} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{melt}\PYG{p}{(}\PYG{n}{diamonds}\PYG{n}{[}\PYG{p}{,}\PYG{o}{\PYGZhy{}}\PYG{n+nf}{c}\PYG{p}{(}\PYG{l+m}{2}\PYG{o}{:}\PYG{l+m}{4}\PYG{p}{)}\PYG{n}{]}\PYG{p}{)}
+        \PYG{c+c1}{\PYGZsh{} plot histogram}
+        \PYG{n+nf}{ggplot}\PYG{p}{(}\PYG{n}{d}\PYG{p}{,}\PYG{n+nf}{aes}\PYG{p}{(}\PYG{n}{x} \PYG{o}{=} \PYG{n}{value}\PYG{p}{)}\PYG{p}{)} \PYG{o}{+}
+          \PYG{n+nf}{facet\PYGZus{}wrap}\PYG{p}{(}\PYG{o}{\PYGZti{}}\PYG{n}{variable}\PYG{p}{,}\PYG{n}{scales} \PYG{o}{=} \PYG{l+s}{\PYGZdq{}}\PYG{l+s}{free\PYGZus{}x\PYGZdq{}}\PYG{p}{)} \PYG{o}{+}
+          \PYG{n+nf}{geom\PYGZus{}histogram}\PYG{p}{(}\PYG{p}{)}
+
+        \PYG{n+nf}{print}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{This is a source R code demo for Sphinx.\PYGZdq{}}\PYG{p}{)}
+\end{sphinxVerbatim}
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{\PYGZsq{}}
+\PYG{l+s}{This is a source R code demo for Sphinx.}
+\PYG{l+s}{@date:  Apr 25, 2016}
+\PYG{l+s}{@author: Wenqiang Feng}
+\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{\PYGZsq{}}
+
+\PYG{n+nf}{library}\PYG{p}{(}\PYG{n}{reshape2}\PYG{p}{)}
+\PYG{n+nf}{library}\PYG{p}{(}\PYG{n}{ggplot2}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} import data}
+\PYG{n}{d} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{melt}\PYG{p}{(}\PYG{n}{diamonds}\PYG{n}{[}\PYG{p}{,}\PYG{o}{\PYGZhy{}}\PYG{n+nf}{c}\PYG{p}{(}\PYG{l+m}{2}\PYG{o}{:}\PYG{l+m}{4}\PYG{p}{)}\PYG{n}{]}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} plot histogram}
+\PYG{n+nf}{ggplot}\PYG{p}{(}\PYG{n}{d}\PYG{p}{,}\PYG{n+nf}{aes}\PYG{p}{(}\PYG{n}{x} \PYG{o}{=} \PYG{n}{value}\PYG{p}{)}\PYG{p}{)} \PYG{o}{+}
+  \PYG{n+nf}{facet\PYGZus{}wrap}\PYG{p}{(}\PYG{o}{\PYGZti{}}\PYG{n}{variable}\PYG{p}{,}\PYG{n}{scales} \PYG{o}{=} \PYG{l+s}{\PYGZdq{}}\PYG{l+s}{free\PYGZus{}x\PYGZdq{}}\PYG{p}{)} \PYG{o}{+}
+  \PYG{n+nf}{geom\PYGZus{}histogram}\PYG{p}{(}\PYG{p}{)}
+
+\PYG{n+nf}{print}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{This is a source R code demo for Sphinx.\PYGZdq{}}\PYG{p}{)}
+\end{sphinxVerbatim}
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\setcounter{enumi}{1}
+\item {} 
+\sphinxstylestrong{Source code import}
+
+\end{enumerate}
+\begin{itemize}
+\item {} 
+\sphinxstylestrong{Python Source code}
+
+\end{itemize}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{o+ow}{literalinclude}\PYG{p}{::} code/sourceCodePy.py
+     \PYG{n+nc}{:language:} \PYG{n+nf}{python}
+\end{sphinxVerbatim}
+
+Result:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}}
+\PYG{l+s+sd}{This is a source Python code demo for Sphinx.}
+\PYG{l+s+sd}{@date:  Apr 25, 2016}
+\PYG{l+s+sd}{@author: Wenqiang Feng }
+\PYG{l+s+sd}{\PYGZsq{}\PYGZsq{}\PYGZsq{}}
+\PYG{k+kn}{import} \PYG{n+nn}{pandas} \PYG{k+kn}{as} \PYG{n+nn}{pd}
+\PYG{k+kn}{import} \PYG{n+nn}{numpy} \PYG{k+kn}{as} \PYG{n+nn}{np}
+\PYG{k+kn}{import} \PYG{n+nn}{matplotlib.pyplot} \PYG{k+kn}{as} \PYG{n+nn}{plt}
+\PYG{k+kn}{from} \PYG{n+nn}{pandas.tools.plotting} \PYG{k+kn}{import} \PYG{n}{scatter\PYGZus{}matrix}
+\PYG{k+kn}{from} \PYG{n+nn}{docutils.parsers.rst.directives} \PYG{k+kn}{import} \PYG{n}{path}
+
+
+\PYG{k}{if} \PYG{n+nv+vm}{\PYGZus{}\PYGZus{}name\PYGZus{}\PYGZus{}} \PYG{o}{==} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZus{}\PYGZus{}main\PYGZus{}\PYGZus{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{:}
+
+    \PYG{k}{print}\PYG{p}{(}\PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{This is a source Python code demo for Sphinx.}\PYG{l+s+s2}{\PYGZdq{}}\PYG{p}{)}
+\end{sphinxVerbatim}
+\begin{itemize}
+\item {} 
+\sphinxstylestrong{R Source code}
+
+\end{itemize}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{o+ow}{literalinclude}\PYG{p}{::} code/sourceCodeR.R
+     \PYG{n+nc}{:language:} \PYG{n+nf}{r}
+\end{sphinxVerbatim}
+
+Result:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{\PYGZsq{}}
+\PYG{l+s}{This is a source R code demo for Sphinx.}
+\PYG{l+s}{@date:  Apr 25, 2016}
+\PYG{l+s}{@author: Wenqiang Feng }
+\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{\PYGZsq{}}\PYG{l+s}{\PYGZsq{}}
+
+\PYG{n+nf}{library}\PYG{p}{(}\PYG{n}{reshape2}\PYG{p}{)}
+\PYG{n+nf}{library}\PYG{p}{(}\PYG{n}{ggplot2}\PYG{p}{)}
+
+\PYG{c+c1}{\PYGZsh{} import data }
+\PYG{n}{d} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{melt}\PYG{p}{(}\PYG{n}{diamonds}\PYG{n}{[}\PYG{p}{,}\PYG{o}{\PYGZhy{}}\PYG{n+nf}{c}\PYG{p}{(}\PYG{l+m}{2}\PYG{o}{:}\PYG{l+m}{4}\PYG{p}{)}\PYG{n}{]}\PYG{p}{)}
+\PYG{c+c1}{\PYGZsh{} plot histogram}
+\PYG{n+nf}{ggplot}\PYG{p}{(}\PYG{n}{d}\PYG{p}{,}\PYG{n+nf}{aes}\PYG{p}{(}\PYG{n}{x} \PYG{o}{=} \PYG{n}{value}\PYG{p}{)}\PYG{p}{)} \PYG{o}{+} 
+  \PYG{n+nf}{facet\PYGZus{}wrap}\PYG{p}{(}\PYG{o}{\PYGZti{}}\PYG{n}{variable}\PYG{p}{,}\PYG{n}{scales} \PYG{o}{=} \PYG{l+s}{\PYGZdq{}}\PYG{l+s}{free\PYGZus{}x\PYGZdq{}}\PYG{p}{)} \PYG{o}{+} 
+  \PYG{n+nf}{geom\PYGZus{}histogram}\PYG{p}{(}\PYG{p}{)}
+
+\PYG{n+nf}{print}\PYG{p}{(}\PYG{l+s}{\PYGZdq{}}\PYG{l+s}{This is a source R code demo for Sphinx.\PYGZdq{}}\PYG{p}{)}
+\end{sphinxVerbatim}
+
+
+\subsection{Reference}
+\label{\detokenize{rtxt:reference}}\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\item {} 
+\sphinxstylestrong{Paper reference}
+
+\end{enumerate}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{n+nt}{[Ref]} Book or article reference, URL or whatever.
+
+Lorem ipsum \PYG{l+s}{[Ref]\PYGZus{}} dolor sit amet.
+\end{sphinxVerbatim}
+
+Result:
+
+Lorem ipsum \sphinxcite{rtxt:ref} dolor sit amet.
+
+I would refer the reader to \sphinxcite{reference:sphinx2019} for more details.
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\setcounter{enumi}{1}
+\item {} 
+\sphinxstylestrong{Equation reference}
+
+\end{enumerate}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{o+ow}{math}\PYG{p}{::}
+   \PYG{n+nc}{:label:} \PYG{n+nf}{eq\PYGZus{}condition}
+
+        f(x)
+        =
+        \PYGZbs{}Biggl \PYGZbs{}lbrace
+        \PYGZob{}
+        0,\PYGZbs{}text\PYGZob{} if \PYGZcb{}
+           \PYGZob{} x \PYGZgt{}0\PYGZcb{}
+        \PYGZbs{}atop
+        1 \PYGZbs{}text\PYGZob{} otherwise \PYGZcb{}
+        \PYGZcb{}
+
+The Equation \PYG{n+na}{:eq:}\PYG{n+nv}{{}`eq\PYGZus{}condition{}`} is the definition of \PYG{n+na}{:math:}\PYG{n+nv}{{}`f(x){}`}.
+\end{sphinxVerbatim}
+
+Result:
+\begin{equation}\label{equation:rtxt:eq_condition}
+\begin{split}     f(x)
+     =
+     \Biggl \lbrace
+     {
+     0,\text{ if }
+        { x >0}
+     \atop
+     1 \text{ otherwise }
+     }\end{split}
+\end{equation}
+The Equation \eqref{equation:rtxt:eq_condition} is the definition of \(f(x)\).
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\setcounter{enumi}{3}
+\item {} 
+\sphinxstylestrong{Figure reference}
+
+\end{enumerate}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{n+nt}{\PYGZus{}fig\PYGZus{}hist\PYGZus{}demo:}
+\PYG{p}{..} \PYG{o+ow}{figure}\PYG{p}{::} images/avg\PYGZus{}rating\PYGZus{}mon.png
+   \PYG{n+nc}{:scale:} \PYG{n+nf}{50 \PYGZpc{}}
+   \PYG{n+nc}{:alt:} \PYG{n+nf}{map to buried treasure}
+
+   The histogram of the gouped dataset
+
+The Figure. \PYG{n+na}{:ref:}\PYG{n+nv}{{}`fig\PYGZus{}hist\PYGZus{}demo{}`} is the histogram of the gouped dataset.
+\end{sphinxVerbatim}
+
+Result:
+
+\begin{figure}[htbp]
+\centering
+\capstart
+
+\noindent\sphinxincludegraphics[scale=0.5]{{avg_rating_mon}.png}
+\caption{The histogram of the gouped dataset}\label{\detokenize{rtxt:id13}}\label{\detokenize{rtxt:fig-hist-demo}}\end{figure}
+
+The Figure. {\hyperref[\detokenize{rtxt:fig-hist-demo}]{\sphinxcrossref{\DUrole{std,std-ref}{The histogram of the gouped dataset}}}} is the histogram of the gouped dataset.
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\setcounter{enumi}{4}
+\item {} 
+\sphinxstylestrong{Table reference}
+
+\end{enumerate}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{n+nt}{\PYGZus{}table\PYGZus{}demo:}
+\PYG{p}{..} \PYG{o+ow}{table}\PYG{p}{::} The general table demo
+
+        +\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+
+        \PYG{o}{\textbar{}} Header row, column 1   \textbar{} Header 2   \textbar{} Header 3 \textbar{} Header 4 \textbar{}
+        \PYG{o}{\textbar{}} (header rows optional) \textbar{}            \textbar{}          \textbar{}          \textbar{}
+        +========================+============+==========+==========+
+        \PYG{o}{\textbar{}} body row 1, column 1   \textbar{} column 2   \textbar{} column 3 \textbar{} column 4 \textbar{}
+        +\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+
+        \PYG{o}{\textbar{}} body row 2             \textbar{} Cells may span columns.          \textbar{}
+        +\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+
+        \PYG{o}{\textbar{}} body row 3             \textbar{} Cells may  \textbar{} \PYGZhy{} Table cells       \textbar{}
+        +\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+ span rows. \textbar{} \PYGZhy{} contain           \textbar{}
+        \PYG{o}{\textbar{}} body row 4             \textbar{}            \textbar{} \PYGZhy{} body elements.    \textbar{}
+        +\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}+
+
+Please see the above Table. \PYG{n+na}{:ref:}\PYG{n+nv}{{}`table\PYGZus{}demo{}`}.
+\end{sphinxVerbatim}
+
+Result:
+
+
+\begin{savenotes}\sphinxattablestart
+\centering
+\sphinxcapstartof{table}
+\sphinxthecaptionisattop
+\sphinxcaption{The general table demo}\label{\detokenize{rtxt:id14}}\label{\detokenize{rtxt:table-demo}}
+\sphinxaftertopcaption
+\begin{tabular}[t]{|*{4}{\X{1}{4}|}}
+\hline
+\sphinxstyletheadfamily 
+Header row, column 1
+(header rows optional)
+&\sphinxstyletheadfamily 
+Header 2
+&\sphinxstyletheadfamily 
+Header 3
+&\sphinxstyletheadfamily 
+Header 4
+\\
+\hline
+body row 1, column 1
+&
+column 2
+&
+column 3
+&
+column 4
+\\
+\hline
+body row 2
+&\sphinxstartmulticolumn{3}%
+\begin{varwidth}[t]{\sphinxcolwidth{3}{4}}
+Cells may span columns.
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+\sphinxstopmulticolumn
+\\
+\hline
+body row 3
+&\sphinxmultirow{2}{12}{%
+\begin{varwidth}[t]{\sphinxcolwidth{1}{4}}
+Cells may
+span rows.
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+&\sphinxstartmulticolumn{2}%
+\sphinxmultirow{2}{13}{%
+\begin{varwidth}[t]{\sphinxcolwidth{2}{4}}
+\begin{itemize}
+\item {} 
+Table cells
+
+\item {} 
+contain
+
+\item {} 
+body elements.
+
+\end{itemize}
+\par
+\vskip-\baselineskip\vbox{\hbox{\strut}}\end{varwidth}%
+}%
+\sphinxstopmulticolumn
+\\
+\cline{1-1}
+body row 4
+&\sphinxtablestrut{12}&\multicolumn{2}{l|}{\sphinxtablestrut{13}}\\
+\hline
+\end{tabular}
+\par
+\sphinxattableend\end{savenotes}
+
+Please see the above Table. {\hyperref[\detokenize{rtxt:table-demo}]{\sphinxcrossref{\DUrole{std,std-ref}{The general table demo}}}}.
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\setcounter{enumi}{5}
+\item {} 
+\sphinxstylestrong{Footnotes}
+
+\end{enumerate}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+Lorem ipsum \PYG{l+s}{[\PYGZsh{}f1]\PYGZus{}} dolor sit amet ... \PYG{l+s}{[\PYGZsh{}f2]\PYGZus{}}
+
+\PYG{p}{..} \PYG{o+ow}{rubric}\PYG{p}{::} Footnotes
+
+\PYG{p}{..} \PYG{n+nt}{[\PYGZsh{}f1]} Text of the first footnote.
+\PYG{p}{..} \PYG{n+nt}{[\PYGZsh{}f2]} Text of the second footnote.
+\end{sphinxVerbatim}
+
+Result:
+
+Lorem ipsum %
+\begin{footnote}[1]\sphinxAtStartFootnote
+Text of the first footnote.
+%
+\end{footnote} dolor sit amet … %
+\begin{footnote}[2]\sphinxAtStartFootnote
+Text of the second footnote.
+%
+\end{footnote}
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\setcounter{enumi}{6}
+\item {} 
+\sphinxstylestrong{Hyperlinks}
+
+\end{enumerate}
+\begin{itemize}
+\item {} 
+General hyperlink
+
+\end{itemize}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+You are more than welcome to visit my personal webpage: \PYG{l+s}{{}`Feng Website{}`\PYGZus{}}.
+
+\PYG{p}{..} \PYG{n+nt}{\PYGZus{}Feng Website:} http://web.utk.edu/\PYGZti{}wfeng1/
+\end{sphinxVerbatim}
+
+Result:
+
+You are more than welcome to visit my personal webpage: \sphinxhref{http://web.utk.edu/~wfeng1/}{Feng Website}.
+\begin{itemize}
+\item {} 
+Embeded Youtube link:
+
+\end{itemize}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{o+ow}{raw}\PYG{p}{::} html
+
+    \PYGZlt{}iframe width=\PYGZdq{}700\PYGZdq{} height=\PYGZdq{}315\PYGZdq{}
+    src=\PYGZdq{}https://www.youtube.com/embed/mrEee4bhc7Y\PYGZdq{}
+    frameborder=\PYGZdq{}0\PYGZdq{} allowfullscreen\PYGZgt{}\PYGZlt{}/iframe\PYGZgt{}
+\end{sphinxVerbatim}
+
+Result:
+
+
+
+\begin{sphinxadmonition}{warning}{Warning:}
+You have to use the hyperlink \sphinxcode{\sphinxupquote{https://www.youtube.com/embed/}} + \sphinxcode{\sphinxupquote{name}}.
+\end{sphinxadmonition}
+
+
 \section{Roles}
 \label{\detokenize{rtxt:roles}}
 A role or “custom interpreted text role” is an inline piece of explicit markup. It signifies that that the enclosed text should be interpreted in a specific way. Sphinx uses this to provide semantic markup and cross-referencing of identifiers, as described in the appropriate section. More details can be found at: \sphinxurl{http://docutils.sourceforge.net/docs/ref/rst/roles.html\#customization}
@@ -2404,38 +2865,40 @@ A role or “custom interpreted text role” is an inline piece of explicit mark
 reStructuredText:
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
-emphasis \textendash{} equivalent of \PYG{g+ge}{*emphasis*}
+\PYG{l+m}{*} emphasis \textendash{} equivalent of \PYG{g+ge}{*emphasis*}
 
-strong \textendash{} equivalent of \PYG{g+gs}{**strong**}
+\PYG{l+m}{*} strong \textendash{} equivalent of \PYG{g+gs}{**strong**}
 
-literal \textendash{} equivalent of \PYG{l+s}{{}`{}`}\PYG{l+s}{literal}\PYG{l+s}{{}`{}`}
+\PYG{l+m}{*} literal \textendash{} equivalent of \PYG{l+s}{{}`{}`}\PYG{l+s}{literal}\PYG{l+s}{{}`{}`}
 
-subscript \textendash{} H\PYGZbs{} \PYG{n+na}{:sub:}\PYG{n+nv}{{}`2{}`}\PYGZbs{} O
+\PYG{l+m}{*} subscript \textendash{} H\PYGZbs{} \PYG{n+na}{:sub:}\PYG{n+nv}{{}`2{}`}\PYGZbs{} O
 
-superscript \textendash{} E = mc\PYGZbs{} \PYG{n+na}{:sup:}\PYG{n+nv}{{}`2{}`}
+\PYG{l+m}{*} superscript \textendash{} E = mc\PYGZbs{} \PYG{n+na}{:sup:}\PYG{n+nv}{{}`2{}`}
 
-title\PYGZhy{}reference \textendash{} for titles of books, periodicals, and other materials
-\end{sphinxVerbatim}
-
-emphasis \textendash{} equivalent of \sphinxstyleemphasis{emphasis}
-
-strong \textendash{} equivalent of \sphinxstylestrong{strong}
-
-literal \textendash{} equivalent of \sphinxcode{\sphinxupquote{literal}}
-
-subscript \textendash{} H$_{\text{2}}$O
-
-superscript \textendash{} E = mc$^{\text{2}}$
-
-title-reference \textendash{} for titles of books, periodicals, and other materials
-
-reStructuredText:
-
-\begin{sphinxVerbatim}[commandchars=\\\{\}]
-
+\PYG{l+m}{*} title\PYGZhy{}reference \textendash{} for titles of books, periodicals, and other materials
 \end{sphinxVerbatim}
 
 Result:
+\begin{itemize}
+\item {} 
+emphasis \textendash{} equivalent of \sphinxstyleemphasis{emphasis}
+
+\item {} 
+strong \textendash{} equivalent of \sphinxstylestrong{strong}
+
+\item {} 
+literal \textendash{} equivalent of \sphinxcode{\sphinxupquote{literal}}
+
+\item {} 
+subscript \textendash{} H$_{\text{2}}$O
+
+\item {} 
+superscript \textendash{} E = mc$^{\text{2}}$
+
+\item {} 
+title-reference \textendash{} for titles of books, periodicals, and other materials
+
+\end{itemize}
 
 
 \subsection{Specialized Roles}
@@ -2610,18 +3073,6 @@ reference.
 
 
 See more details at \sphinxhref{http://docutils.sourceforge.net/docs/ref/rst/directives.html\#admonitions}{Admonitions}.
-
-Lorem ipsum %
-\begin{footnote}[1]\sphinxAtStartFootnote
-Text of the first footnote.
-%
-\end{footnote} dolor sit amet … %
-\begin{footnote}[2]\sphinxAtStartFootnote
-Text of the second footnote.
-%
-\end{footnote}
-
-Lorem ipsum \sphinxcite{rtxt:ref} dolor sit amet.
 
 
 \chapter{Main Reference}

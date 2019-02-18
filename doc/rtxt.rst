@@ -751,9 +751,6 @@ The is a test for the user defined math equation:
 
 	\euler
 
-
-
-
 4. **More examples** 
 
 reStructuredText:
@@ -818,6 +815,336 @@ Result:
 .. math:: e^{i\pi} + 1 = 0
    :label: euler
 
+Source Codes
+------------
+
+1. **Source code block**
+
+reStructuredText:
+
+.. code-block:: rst
+
+
+	.. code-block:: python
+
+		'''
+		This is a source Python code demo for Sphinx.
+		@date:  Apr 25, 2016
+		@author: Wenqiang Feng 
+		'''
+		import pandas as pd
+		import numpy as np
+		import matplotlib.pyplot as plt
+		from pandas.tools.plotting import scatter_matrix
+		from docutils.parsers.rst.directives import path
+
+
+		if __name__ == '__main__':
+
+		    print("This is a source Python code demo for Sphinx.")
+
+Result:
+
+.. code-block:: python
+
+	'''
+	This is a source Python code demo for Sphinx.
+	@date:  Apr 25, 2016
+	@author: Wenqiang Feng 
+	'''
+	import pandas as pd
+	import numpy as np
+	import matplotlib.pyplot as plt
+	from pandas.tools.plotting import scatter_matrix
+	from docutils.parsers.rst.directives import path
+
+
+	if __name__ == '__main__':
+
+	    print("This is a source Python code demo for Sphinx.")
+
+
+
+reStructuredText:
+
+.. code-block:: rst
+
+	.. code-block:: r
+
+		'''
+		This is a source R code demo for Sphinx.
+		@date:  Apr 25, 2016
+		@author: Wenqiang Feng 
+		'''
+
+		library(reshape2)
+		library(ggplot2)
+
+		# import data 
+		d <- melt(diamonds[,-c(2:4)])
+		# plot histogram
+		ggplot(d,aes(x = value)) + 
+		  facet_wrap(~variable,scales = "free_x") + 
+		  geom_histogram()
+
+		print("This is a source R code demo for Sphinx.")
+
+
+.. code-block:: r
+
+	'''
+	This is a source R code demo for Sphinx.
+	@date:  Apr 25, 2016
+	@author: Wenqiang Feng 
+	'''
+
+	library(reshape2)
+	library(ggplot2)
+
+	# import data 
+	d <- melt(diamonds[,-c(2:4)])
+	# plot histogram
+	ggplot(d,aes(x = value)) + 
+	  facet_wrap(~variable,scales = "free_x") + 
+	  geom_histogram()
+
+	print("This is a source R code demo for Sphinx.")
+
+
+
+2. **Source code import**
+
+* **Python Source code**
+
+reStructuredText:
+
+.. code-block:: rst
+
+	.. literalinclude:: code/sourceCodePy.py
+	     :language: python
+
+Result:
+
+.. literalinclude:: code/sourceCodePy.py
+     :language: python
+
+* **R Source code**
+
+reStructuredText:
+
+.. code-block:: rst
+
+	.. literalinclude:: code/sourceCodeR.R
+	     :language: r
+
+Result:
+
+.. literalinclude:: code/sourceCodeR.R
+     :language: r
+
+Reference
+---------
+
+1. **Paper reference**
+
+reStructuredText:
+
+.. code-block:: rst
+
+	.. [Ref] Book or article reference, URL or whatever.
+
+	Lorem ipsum [Ref]_ dolor sit amet.
+
+
+Result:
+
+.. [Ref] Book or article reference, URL or whatever.
+
+Lorem ipsum [Ref]_ dolor sit amet.
+
+I would refer the reader to [Sphinx2019]_ for more details.
+
+2. **Equation reference**
+
+reStructuredText:
+
+.. code-block:: rst
+
+	.. math::
+	   :label: eq_condition
+
+		f(x)
+		=
+		\Biggl \lbrace
+		{
+		0,\text{ if }
+		   { x >0}
+		\atop
+		1 \text{ otherwise }
+		}
+
+	The Equation :eq:`eq_condition` is the definition of :math:`f(x)`.
+
+Result:
+
+.. math::
+   :label: eq_condition
+
+	f(x)
+	=
+	\Biggl \lbrace
+	{
+	0,\text{ if }
+	   { x >0}
+	\atop
+	1 \text{ otherwise }
+	}
+
+The Equation :eq:`eq_condition` is the definition of :math:`f(x)`.
+
+4. **Figure reference**
+
+reStructuredText:
+
+.. code-block:: rst
+
+	.. _fig_hist_demo: 
+	.. figure:: images/avg_rating_mon.png
+	   :scale: 50 %
+	   :alt: map to buried treasure
+
+	   The histogram of the gouped dataset
+
+	The Figure. :ref:`fig_hist_demo` is the histogram of the gouped dataset.
+
+
+Result:
+
+.. _fig_hist_demo: 
+.. figure:: images/avg_rating_mon.png
+   :scale: 50 %
+   :alt: map to buried treasure
+
+   The histogram of the gouped dataset
+
+The Figure. :ref:`fig_hist_demo` is the histogram of the gouped dataset.
+
+
+5. **Table reference**
+
+reStructuredText:
+
+.. code-block:: rst
+
+	.. _table_demo: 
+	.. table:: The general table demo
+
+		+------------------------+------------+----------+----------+
+		| Header row, column 1   | Header 2   | Header 3 | Header 4 |
+		| (header rows optional) |            |          |          |
+		+========================+============+==========+==========+
+		| body row 1, column 1   | column 2   | column 3 | column 4 |
+		+------------------------+------------+----------+----------+
+		| body row 2             | Cells may span columns.          |
+		+------------------------+------------+---------------------+
+		| body row 3             | Cells may  | - Table cells       |
+		+------------------------+ span rows. | - contain           |
+		| body row 4             |            | - body elements.    |
+		+------------------------+------------+---------------------+
+
+	Please see the above Table. :ref:`table_demo`.
+
+
+
+Result:
+
+.. _table_demo: 
+.. table:: The general table demo
+
+	+------------------------+------------+----------+----------+
+	| Header row, column 1   | Header 2   | Header 3 | Header 4 |
+	| (header rows optional) |            |          |          |
+	+========================+============+==========+==========+
+	| body row 1, column 1   | column 2   | column 3 | column 4 |
+	+------------------------+------------+----------+----------+
+	| body row 2             | Cells may span columns.          |
+	+------------------------+------------+---------------------+
+	| body row 3             | Cells may  | - Table cells       |
+	+------------------------+ span rows. | - contain           |
+	| body row 4             |            | - body elements.    |
+	+------------------------+------------+---------------------+
+
+Please see the above Table. :ref:`table_demo`.
+
+
+6. **Footnotes**
+
+reStructuredText:
+
+.. code-block:: rst
+
+	Lorem ipsum [#f1]_ dolor sit amet ... [#f2]_
+
+	.. rubric:: Footnotes
+
+	.. [#f1] Text of the first footnote.
+	.. [#f2] Text of the second footnote.
+
+Result:
+
+Lorem ipsum [#f1]_ dolor sit amet ... [#f2]_
+
+.. rubric:: Footnotes
+
+.. [#f1] Text of the first footnote.
+.. [#f2] Text of the second footnote.
+
+7. **Hyperlinks**
+
+* General hyperlink
+
+reStructuredText:
+
+.. code-block:: rst
+
+	You are more than welcome to visit my personal webpage: `Feng Website`_.
+
+	.. _Feng Website: http://web.utk.edu/~wfeng1/
+
+Result:
+
+You are more than welcome to visit my personal webpage: `Feng Website`_.
+
+.. _Feng Website: http://web.utk.edu/~wfeng1/
+
+* Embeded Youtube link:
+
+reStructuredText:
+
+.. code-block:: rst
+
+	.. raw:: html
+
+	    <iframe width="700" height="315" 
+	    src="https://www.youtube.com/embed/mrEee4bhc7Y" 
+	    frameborder="0" allowfullscreen></iframe>
+
+Result:
+
+.. raw:: html
+
+    <iframe width="700" height="315" 
+    src="https://www.youtube.com/embed/mrEee4bhc7Y" 
+    frameborder="0" allowfullscreen></iframe>
+
+.. warning::
+
+	You have to use the hyperlink: ``https://www.youtube.com/embed/`` + ``name``. 
+
+
+
+
+
 Roles
 +++++
 
@@ -833,41 +1160,31 @@ reStructuredText:
 
 .. code-block:: rst
 
-	emphasis – equivalent of *emphasis*
+	* emphasis – equivalent of *emphasis*
 
-	strong – equivalent of **strong**
+	* strong – equivalent of **strong**
 
-	literal – equivalent of ``literal``
+	* literal – equivalent of ``literal``
 
-	subscript – H\ :sub:`2`\ O
+	* subscript – H\ :sub:`2`\ O
 
-	superscript – E = mc\ :sup:`2`
+	* superscript – E = mc\ :sup:`2`
 
-	title-reference – for titles of books, periodicals, and other materials
+	* title-reference – for titles of books, periodicals, and other materials
 
+Result:
 
-emphasis – equivalent of *emphasis*
+* emphasis – equivalent of *emphasis*
 
-strong – equivalent of **strong**
+* strong – equivalent of **strong**
 
-literal – equivalent of ``literal``
+* literal – equivalent of ``literal``
 
-subscript – H\ :sub:`2`\ O
+* subscript – H\ :sub:`2`\ O
 
-superscript – E = mc\ :sup:`2`
+* superscript – E = mc\ :sup:`2`
 
-title-reference – for titles of books, periodicals, and other materials
-
-
-
-reStructuredText:
-
-.. code-block:: rst
-
-
-
-Result:	
-
+* title-reference – for titles of books, periodicals, and other materials
 
 
 Specialized Roles
@@ -930,9 +1247,6 @@ reStructuredText:
 .. |reST| replace:: reStructuredText
 
 |sphx| and |reST| are awesome!
-
-
-
 
 
 
@@ -1035,17 +1349,7 @@ Result:
 
 See more details at `Admonitions`_.
 
-Lorem ipsum [#f1]_ dolor sit amet ... [#f2]_
 
-
-Lorem ipsum [Ref]_ dolor sit amet.
-
-.. rubric:: Footnotes
-
-.. [#f1] Text of the first footnote.
-.. [#f2] Text of the second footnote.
-
-.. [Ref] Book or article reference, URL or whatever.
 
 
 

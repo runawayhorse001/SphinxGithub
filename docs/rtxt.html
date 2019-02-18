@@ -102,6 +102,8 @@
 <li class="toctree-l3"><a class="reference internal" href="#table">Table</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#images-and-figures">Images and Figures</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#math">Math</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#source-codes">Source Codes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#reference">Reference</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#roles">Roles</a><ul>
@@ -688,8 +690,8 @@ list (row 3, column 2).</li>
    &quot;Gannet Ripple&quot;, 1.99, &quot;On a stick!&quot;
 </pre></div>
 </div>
-<table border="1" class="colwidths-given docutils" id="id6">
-<caption><span class="caption-text">Frozen Delights!</span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
+<table border="1" class="colwidths-given docutils" id="id7">
+<caption><span class="caption-text">Frozen Delights!</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="27%" />
 <col width="18%" />
@@ -740,8 +742,8 @@ crunchy, now would it?</td>
      <span class="m">-</span> On a stick!
 </pre></div>
 </div>
-<table border="1" class="colwidths-given docutils" id="id7">
-<caption><span class="caption-text">Frozen Delights!</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
+<table border="1" class="colwidths-given docutils" id="id8">
+<caption><span class="caption-text">Frozen Delights!</span><a class="headerlink" href="#id8" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col width="27%" />
 <col width="18%" />
@@ -789,7 +791,7 @@ crunchy, now would it?</td>
    This is the caption of the figure (a simple paragraph).
 </pre></div>
 </div>
-<div class="figure" id="id8">
+<div class="figure" id="id9">
 <a class="reference internal image-reference" href="_images/avg_rating_mon.png"><img alt="map to buried treasure" src="_images/avg_rating_mon.png" style="width: 641.5px; height: 240.0px;" /></a>
 <p class="caption"><span class="caption-text">This is the caption of the figure (a simple paragraph).</span></p>
 </div>
@@ -842,7 +844,7 @@ Images and Figures Images and Figures Images and Figures Images and Figures Imag
 </pre></div>
 </div>
 <p>Result:</p>
-<div class="figure align-right" id="id9">
+<div class="figure align-right" id="id10">
 <a class="reference internal image-reference" href="_images/boxp.png"><img alt="alternate text" src="_images/boxp.png" style="width: 400.0px; height: 200.0px;" /></a>
 <p class="caption"><span class="caption-text">This is the caption of the figure (a simple paragraph).</span></p>
 </div>
@@ -850,7 +852,7 @@ Images and Figures Images and Figures Images and Figures Images and Figures Imag
 Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
 Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
 Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures</p>
-<div class="figure align-center" id="id10">
+<div class="figure align-center" id="id11">
 <a class="reference internal image-reference" href="_images/boxp.png"><img alt="alternate text" src="_images/boxp.png" style="width: 400.0px; height: 200.0px;" /></a>
 <p class="caption"><span class="caption-text">This is the caption of the figure (a simple paragraph).</span></p>
 </div>
@@ -858,7 +860,7 @@ Images and Figures Images and Figures Images and Figures Images and Figures Imag
 Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
 Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures
 Images and Figures Images and Figures Images and Figures Images and Figures Images and Figures</p>
-<div class="figure align-left" id="id11">
+<div class="figure align-left" id="id12">
 <a class="reference internal image-reference" href="_images/boxp.png"><img alt="alternate text" src="_images/boxp.png" style="width: 400.0px; height: 200.0px;" /></a>
 <p class="caption"><span class="caption-text">This is the caption of the figure (a simple paragraph).</span></p>
 </div>
@@ -1022,6 +1024,344 @@ The is a test for the user defined math equation:
 </div><div class="math" id="equation-euler">
 <p><span class="eqno">(2)<a class="headerlink" href="#equation-euler" title="Permalink to this equation">¶</a></span><img src="_images/math/7d4604bee53fd072ec98ee4b389a73a1354f6579.png" alt="e^{i\pi} + 1 = 0"/></p>
 </div></div>
+<div class="section" id="source-codes">
+<h3>Source Codes<a class="headerlink" href="#source-codes" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><strong>Source code block</strong></li>
+</ol>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">code-block</span><span class="p">::</span> <span class="k">python</span>
+
+        <span class="sd">&#39;&#39;&#39;</span>
+        <span class="sd">This is a source Python code demo for Sphinx.</span>
+        <span class="sd">@date:  Apr 25, 2016</span>
+        <span class="sd">@author: Wenqiang Feng</span>
+        <span class="sd">&#39;&#39;&#39;</span>
+        <span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+        <span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+        <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+        <span class="kn">from</span> <span class="nn">pandas.tools.plotting</span> <span class="kn">import</span> <span class="n">scatter_matrix</span>
+        <span class="kn">from</span> <span class="nn">docutils.parsers.rst.directives</span> <span class="kn">import</span> <span class="n">path</span>
+
+
+        <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+
+            <span class="k">print</span><span class="p">(</span><span class="s2">&quot;This is a source Python code demo for Sphinx.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Result:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">This is a source Python code demo for Sphinx.</span>
+<span class="sd">@date:  Apr 25, 2016</span>
+<span class="sd">@author: Wenqiang Feng</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">pandas.tools.plotting</span> <span class="kn">import</span> <span class="n">scatter_matrix</span>
+<span class="kn">from</span> <span class="nn">docutils.parsers.rst.directives</span> <span class="kn">import</span> <span class="n">path</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;This is a source Python code demo for Sphinx.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">code-block</span><span class="p">::</span> <span class="k">r</span>
+
+        <span class="s">&#39;&#39;&#39;</span>
+        <span class="s">This is a source R code demo for Sphinx.</span>
+        <span class="s">@date:  Apr 25, 2016</span>
+        <span class="s">@author: Wenqiang Feng</span>
+        <span class="s">&#39;&#39;&#39;</span>
+
+        <span class="nf">library</span><span class="p">(</span><span class="n">reshape2</span><span class="p">)</span>
+        <span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+
+        <span class="c1"># import data</span>
+        <span class="n">d</span> <span class="o">&lt;-</span> <span class="nf">melt</span><span class="p">(</span><span class="n">diamonds[</span><span class="p">,</span><span class="o">-</span><span class="nf">c</span><span class="p">(</span><span class="m">2</span><span class="o">:</span><span class="m">4</span><span class="p">)</span><span class="n">]</span><span class="p">)</span>
+        <span class="c1"># plot histogram</span>
+        <span class="nf">ggplot</span><span class="p">(</span><span class="n">d</span><span class="p">,</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">value</span><span class="p">))</span> <span class="o">+</span>
+          <span class="nf">facet_wrap</span><span class="p">(</span><span class="o">~</span><span class="n">variable</span><span class="p">,</span><span class="n">scales</span> <span class="o">=</span> <span class="s">&quot;free_x&quot;</span><span class="p">)</span> <span class="o">+</span>
+          <span class="nf">geom_histogram</span><span class="p">()</span>
+
+        <span class="nf">print</span><span class="p">(</span><span class="s">&quot;This is a source R code demo for Sphinx.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="s">&#39;&#39;&#39;</span>
+<span class="s">This is a source R code demo for Sphinx.</span>
+<span class="s">@date:  Apr 25, 2016</span>
+<span class="s">@author: Wenqiang Feng</span>
+<span class="s">&#39;&#39;&#39;</span>
+
+<span class="nf">library</span><span class="p">(</span><span class="n">reshape2</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+
+<span class="c1"># import data</span>
+<span class="n">d</span> <span class="o">&lt;-</span> <span class="nf">melt</span><span class="p">(</span><span class="n">diamonds[</span><span class="p">,</span><span class="o">-</span><span class="nf">c</span><span class="p">(</span><span class="m">2</span><span class="o">:</span><span class="m">4</span><span class="p">)</span><span class="n">]</span><span class="p">)</span>
+<span class="c1"># plot histogram</span>
+<span class="nf">ggplot</span><span class="p">(</span><span class="n">d</span><span class="p">,</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">value</span><span class="p">))</span> <span class="o">+</span>
+  <span class="nf">facet_wrap</span><span class="p">(</span><span class="o">~</span><span class="n">variable</span><span class="p">,</span><span class="n">scales</span> <span class="o">=</span> <span class="s">&quot;free_x&quot;</span><span class="p">)</span> <span class="o">+</span>
+  <span class="nf">geom_histogram</span><span class="p">()</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="s">&quot;This is a source R code demo for Sphinx.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><strong>Source code import</strong></li>
+</ol>
+<ul class="simple">
+<li><strong>Python Source code</strong></li>
+</ul>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">literalinclude</span><span class="p">::</span> code/sourceCodePy.py
+     <span class="nc">:language:</span> <span class="nf">python</span>
+</pre></div>
+</div>
+<p>Result:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">This is a source Python code demo for Sphinx.</span>
+<span class="sd">@date:  Apr 25, 2016</span>
+<span class="sd">@author: Wenqiang Feng </span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="kn">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">pandas.tools.plotting</span> <span class="kn">import</span> <span class="n">scatter_matrix</span>
+<span class="kn">from</span> <span class="nn">docutils.parsers.rst.directives</span> <span class="kn">import</span> <span class="n">path</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="s2">&quot;This is a source Python code demo for Sphinx.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><strong>R Source code</strong></li>
+</ul>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">literalinclude</span><span class="p">::</span> code/sourceCodeR.R
+     <span class="nc">:language:</span> <span class="nf">r</span>
+</pre></div>
+</div>
+<p>Result:</p>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="s">&#39;&#39;&#39;</span>
+<span class="s">This is a source R code demo for Sphinx.</span>
+<span class="s">@date:  Apr 25, 2016</span>
+<span class="s">@author: Wenqiang Feng </span>
+<span class="s">&#39;&#39;&#39;</span>
+
+<span class="nf">library</span><span class="p">(</span><span class="n">reshape2</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+
+<span class="c1"># import data </span>
+<span class="n">d</span> <span class="o">&lt;-</span> <span class="nf">melt</span><span class="p">(</span><span class="n">diamonds[</span><span class="p">,</span><span class="o">-</span><span class="nf">c</span><span class="p">(</span><span class="m">2</span><span class="o">:</span><span class="m">4</span><span class="p">)</span><span class="n">]</span><span class="p">)</span>
+<span class="c1"># plot histogram</span>
+<span class="nf">ggplot</span><span class="p">(</span><span class="n">d</span><span class="p">,</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">value</span><span class="p">))</span> <span class="o">+</span> 
+  <span class="nf">facet_wrap</span><span class="p">(</span><span class="o">~</span><span class="n">variable</span><span class="p">,</span><span class="n">scales</span> <span class="o">=</span> <span class="s">&quot;free_x&quot;</span><span class="p">)</span> <span class="o">+</span> 
+  <span class="nf">geom_histogram</span><span class="p">()</span>
+
+<span class="nf">print</span><span class="p">(</span><span class="s">&quot;This is a source R code demo for Sphinx.&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="reference">
+<h3>Reference<a class="headerlink" href="#reference" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><strong>Paper reference</strong></li>
+</ol>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">[Ref]</span> Book or article reference, URL or whatever.
+
+Lorem ipsum <span class="s">[Ref]_</span> dolor sit amet.
+</pre></div>
+</div>
+<p>Result:</p>
+<table class="docutils citation" frame="void" id="ref" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[Ref]</a></td><td>Book or article reference, URL or whatever.</td></tr>
+</tbody>
+</table>
+<p>Lorem ipsum <a class="reference internal" href="#ref" id="id2">[Ref]</a> dolor sit amet.</p>
+<p>I would refer the reader to <a class="reference internal" href="reference.html#sphinx2019" id="id3">[Sphinx2019]</a> for more details.</p>
+<ol class="arabic simple" start="2">
+<li><strong>Equation reference</strong></li>
+</ol>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">math</span><span class="p">::</span>
+   <span class="nc">:label:</span> <span class="nf">eq_condition</span>
+
+        f(x)
+        =
+        \Biggl \lbrace
+        {
+        0,\text{ if }
+           { x &gt;0}
+        \atop
+        1 \text{ otherwise }
+        }
+
+The Equation <span class="na">:eq:</span><span class="nv">`eq_condition`</span> is the definition of <span class="na">:math:</span><span class="nv">`f(x)`</span>.
+</pre></div>
+</div>
+<p>Result:</p>
+<div class="math" id="equation-eq-condition">
+<p><span class="eqno">(3)<a class="headerlink" href="#equation-eq-condition" title="Permalink to this equation">¶</a></span><img src="_images/math/f3c26c283bbd6e26fe5ecbff05914b8813f9c328.png" alt="f(x)
+     =
+     \Biggl \lbrace
+     {
+     0,\text{ if }
+        { x &gt;0}
+     \atop
+     1 \text{ otherwise }
+     }"/></p>
+</div><p>The Equation <a class="reference internal" href="#equation-eq-condition">(3)</a> is the definition of <img class="math" src="_images/math/a1e0efec789bf92927c7373828e7972390512bc9.png" alt="f(x)"/>.</p>
+<ol class="arabic simple" start="4">
+<li><strong>Figure reference</strong></li>
+</ol>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">_fig_hist_demo:</span>
+<span class="p">..</span> <span class="ow">figure</span><span class="p">::</span> images/avg_rating_mon.png
+   <span class="nc">:scale:</span> <span class="nf">50 %</span>
+   <span class="nc">:alt:</span> <span class="nf">map to buried treasure</span>
+
+   The histogram of the gouped dataset
+
+The Figure. <span class="na">:ref:</span><span class="nv">`fig_hist_demo`</span> is the histogram of the gouped dataset.
+</pre></div>
+</div>
+<p>Result:</p>
+<div class="figure" id="id13">
+<span id="fig-hist-demo"></span><a class="reference internal image-reference" href="_images/avg_rating_mon.png"><img alt="map to buried treasure" src="_images/avg_rating_mon.png" style="width: 641.5px; height: 240.0px;" /></a>
+<p class="caption"><span class="caption-text">The histogram of the gouped dataset</span></p>
+</div>
+<p>The Figure. <a class="reference internal" href="#fig-hist-demo"><span class="std std-ref">The histogram of the gouped dataset</span></a> is the histogram of the gouped dataset.</p>
+<ol class="arabic simple" start="5">
+<li><strong>Table reference</strong></li>
+</ol>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="nt">_table_demo:</span>
+<span class="p">..</span> <span class="ow">table</span><span class="p">::</span> The general table demo
+
+        +------------------------+------------+----------+----------+
+        <span class="o">|</span> Header row, column 1   | Header 2   | Header 3 | Header 4 |
+        <span class="o">|</span> (header rows optional) |            |          |          |
+        +========================+============+==========+==========+
+        <span class="o">|</span> body row 1, column 1   | column 2   | column 3 | column 4 |
+        +------------------------+------------+----------+----------+
+        <span class="o">|</span> body row 2             | Cells may span columns.          |
+        +------------------------+------------+---------------------+
+        <span class="o">|</span> body row 3             | Cells may  | - Table cells       |
+        +------------------------+ span rows. | - contain           |
+        <span class="o">|</span> body row 4             |            | - body elements.    |
+        +------------------------+------------+---------------------+
+
+Please see the above Table. <span class="na">:ref:</span><span class="nv">`table_demo`</span>.
+</pre></div>
+</div>
+<p>Result:</p>
+<span id="table-demo"></span><table border="1" class="docutils" id="id14">
+<caption><span class="caption-text">The general table demo</span><a class="headerlink" href="#id14" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col width="43%" />
+<col width="21%" />
+<col width="18%" />
+<col width="18%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Header row, column 1
+(header rows optional)</th>
+<th class="head">Header 2</th>
+<th class="head">Header 3</th>
+<th class="head">Header 4</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>body row 1, column 1</td>
+<td>column 2</td>
+<td>column 3</td>
+<td>column 4</td>
+</tr>
+<tr class="row-odd"><td>body row 2</td>
+<td colspan="3">Cells may span columns.</td>
+</tr>
+<tr class="row-even"><td>body row 3</td>
+<td rowspan="2">Cells may
+span rows.</td>
+<td colspan="2" rowspan="2"><ul class="first last simple">
+<li>Table cells</li>
+<li>contain</li>
+<li>body elements.</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>body row 4</td>
+</tr>
+</tbody>
+</table>
+<p>Please see the above Table. <a class="reference internal" href="#table-demo"><span class="std std-ref">The general table demo</span></a>.</p>
+<ol class="arabic simple" start="6">
+<li><strong>Footnotes</strong></li>
+</ol>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>Lorem ipsum <span class="s">[#f1]_</span> dolor sit amet ... <span class="s">[#f2]_</span>
+
+<span class="p">..</span> <span class="ow">rubric</span><span class="p">::</span> Footnotes
+
+<span class="p">..</span> <span class="nt">[#f1]</span> Text of the first footnote.
+<span class="p">..</span> <span class="nt">[#f2]</span> Text of the second footnote.
+</pre></div>
+</div>
+<p>Result:</p>
+<p>Lorem ipsum <a class="footnote-reference" href="#f1" id="id4">[1]</a> dolor sit amet … <a class="footnote-reference" href="#f2" id="id5">[2]</a></p>
+<p class="rubric">Footnotes</p>
+<table class="docutils footnote" frame="void" id="f1" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id4">[1]</a></td><td>Text of the first footnote.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="f2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id5">[2]</a></td><td>Text of the second footnote.</td></tr>
+</tbody>
+</table>
+<ol class="arabic simple" start="7">
+<li><strong>Hyperlinks</strong></li>
+</ol>
+<ul class="simple">
+<li>General hyperlink</li>
+</ul>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>You are more than welcome to visit my personal webpage: <span class="s">`Feng Website`_</span>.
+
+<span class="p">..</span> <span class="nt">_Feng Website:</span> http://web.utk.edu/~wfeng1/
+</pre></div>
+</div>
+<p>Result:</p>
+<p>You are more than welcome to visit my personal webpage: <a class="reference external" href="http://web.utk.edu/~wfeng1/">Feng Website</a>.</p>
+<ul class="simple">
+<li>Embeded Youtube link:</li>
+</ul>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">raw</span><span class="p">::</span> html
+
+    &lt;iframe width=&quot;700&quot; height=&quot;315&quot;
+    src=&quot;https://www.youtube.com/embed/mrEee4bhc7Y&quot;
+    frameborder=&quot;0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+</pre></div>
+</div>
+<p>Result:</p>
+<iframe width="700" height="315"
+src="https://www.youtube.com/embed/mrEee4bhc7Y"
+frameborder="0" allowfullscreen></iframe><div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">You have to use the hyperlink <code class="docutils literal notranslate"><span class="pre">https://www.youtube.com/embed/</span></code> + <code class="docutils literal notranslate"><span class="pre">name</span></code>.</p>
+</div>
+</div>
 </div>
 <div class="section" id="roles">
 <h2>Roles<a class="headerlink" href="#roles" title="Permalink to this headline">¶</a></h2>
@@ -1032,30 +1372,28 @@ The is a test for the user defined math equation:
 <li><strong>Line markup</strong></li>
 </ul>
 <p>reStructuredText:</p>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>emphasis – equivalent of <span class="ge">*emphasis*</span>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="m">*</span> emphasis – equivalent of <span class="ge">*emphasis*</span>
 
-strong – equivalent of <span class="gs">**strong**</span>
+<span class="m">*</span> strong – equivalent of <span class="gs">**strong**</span>
 
-literal – equivalent of <span class="s">``literal``</span>
+<span class="m">*</span> literal – equivalent of <span class="s">``literal``</span>
 
-subscript – H\ <span class="na">:sub:</span><span class="nv">`2`</span>\ O
+<span class="m">*</span> subscript – H\ <span class="na">:sub:</span><span class="nv">`2`</span>\ O
 
-superscript – E = mc\ <span class="na">:sup:</span><span class="nv">`2`</span>
+<span class="m">*</span> superscript – E = mc\ <span class="na">:sup:</span><span class="nv">`2`</span>
 
-title-reference – for titles of books, periodicals, and other materials
-</pre></div>
-</div>
-<p>emphasis – equivalent of <em>emphasis</em></p>
-<p>strong – equivalent of <strong>strong</strong></p>
-<p>literal – equivalent of <code class="docutils literal notranslate"><span class="pre">literal</span></code></p>
-<p>subscript – H<sub>2</sub>O</p>
-<p>superscript – E = mc<sup>2</sup></p>
-<p>title-reference – for titles of books, periodicals, and other materials</p>
-<p>reStructuredText:</p>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>
+<span class="m">*</span> title-reference – for titles of books, periodicals, and other materials
 </pre></div>
 </div>
 <p>Result:</p>
+<ul class="simple">
+<li>emphasis – equivalent of <em>emphasis</em></li>
+<li>strong – equivalent of <strong>strong</strong></li>
+<li>literal – equivalent of <code class="docutils literal notranslate"><span class="pre">literal</span></code></li>
+<li>subscript – H<sub>2</sub>O</li>
+<li>superscript – E = mc<sup>2</sup></li>
+<li>title-reference – for titles of books, periodicals, and other materials</li>
+</ul>
 </div>
 <div class="section" id="specialized-roles">
 <h3>Specialized Roles<a class="headerlink" href="#specialized-roles" title="Permalink to this headline">¶</a></h3>
@@ -1183,27 +1521,6 @@ document link to the description of the individual constructs in the reST
 reference.</p>
 </div>
 <p>See more details at <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#admonitions">Admonitions</a>.</p>
-<p>Lorem ipsum <a class="footnote-reference" href="#f1" id="id2">[1]</a> dolor sit amet … <a class="footnote-reference" href="#f2" id="id3">[2]</a></p>
-<p>Lorem ipsum <a class="reference internal" href="#ref" id="id4">[Ref]</a> dolor sit amet.</p>
-<p class="rubric">Footnotes</p>
-<table class="docutils footnote" frame="void" id="f1" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id2">[1]</a></td><td>Text of the first footnote.</td></tr>
-</tbody>
-</table>
-<table class="docutils footnote" frame="void" id="f2" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id3">[2]</a></td><td>Text of the second footnote.</td></tr>
-</tbody>
-</table>
-<table class="docutils citation" frame="void" id="ref" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id4">[Ref]</a></td><td>Book or article reference, URL or whatever.</td></tr>
-</tbody>
-</table>
 </div>
 </div>
 </div>
