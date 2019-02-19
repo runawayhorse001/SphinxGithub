@@ -120,7 +120,8 @@ Welcome to my \sphinxstylestrong{Sphinx gihub webpage} tutorials! In those tutor
 
 \chapter{Preface}
 \label{\detokenize{preface:preface}}\label{\detokenize{preface:id1}}\label{\detokenize{preface::doc}}
-\begin{sphinxadmonition}{note}{Note:}
+\begin{sphinxadmonition}{note}{Chinese proverb}
+
 Good tools are prerequisite to the successful execution of a job. \textendash{} old Chinese proverb
 \end{sphinxadmonition}
 
@@ -212,7 +213,8 @@ corrections, suggestions or feedbacks through email (Wenqiang Feng: \sphinxhref{
 
 \chapter{Introduction}
 \label{\detokenize{intro:introduction}}\label{\detokenize{intro:intro}}\label{\detokenize{intro::doc}}
-\begin{sphinxadmonition}{note}{Note:}
+\begin{sphinxadmonition}{note}{Chinese proverb}
+
 If you only know yourself, but not your opponent, you may win or may lose.
 If you know neither yourself nor your enemy, you will always endanger yourself.
 \textendash{} idiom, from Sunzi’s Art of War
@@ -273,7 +275,8 @@ More information can be get from \sphinxhref{https://en.wikipedia.org/wiki/LaTeX
 
 \chapter{Packages Installation}
 \label{\detokenize{pkgs:packages-installation}}\label{\detokenize{pkgs:pkgs}}\label{\detokenize{pkgs::doc}}
-\begin{sphinxadmonition}{note}{Note:}
+\begin{sphinxadmonition}{note}{Chinese proverb}
+
 A journey of a thousand miles begins with a single step \textendash{} old Chinese proverb
 \end{sphinxadmonition}
 
@@ -322,7 +325,7 @@ sudo apt update \PYG{o}{\PYGZam{}\PYGZam{}} sudo apt install texlive\PYGZhy{}ful
 
 \chapter{Sphinx Configuration}
 \label{\detokenize{sphinx:sphinx-configuration}}\label{\detokenize{sphinx:sphinx}}\label{\detokenize{sphinx::doc}}
-\begin{sphinxadmonition}{note}{Note:}
+\begin{sphinxadmonition}{warning}{Warning:}
 I heavily borrowed, modified and used the configuration in \sphinxcode{\sphinxupquote{conf.py}} and \sphinxcode{\sphinxupquote{docgen.py}} of \sphinxhref{https://github.com/Theano/Theano}{Theano package project}. I will keep all the comments from Theano team and the coryrights of those files belong to Theano team.
 \end{sphinxadmonition}
 
@@ -3073,6 +3076,177 @@ reference.
 
 
 See more details at \sphinxhref{http://docutils.sourceforge.net/docs/ref/rst/directives.html\#admonitions}{Admonitions}.
+
+
+\chapter{Publishing on Github}
+\label{\detokenize{github:publishing-on-github}}\label{\detokenize{github:github}}\label{\detokenize{github::doc}}
+\begin{sphinxadmonition}{note}{Chinese proverb}
+
+sharing your happiness is much better than enjoying your happiness by your own.
+\end{sphinxadmonition}
+
+
+\section{Create reStructuredTexts}
+\label{\detokenize{github:create-rests}}
+
+\subsection{Create reStructuredTexts}
+\label{\detokenize{github:id1}}
+Use the tips in {\hyperref[\detokenize{rtxt:rtext}]{\sphinxcrossref{\DUrole{std,std-ref}{reStructuredText Markup}}}} to create your reStructuredTexts. And out them in one folder, for example \sphinxcode{\sphinxupquote{doc}}.
+
+\begin{figure}[htbp]
+\centering
+
+\noindent\sphinxincludegraphics{{doc}.png}
+\end{figure}
+
+
+\subsection{Add them in \sphinxstyleliteralintitle{\sphinxupquote{index.rst}}}
+\label{\detokenize{github:add-them-in-index-rst}}
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{g+gh}{========}
+\PYG{g+gh}{Contents}
+\PYG{g+gh}{========}
+
+\PYG{p}{..} \PYG{o+ow}{toctree}\PYG{p}{::}
+   \PYG{n+nc}{:maxdepth:} \PYG{n+nf}{2}
+
+   preface
+   intro
+   pkgs
+   sphinx
+   rtxt
+   github
+   reference
+\end{sphinxVerbatim}
+
+
+\subsection{Compile the reStructuredTexts files}
+\label{\detokenize{github:compile-the-rests-files}}\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\item {} 
+Change the directory to the folder
+
+\end{enumerate}
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n+nb}{cd} MyTutorial/SphinxGithub/doc
+\end{sphinxVerbatim}
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\setcounter{enumi}{1}
+\item {} 
+Compile
+
+\end{enumerate}
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+make
+\end{sphinxVerbatim}
+
+Then you should get two more folders: \sphinxcode{\sphinxupquote{docs}} and \sphinxcode{\sphinxupquote{latex}}.
+
+\begin{figure}[htbp]
+\centering
+
+\noindent\sphinxincludegraphics{{compiled}.png}
+\end{figure}
+
+
+\section{Create Repository on Github}
+\label{\detokenize{github:create-repository-on-github}}
+\begin{figure}[htbp]
+\centering
+
+\noindent\sphinxincludegraphics{{newr}.png}
+\end{figure}
+
+
+\section{Commit reStructuredTexts folder to Repository}
+\label{\detokenize{github:commit-rests-folder-to-repository}}
+Open Terminal and do the following steps:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+git init
+
+git add .
+\PYG{c+c1}{\PYGZsh{} Adds the files in the local repository and stages them for commit. To unstage a file, use \PYGZsq{}git reset HEAD YOUR\PYGZhy{}FILE\PYGZsq{}.}
+
+git commit \PYGZhy{}m \PYG{l+s+s2}{\PYGZdq{}First commit\PYGZdq{}}
+\PYG{c+c1}{\PYGZsh{} Commits the tracked changes and prepares them to be pushed to a remote repository. To remove this commit and modify the file, use \PYGZsq{}git reset \PYGZhy{}\PYGZhy{}soft HEAD\PYGZti{}1\PYGZsq{} and commit and add the file again.}
+
+git remote add origin remote repository URL
+\PYG{c+c1}{\PYGZsh{} Sets the new remote}
+git remote \PYGZhy{}v
+\PYG{c+c1}{\PYGZsh{} Verifies the new remote URL}
+
+git push \PYGZhy{}u origin master
+\PYG{c+c1}{\PYGZsh{} Pushes the changes in your local repository up to the remote repository you specified as the origin}
+\end{sphinxVerbatim}
+
+
+\section{Setup Github Pages on Github}
+\label{\detokenize{github:setup-github-pages-on-github}}
+
+\subsection{Repository}
+\label{\detokenize{github:repository}}
+Once you commited your repository to the Github, you will get:
+
+\begin{figure}[htbp]
+\centering
+
+\noindent\sphinxincludegraphics{{repository}.png}
+\end{figure}
+
+
+\subsection{Setting}
+\label{\detokenize{github:setting}}\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\item {} 
+\sphinxstylestrong{Go to Settings button in your repository}
+
+\end{enumerate}
+
+\begin{figure}[htbp]
+\centering
+
+\noindent\sphinxincludegraphics{{setting}.png}
+\end{figure}
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\setcounter{enumi}{1}
+\item {} 
+\sphinxstylestrong{Set up the Github pages source}
+
+\end{enumerate}
+
+\begin{figure}[htbp]
+\centering
+
+\noindent\sphinxincludegraphics{{githubpage}.png}
+\end{figure}
+\begin{enumerate}
+\def\theenumi{\arabic{enumi}}
+\def\labelenumi{\theenumi .}
+\makeatletter\def\p@enumii{\p@enumi \theenumi .}\makeatother
+\setcounter{enumi}{2}
+\item {} 
+\sphinxstylestrong{Enjoy your Github Pages}
+
+\end{enumerate}
+
+\begin{figure}[htbp]
+\centering
+
+\noindent\sphinxincludegraphics{{online}.png}
+\end{figure}
 
 
 \chapter{Main Reference}

@@ -19,5 +19,6 @@ Contents
    pkgs
    sphinx
    rtxt
+   github
    reference
 

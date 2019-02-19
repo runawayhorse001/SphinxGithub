@@ -4,7 +4,7 @@
 Packages Installation
 =====================
 
-.. note::
+.. admonition:: Chinese proverb
 
    A journey of a thousand miles begins with a single step -- old Chinese proverb
    
