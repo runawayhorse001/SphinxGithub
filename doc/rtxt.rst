@@ -12,7 +12,7 @@ reStructuredText Markup
 reStructuredText Primer
 +++++++++++++++++++++++
 
-I would refer the reader to [Sphinx2019]_ for more details.
+I would refer the reader to [Sphinx2019]_ and [Georg2018]_ for more details.
 
 Sections
 --------
