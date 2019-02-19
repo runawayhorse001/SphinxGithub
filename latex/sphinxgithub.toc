@@ -49,6 +49,6 @@
 \contentsline {section}{\numberline {6.3}Commit reStructuredTexts folder to Repository}{60}{section.6.3}
 \contentsline {section}{\numberline {6.4}Setup Github Pages on Github}{62}{section.6.4}
 \contentsline {subsection}{\numberline {6.4.1}Repository}{62}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Setting}{63}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.2}Setup Github Pages}{63}{subsection.6.4.2}
 \contentsline {chapter}{\numberline {7}Main Reference}{67}{chapter.7}
 \contentsline {chapter}{Bibliography}{69}{chapter*.3}

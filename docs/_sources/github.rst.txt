@@ -100,8 +100,8 @@ Once you commited your repository to the Github, you will get:
 
 .. figure:: images/repository.png
 
-Setting
--------
+Setup Github Pages
+------------------
 
 1. **Go to Settings button in your repository**
 
