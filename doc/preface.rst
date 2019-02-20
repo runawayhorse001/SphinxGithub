@@ -8,8 +8,12 @@ Preface
 
 	Good tools are prerequisite to the successful execution of a job. – old Chinese proverb
 
+
+About
++++++
+
 About this tutorial
-+++++++++++++++++++
+-------------------
 
 This document is a summary of my valueable experiences in using Python decumentation ``Sphinx`` with ``Github`` webpage. The PDF version can be downloaded from `HERE <sphinxgithub.pdf>`_. **You may download and distribute it. Please be aware, however, that the note contains typos as well as inaccurate or incorrect description.** 
 

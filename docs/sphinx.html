@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Sphinx Configuration &mdash; Sphinx with Github Webpages 1.00 documentation</title>
+  <title>4. Sphinx Configuration &mdash; Sphinx with Github Webpages 1.00 documentation</title>
   
 
   
@@ -19,20 +19,27 @@
   
 
   
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="_static/fix_rtd.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="reStructuredText Markup" href="rtxt.html" />
-    <link rel="prev" title="Packages Installation" href="pkgs.html" />
+    <link rel="next" title="5. reStructuredText Markup" href="rtxt.html" />
+    <link rel="prev" title="3. Packages Installation" href="pkgs.html" />
  
 <script type="text/javascript">
   var _gaq = _gaq || [];
@@ -40,21 +47,16 @@
   _gaq.push(['_trackPageview']);
 </script>
 
-
-  
-  <script src="_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -93,34 +95,34 @@
             
             
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="preface.html">Preface</a></li>
-<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pkgs.html">Packages Installation</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Sphinx Configuration</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#general-html-configuration">General HTML Configuration</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#general-evironment-infomation">General Evironment Infomation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#general-project-infomation">General Project Infomation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preface.html">1. Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="intro.html">2. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pkgs.html">3. Packages Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">4. Sphinx Configuration</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#general-html-configuration">4.1. General HTML Configuration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#general-evironment-infomation">4.1.1. General Evironment Infomation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#general-project-infomation">4.1.2. General Project Infomation</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#general-latex-configuration">General LaTex Configuration</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#general-latex-output-options">General LaTeX Output Options</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#latex-preamble-definitions">LaTeX preamble definitions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#general-latex-configuration">4.2. General LaTex Configuration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#general-latex-output-options">4.2.1. General LaTeX Output Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#latex-preamble-definitions">4.2.2. LaTeX preamble definitions</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#full-conf-py-script">Full <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> Script</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#general-documentation-generator-configuration">General Documentation Generator Configuration</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#output-options">Output Options</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#output-directory">Output Directory</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#documentation-compiler">Documentation Compiler</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#makefile-wrapper"><code class="docutils literal notranslate"><span class="pre">Makefile</span></code> Wrapper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#full-conf-py-script">4.3. Full <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> Script</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#general-documentation-generator-configuration">4.4. General Documentation Generator Configuration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#output-options">4.4.1. Output Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#output-directory">4.4.2. Output Directory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#documentation-compiler">4.4.3. Documentation Compiler</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#makefile-wrapper">4.4.4. <code class="docutils literal notranslate"><span class="pre">Makefile</span></code> Wrapper</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#full-docgen-py-script">Full <code class="docutils literal notranslate"><span class="pre">docgen.py</span></code> Script</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#full-docgen-py-script">4.5. Full <code class="docutils literal notranslate"><span class="pre">docgen.py</span></code> Script</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="rtxt.html">reStructuredText Markup</a></li>
-<li class="toctree-l1"><a class="reference internal" href="github.html">Publishing on Github</a></li>
-<li class="toctree-l1"><a class="reference internal" href="reference.html">Main Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rtxt.html">5. reStructuredText Markup</a></li>
+<li class="toctree-l1"><a class="reference internal" href="github.html">6. Publishing on Github</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">7. Main Reference</a></li>
 </ul>
 
             
@@ -166,7 +168,7 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Sphinx Configuration</li>
+      <li>4. Sphinx Configuration</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -186,15 +188,15 @@
            <div itemprop="articleBody">
             
   <div class="section" id="sphinx-configuration">
-<span id="sphinx"></span><h1>Sphinx Configuration<a class="headerlink" href="#sphinx-configuration" title="Permalink to this headline">¶</a></h1>
+<span id="sphinx"></span><h1>4. Sphinx Configuration<a class="headerlink" href="#sphinx-configuration" title="Permalink to this headline">¶</a></h1>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">I heavily borrowed, modified and used the configuration in <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> and <code class="docutils literal notranslate"><span class="pre">docgen.py</span></code> of <a class="reference external" href="https://github.com/Theano/Theano">Theano package project</a>. I will keep all the comments from Theano team and the coryrights of those files belong to Theano team.</p>
 </div>
 <div class="section" id="general-html-configuration">
-<h2>General HTML Configuration<a class="headerlink" href="#general-html-configuration" title="Permalink to this headline">¶</a></h2>
+<h2>4.1. General HTML Configuration<a class="headerlink" href="#general-html-configuration" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="general-evironment-infomation">
-<h3>General Evironment Infomation<a class="headerlink" href="#general-evironment-infomation" title="Permalink to this headline">¶</a></h3>
+<h3>4.1.1. General Evironment Infomation<a class="headerlink" href="#general-evironment-infomation" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
 <li>Sphinx extension</li>
 </ol>
@@ -283,7 +285,7 @@
 </div>
 </div>
 <div class="section" id="general-project-infomation">
-<h3>General Project Infomation<a class="headerlink" href="#general-project-infomation" title="Permalink to this headline">¶</a></h3>
+<h3>4.1.2. General Project Infomation<a class="headerlink" href="#general-project-infomation" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
 <li>The suffix of source filenames</li>
 </ol>
@@ -339,9 +341,9 @@
 </div>
 </div>
 <div class="section" id="general-latex-configuration">
-<h2>General LaTex Configuration<a class="headerlink" href="#general-latex-configuration" title="Permalink to this headline">¶</a></h2>
+<h2>4.2. General LaTex Configuration<a class="headerlink" href="#general-latex-configuration" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="general-latex-output-options">
-<h3>General LaTeX Output Options<a class="headerlink" href="#general-latex-output-options" title="Permalink to this headline">¶</a></h3>
+<h3>4.2.1. General LaTeX Output Options<a class="headerlink" href="#general-latex-output-options" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Options for LaTeX output</span>
 <span class="c1"># ------------------------</span>
 
@@ -370,7 +372,7 @@
 </div>
 </div>
 <div class="section" id="latex-preamble-definitions">
-<h3>LaTeX preamble definitions<a class="headerlink" href="#latex-preamble-definitions" title="Permalink to this headline">¶</a></h3>
+<h3>4.2.2. LaTeX preamble definitions<a class="headerlink" href="#latex-preamble-definitions" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#latex_elements[&#39;preamble&#39;] = &#39;\usepackage{xcolor}&#39;</span>
 <span class="c1"># Additional stuff for the LaTeX preamble.</span>
 <span class="c1">#latex_preamble</span>
@@ -411,7 +413,7 @@
 </div>
 </div>
 <div class="section" id="full-conf-py-script">
-<h2>Full <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> Script<a class="headerlink" href="#full-conf-py-script" title="Permalink to this headline">¶</a></h2>
+<h2>4.3. Full <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> Script<a class="headerlink" href="#full-conf-py-script" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
 <span class="c1">#############################################################################</span>
 <span class="c1"># I heavily borrowed, modified and used the configuration in conf.py of Theano</span>
@@ -765,9 +767,9 @@
 </div>
 </div>
 <div class="section" id="general-documentation-generator-configuration">
-<h2>General Documentation Generator Configuration<a class="headerlink" href="#general-documentation-generator-configuration" title="Permalink to this headline">¶</a></h2>
+<h2>4.4. General Documentation Generator Configuration<a class="headerlink" href="#general-documentation-generator-configuration" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="output-options">
-<h3>Output Options<a class="headerlink" href="#output-options" title="Permalink to this headline">¶</a></h3>
+<h3>4.4.1. Output Options<a class="headerlink" href="#output-options" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">throot</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span>
      <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">pardir</span><span class="p">))</span>
 
@@ -798,7 +800,7 @@
 </div>
 </div>
 <div class="section" id="output-directory">
-<h3>Output Directory<a class="headerlink" href="#output-directory" title="Permalink to this headline">¶</a></h3>
+<h3>4.4.2. Output Directory<a class="headerlink" href="#output-directory" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">mkdir</span><span class="p">(</span><span class="n">path</span><span class="p">):</span>
     <span class="k">try</span><span class="p">:</span>
         <span class="n">os</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
@@ -824,7 +826,7 @@
 </div>
 </div>
 <div class="section" id="documentation-compiler">
-<h3>Documentation Compiler<a class="headerlink" href="#documentation-compiler" title="Permalink to this headline">¶</a></h3>
+<h3>4.4.3. Documentation Compiler<a class="headerlink" href="#documentation-compiler" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">call_sphinx</span><span class="p">(</span><span class="n">builder</span><span class="p">,</span> <span class="n">workdir</span><span class="p">):</span>
      <span class="kn">import</span> <span class="nn">sphinx</span>
      <span class="k">if</span> <span class="n">options</span><span class="p">[</span><span class="s1">&#39;--check&#39;</span><span class="p">]:</span>
@@ -879,7 +881,7 @@
 </div>
 </div>
 <div class="section" id="makefile-wrapper">
-<h3><code class="docutils literal notranslate"><span class="pre">Makefile</span></code> Wrapper<a class="headerlink" href="#makefile-wrapper" title="Permalink to this headline">¶</a></h3>
+<h3>4.4.4. <code class="docutils literal notranslate"><span class="pre">Makefile</span></code> Wrapper<a class="headerlink" href="#makefile-wrapper" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nb">all</span><span class="p">:</span>
         <span class="n">python</span> <span class="n">scripts</span><span class="o">/</span><span class="n">docgen</span><span class="o">.</span><span class="n">py</span>
 </pre></div>
@@ -887,7 +889,7 @@
 </div>
 </div>
 <div class="section" id="full-docgen-py-script">
-<h2>Full <code class="docutils literal notranslate"><span class="pre">docgen.py</span></code> Script<a class="headerlink" href="#full-docgen-py-script" title="Permalink to this headline">¶</a></h2>
+<h2>4.5. Full <code class="docutils literal notranslate"><span class="pre">docgen.py</span></code> Script<a class="headerlink" href="#full-docgen-py-script" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#############################################################################</span>
 <span class="c1"># I heavily borrowed, modified and used the configuration in docgen.py of Theano</span>
 <span class="c1"># package project. I will keep all the comments from Theano team and the</span>
@@ -1032,10 +1034,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="rtxt.html" class="btn btn-neutral float-right" title="reStructuredText Markup" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="rtxt.html" class="btn btn-neutral float-right" title="5. reStructuredText Markup" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="pkgs.html" class="btn btn-neutral" title="Packages Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="pkgs.html" class="btn btn-neutral float-left" title="3. Packages Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -1045,7 +1047,9 @@
   <div role="contentinfo">
     <p>
         &copy; Copyright 2019, Wenqiang Feng
-      Last updated on Feb 18, 2019.
+      <span class="lastupdated">
+        Last updated on Feb 20, 2019.
+      </span>
 
     </p>
   </div>
@@ -1062,26 +1066,16 @@
   
 
 
-  
-
-    
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
-    
-
-  
-
-  <script type="text/javascript" src="_static/js/theme.js"></script>
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
   </script>
+
+  
+  
+    
+  
  
 <script type="text/javascript">
   (function() {
