@@ -44,19 +44,36 @@ extensions = ['sphinx.ext.autodoc',
               'sphinx.ext.todo',
               'sphinx.ext.doctest',
               'sphinx.ext.napoleon',
-              'sphinx.ext.linkcode']
+              'sphinx.ext.linkcode',
+              'sphinx.ext.intersphinx' 
+              ]
 
 todo_include_todos = True
 napoleon_google_docstring = False
 napoleon_include_special_with_doc = False
-#html_show_sourcelink = True for 
+
+# Enable link of 'View page source'
 #html_show_sourcelink = False
 # Add 'Edit on Github' link instead of 'View page source'
 html_context = {
-"display_github": False, # Add 'Edit on Github' link instead of 'View page source'
-"last_updated": True,
-"commit": False,
+    # Enable the "Edit in GitHub link within the header of each page.
+    'display_github': True,
+    # Set the following variables to generate the resulting github URL for each page. 
+    # Format Template: https://{{ github_host|default("github.com") }}/{{ github_user }}
+    #/{{ github_repo }}/blob/{{ github_version }}{{ conf_py_path }}{{ pagename }}{{ suffix }}
+    #https://github.com/runawayhorse001/SphinxGithub/blob/master/doc/index.rst
+    'github_user': 'runawayhorse001',
+    'github_repo': 'SphinxGithub',
+    'github_version': 'master/doc/' ,
 }
+
+# {% if display_github %}
+#     <li><a href="https://github.com/{{ github_user }}/{{ github_repo }}
+#     /tree/{{ github_version }}{{ conf_py_path }}{{ pagename }}.rst">
+#     Show on GitHub</a></li>
+# {% endif %}
+
+
 # We do it like this to support multiple sphinx version without having warning.
 # Our buildbot consider warning as error.
 try:
@@ -151,6 +168,9 @@ def setup(app):
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
 #html_title = None
+
+# If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
+#html_show_sphinx = False
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
