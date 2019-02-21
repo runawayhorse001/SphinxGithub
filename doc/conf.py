@@ -55,6 +55,7 @@ napoleon_include_special_with_doc = False
 # Enable link of 'View page source'
 #html_show_sourcelink = False
 # Add 'Edit on Github' link instead of 'View page source'
+# reference:https://docs.readthedocs.io/en/latest/vcs.html
 html_context = {
     # Enable the "Edit in GitHub link within the header of each page.
     'display_github': True,
