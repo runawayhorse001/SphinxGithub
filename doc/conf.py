@@ -49,7 +49,14 @@ extensions = ['sphinx.ext.autodoc',
 todo_include_todos = True
 napoleon_google_docstring = False
 napoleon_include_special_with_doc = False
-
+#html_show_sourcelink = True for 
+#html_show_sourcelink = False
+# Add 'Edit on Github' link instead of 'View page source'
+html_context = {
+"display_github": False, # Add 'Edit on Github' link instead of 'View page source'
+"last_updated": True,
+"commit": False,
+}
 # We do it like this to support multiple sphinx version without having warning.
 # Our buildbot consider warning as error.
 try:
@@ -64,7 +71,7 @@ except ImportError:
 
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['.templates']
+#templates_path = ['.templates']
 
 # The suffix of source filenames.
 source_suffix = '.rst'

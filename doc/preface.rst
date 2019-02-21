@@ -53,7 +53,7 @@ About the authors
 
 Motivation for this tutorial 
 ++++++++++++++++++++++++++++
-``Sphinx`` is an awesome Python documentation package, and it has excellent facilities for the documentation of software projects in a range of languages. I was impressed and attracted by Sphinx in the first using. And I foud that:
+``Sphinx`` is an awesome Python documentation package, and it has excellent facilities for the documentation of software projects in a range of languages. I have been using ``Sphinx`` for almost 4 years. I was impressed and attracted by Sphinx in the first using. And I foud that:
 
 * It supports **several popular output formats**: ``HTML`` (including Windows HTML Help), ``LaTeX`` (for printable PDF versions), ePub, Texinfo, manual pages, plain text.
 
