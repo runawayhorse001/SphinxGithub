@@ -412,12 +412,12 @@
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
 <span class="c1">#############################################################################</span>
 <span class="c1"># I heavily borrowed, modified and used the configuration in conf.py of Theano</span>
-<span class="c1"># package project. I will keep all the comments from Theano team and the</span>
-<span class="c1"># coryright of this file belongs to Theano team.</span>
-<span class="c1"># reference:</span>
-<span class="c1">#</span>
+<span class="c1"># package project. I will keep all the comments from Theano team and the </span>
+<span class="c1"># coryright of this file belongs to Theano team. </span>
+<span class="c1"># reference: </span>
+<span class="c1">#           </span>
 <span class="c1"># Theano repository: https://github.com/Theano/Theano</span>
-<span class="c1"># conf.py: https://github.com/Theano/Theano/blob/master/doc/conf.py</span>
+<span class="c1"># conf.py: https://github.com/Theano/Theano/blob/master/doc/conf.py </span>
 <span class="c1">##############################################################################</span>
 <span class="c1"># theano documentation build configuration file, created by</span>
 <span class="c1"># sphinx-quickstart on Tue Oct  7 16:34:06 2008.</span>
@@ -455,11 +455,14 @@
               <span class="s1">&#39;sphinx.ext.todo&#39;</span><span class="p">,</span>
               <span class="s1">&#39;sphinx.ext.doctest&#39;</span><span class="p">,</span>
               <span class="s1">&#39;sphinx.ext.napoleon&#39;</span><span class="p">,</span>
-              <span class="s1">&#39;sphinx.ext.linkcode&#39;</span><span class="p">]</span>
+              <span class="s1">&#39;sphinx.ext.linkcode&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;sphinx.ext.intersphinx&#39;</span> 
+              <span class="p">]</span>
 
 <span class="n">todo_include_todos</span> <span class="o">=</span> <span class="bp">True</span>
 <span class="n">napoleon_google_docstring</span> <span class="o">=</span> <span class="bp">False</span>
 <span class="n">napoleon_include_special_with_doc</span> <span class="o">=</span> <span class="bp">False</span>
+
 
 <span class="c1"># We do it like this to support multiple sphinx version without having warning.</span>
 <span class="c1"># Our buildbot consider warning as error.</span>
@@ -475,7 +478,7 @@
 
 
 <span class="c1"># Add any paths that contain templates here, relative to this directory.</span>
-<span class="n">templates_path</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;.templates&#39;</span><span class="p">]</span>
+<span class="c1">#templates_path = [&#39;.templates&#39;]</span>
 
 <span class="c1"># The suffix of source filenames.</span>
 <span class="n">source_suffix</span> <span class="o">=</span> <span class="s1">&#39;.rst&#39;</span>
@@ -533,6 +536,28 @@
 <span class="c1"># Options for HTML output</span>
 <span class="c1"># -----------------------</span>
 
+<span class="c1"># Enable link of &#39;View page source&#39;</span>
+<span class="c1">#html_show_sourcelink = False</span>
+<span class="c1"># Add &#39;Edit on Github&#39; link instead of &#39;View page source&#39;</span>
+<span class="c1"># reference:https://docs.readthedocs.io/en/latest/vcs.html</span>
+<span class="n">html_context</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="c1"># Enable the &quot;Edit in GitHub link within the header of each page.</span>
+    <span class="s1">&#39;display_github&#39;</span><span class="p">:</span> <span class="bp">True</span><span class="p">,</span>
+    <span class="c1"># Set the following variables to generate the resulting github URL for each page. </span>
+    <span class="c1"># Format Template: https://{{ github_host|default(&quot;github.com&quot;) }}/{{ github_user }}</span>
+    <span class="c1">#/{{ github_repo }}/blob/{{ github_version }}{{ conf_py_path }}{{ pagename }}{{ suffix }}</span>
+    <span class="c1">#https://github.com/runawayhorse001/SphinxGithub/blob/master/doc/index.rst</span>
+    <span class="s1">&#39;github_user&#39;</span><span class="p">:</span> <span class="s1">&#39;runawayhorse001&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;github_repo&#39;</span><span class="p">:</span> <span class="s1">&#39;SphinxGithub&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;github_version&#39;</span><span class="p">:</span> <span class="s1">&#39;master/doc/&#39;</span> <span class="p">,</span>
+<span class="p">}</span>
+
+<span class="c1"># {% if display_github %}</span>
+<span class="c1">#     &lt;li&gt;&lt;a href=&quot;https://github.com/{{ github_user }}/{{ github_repo }}</span>
+<span class="c1">#     /tree/{{ github_version }}{{ conf_py_path }}{{ pagename }}.rst&quot;&gt;</span>
+<span class="c1">#     Show on GitHub&lt;/a&gt;&lt;/li&gt;</span>
+<span class="c1"># {% endif %}</span>
+
 <span class="c1"># The style sheet to use for HTML and HTML Help pages. A file of that name</span>
 <span class="c1"># must exist either in Sphinx&#39; static/ path, or in one of the custom paths</span>
 <span class="c1"># given in html_static_path.</span>
@@ -556,6 +581,9 @@
 <span class="c1"># &quot;&lt;project&gt; v&lt;release&gt; documentation&quot;.</span>
 <span class="c1">#html_title = None</span>
 
+<span class="c1"># If true, &quot;Created using Sphinx&quot; is shown in the HTML footer. Default is True.</span>
+<span class="c1">#html_show_sphinx = False</span>
+
 <span class="c1"># A shorter title for the navigation bar.  Default is the same as html_title.</span>
 <span class="c1">#html_short_title = None</span>
 
@@ -566,7 +594,7 @@
 <span class="c1"># The name of an image file (within the static path) to use as favicon of the</span>
 <span class="c1"># docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32</span>
 <span class="c1"># pixels large.</span>
-<span class="c1">#html_favicon = None</span>
+<span class="n">html_favicon</span> <span class="o">=</span> <span class="s1">&#39;images/icon.ico&#39;</span>
 
 <span class="c1"># Add any paths that contain custom static files (such as style sheets) here,</span>
 <span class="c1"># relative to this directory. They are copied after the builtin static files,</span>
@@ -683,7 +711,7 @@
 
 <span class="c1">#latex_elements[&#39;preamble&#39;] = &#39;\usepackage{xcolor}&#39;</span>
 <span class="c1"># Additional stuff for the LaTeX preamble.</span>
-<span class="c1">#latex_preamble</span>
+<span class="c1">#latex_preamble </span>
 <span class="n">latex_elements</span><span class="p">[</span><span class="s1">&#39;preamble&#39;</span><span class="p">]</span> <span class="o">=</span>  <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">usepackage{amsmath}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
                           <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">usepackage{mathtools}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
                           <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">usepackage{amsfonts}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
@@ -715,7 +743,8 @@
                           <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">C{</span><span class="se">\\</span><span class="s1">mathbf{C}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
                           <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">P{</span><span class="se">\\</span><span class="s1">mathbf{P}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
                           <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">T{{</span><span class="se">\\</span><span class="s1">bf </span><span class="se">\\</span><span class="s1">mathcal T}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
-                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">B{{</span><span class="se">\\</span><span class="s1">bf </span><span class="se">\\</span><span class="s1">mathcal B}}</span><span class="se">\n</span><span class="s1">&#39;</span>
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">B{{</span><span class="se">\\</span><span class="s1">bf </span><span class="se">\\</span><span class="s1">mathcal B}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">euler{\ e^{i\pi} + 1 = 0}</span><span class="se">\n</span><span class="s1">&#39;</span>
 
 <span class="c1"># Documents to append as an appendix to all manuals.</span>
 <span class="c1">#latex_appendices = []</span>
@@ -725,7 +754,7 @@
 
 <span class="n">default_role</span> <span class="o">=</span> <span class="s1">&#39;math&#39;</span>
 <span class="n">ingmath_divpng_args</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;-gamma 1.5&#39;</span><span class="p">,</span><span class="s1">&#39;-D 110&#39;</span><span class="p">]</span>
-<span class="c1">#pngmath_divpng_args = [&#39;-gamma&#39;, &#39;1.5&#39;, &#39;-D&#39;, &#39;110&#39;, &#39;-bg&#39;, &#39;Transparent&#39;]</span>
+<span class="c1">#pngmath_divpng_args = [&#39;-gamma&#39;, &#39;1.5&#39;, &#39;-D&#39;, &#39;110&#39;, &#39;-bg&#39;, &#39;Transparent&#39;] </span>
 <span class="n">imgmath_latex_preamble</span> <span class="o">=</span>  <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">usepackage{amsmath}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
                           <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">usepackage{mathtools}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
                           <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">usepackage{amsfonts}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
@@ -757,7 +786,9 @@
                           <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">C{</span><span class="se">\\</span><span class="s1">mathbf{C}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
                           <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">P{</span><span class="se">\\</span><span class="s1">mathbf{P}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
                           <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">T{{</span><span class="se">\\</span><span class="s1">bf </span><span class="se">\\</span><span class="s1">mathcal T}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
-                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">B{{</span><span class="se">\\</span><span class="s1">bf </span><span class="se">\\</span><span class="s1">mathcal B}}</span><span class="se">\n</span><span class="s1">&#39;</span>
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">B{{</span><span class="se">\\</span><span class="s1">bf </span><span class="se">\\</span><span class="s1">mathcal B}}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">+</span>\
+                          <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">def</span><span class="se">\\</span><span class="s1">euler{\ e^{i\pi} + 1 = 0}</span><span class="se">\n</span><span class="s1">&#39;</span>
+
 </pre></div>
 </div>
 </div>
@@ -887,10 +918,10 @@
 <h2>4.5. Full <code class="docutils literal notranslate"><span class="pre">docgen.py</span></code> Script<a class="headerlink" href="#full-docgen-py-script" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#############################################################################</span>
 <span class="c1"># I heavily borrowed, modified and used the configuration in docgen.py of Theano</span>
-<span class="c1"># package project. I will keep all the comments from Theano team and the</span>
-<span class="c1"># coryright of this file belongs to Theano team.</span>
-<span class="c1"># reference:</span>
-<span class="c1">#</span>
+<span class="c1"># package project. I will keep all the comments from Theano team and the </span>
+<span class="c1"># coryright of this file belongs to Theano team. </span>
+<span class="c1"># reference: </span>
+<span class="c1">#           </span>
 <span class="c1"># Theano repository: https://github.com/Theano/Theano</span>
 <span class="c1"># docgen.py: https://github.com/Theano/Theano/blob/master/doc/scripts/docgen.py</span>
 <span class="c1">##############################################################################</span>
@@ -963,8 +994,8 @@
     <span class="c1"># Make sure we don&#39;t use gpu to compile documentation</span>
     <span class="n">env_th_flags</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;THEANO_FLAGS&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
     <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;THEANO_FLAGS&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;device=cpu,force_device=True&#39;</span>
-
-
+    
+   
 
     <span class="k">def</span> <span class="nf">call_sphinx</span><span class="p">(</span><span class="n">builder</span><span class="p">,</span> <span class="n">workdir</span><span class="p">):</span>
         <span class="kn">import</span> <span class="nn">sphinx</span>
@@ -1016,6 +1047,9 @@
 
     <span class="c1"># Reset THEANO_FLAGS</span>
     <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;THEANO_FLAGS&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">env_th_flags</span>
+
+
+
 </pre></div>
 </div>
 </div>
@@ -1043,7 +1077,7 @@
     <p>
         &copy; Copyright 2019, Wenqiang Feng
       <span class="lastupdated">
-        Last updated on Feb 20, 2019.
+        Last updated on Feb 21, 2019.
       </span>
 
     </p>
