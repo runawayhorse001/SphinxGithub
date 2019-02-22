@@ -63,6 +63,16 @@ if __name__ == '__main__':
     mkdir(latexdir)
     os.chdir(outdir)
 
+    # add .gitignore file to your github repository
+    ignore_path = os.path.join(throot, '.gitignore')
+    if not os.path.exists(ignore_path):
+        ignore_txt = open(throot + '/doc/scripts/'+'gitignore.txt')  
+        gitignore = open(ignore_path,'a')
+        for x in ignore_txt.readlines():
+            gitignore.write(x)
+        ignore_txt.close()
+        gitignore.close()
+
     # add .nojekyll file to fix the github pages issues
     nojekyll_path = os.path.join(outdir, '.nojekyll')
     if not os.path.exists(nojekyll_path):

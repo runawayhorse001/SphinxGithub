@@ -91,7 +91,7 @@
 
 
 \title{Sphinx Github Webpage Tutorials}
-\date{February 21, 2019}
+\date{February 22, 2019}
 \release{1.00}
 \author{Wenqiang Feng}
 \newcommand{\sphinxlogo}{\sphinxincludegraphics{logo.png}\par}
@@ -1188,6 +1188,16 @@ Version and date format
     \PYG{n}{mkdir}\PYG{p}{(}\PYG{n}{outdir}\PYG{p}{)}
     \PYG{n}{mkdir}\PYG{p}{(}\PYG{n}{latexdir}\PYG{p}{)}
     \PYG{n}{os}\PYG{o}{.}\PYG{n}{chdir}\PYG{p}{(}\PYG{n}{outdir}\PYG{p}{)}
+
+    \PYG{c+c1}{\PYGZsh{} add .gitignore file to your github repository}
+    \PYG{n}{ignore\PYGZus{}path} \PYG{o}{=} \PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{join}\PYG{p}{(}\PYG{n}{throot}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{.gitignore}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+    \PYG{k}{if} \PYG{o+ow}{not} \PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{exists}\PYG{p}{(}\PYG{n}{ignore\PYGZus{}path}\PYG{p}{)}\PYG{p}{:}
+        \PYG{n}{ignore\PYGZus{}txt} \PYG{o}{=} \PYG{n+nb}{open}\PYG{p}{(}\PYG{n}{throot} \PYG{o}{+} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{/doc/scripts/}\PYG{l+s+s1}{\PYGZsq{}}\PYG{o}{+}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{gitignore.txt}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}  
+        \PYG{n}{gitignore} \PYG{o}{=} \PYG{n+nb}{open}\PYG{p}{(}\PYG{n}{ignore\PYGZus{}path}\PYG{p}{,}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{a}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+        \PYG{k}{for} \PYG{n}{x} \PYG{o+ow}{in} \PYG{n}{ignore\PYGZus{}txt}\PYG{o}{.}\PYG{n}{readlines}\PYG{p}{(}\PYG{p}{)}\PYG{p}{:}
+            \PYG{n}{gitignore}\PYG{o}{.}\PYG{n}{write}\PYG{p}{(}\PYG{n}{x}\PYG{p}{)}
+        \PYG{n}{ignore\PYGZus{}txt}\PYG{o}{.}\PYG{n}{close}\PYG{p}{(}\PYG{p}{)}
+        \PYG{n}{gitignore}\PYG{o}{.}\PYG{n}{close}\PYG{p}{(}\PYG{p}{)}
 
     \PYG{c+c1}{\PYGZsh{} add .nojekyll file to fix the github pages issues}
     \PYG{n}{nojekyll\PYGZus{}path} \PYG{o}{=} \PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{join}\PYG{p}{(}\PYG{n}{outdir}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{.nojekyll}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}

@@ -981,6 +981,16 @@
     <span class="n">mkdir</span><span class="p">(</span><span class="n">latexdir</span><span class="p">)</span>
     <span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="n">outdir</span><span class="p">)</span>
 
+    <span class="c1"># add .gitignore file to your github repository</span>
+    <span class="n">ignore_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">throot</span><span class="p">,</span> <span class="s1">&#39;.gitignore&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">ignore_path</span><span class="p">):</span>
+        <span class="n">ignore_txt</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">throot</span> <span class="o">+</span> <span class="s1">&#39;/doc/scripts/&#39;</span><span class="o">+</span><span class="s1">&#39;gitignore.txt&#39;</span><span class="p">)</span>  
+        <span class="n">gitignore</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">ignore_path</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">ignore_txt</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>
+            <span class="n">gitignore</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+        <span class="n">ignore_txt</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="n">gitignore</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
     <span class="c1"># add .nojekyll file to fix the github pages issues</span>
     <span class="n">nojekyll_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">outdir</span><span class="p">,</span> <span class="s1">&#39;.nojekyll&#39;</span><span class="p">)</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">nojekyll_path</span><span class="p">):</span>
@@ -1077,7 +1087,7 @@
     <p>
         &copy; Copyright 2019, Wenqiang Feng
       <span class="lastupdated">
-        Last updated on Feb 21, 2019.
+        Last updated on Feb 22, 2019.
       </span>
 
     </p>
