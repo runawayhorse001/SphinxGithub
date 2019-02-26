@@ -52,4 +52,6 @@
 \contentsline {subsection}{\numberline {6.4.1}Repository}{65}{subsection.6.4.1}
 \contentsline {subsection}{\numberline {6.4.2}Setup Github Pages}{65}{subsection.6.4.2}
 \contentsline {chapter}{\numberline {7}Main Reference}{69}{chapter.7}
-\contentsline {chapter}{Bibliography}{71}{chapter*.3}
+\contentsline {chapter}{\numberline {8}Appendix}{71}{chapter.8}
+\contentsline {section}{\numberline {8.1}LaTex Cheat Sheet}{71}{section.8.1}
+\contentsline {chapter}{Bibliography}{73}{chapter*.3}
