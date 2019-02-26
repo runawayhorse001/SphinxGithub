@@ -9,7 +9,7 @@ LaTex Cheat Sheet
 +++++++++++++++++
 
 
-You can download the PDF version: `Sphinx`_ . 
+You can download the PDF version: `LaTex Cheat Sheet`_ . 
 
 
 
