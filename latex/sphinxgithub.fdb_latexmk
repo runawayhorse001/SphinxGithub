@@ -1,10 +1,10 @@
 # Fdb version 3
-["makeindex sphinxgithub.idx"] 1550513878 "sphinxgithub.idx" "sphinxgithub.ind" "sphinxgithub" 1551216778
-  "sphinxgithub.idx" 1551216776 0 d41d8cd98f00b204e9800998ecf8427e ""
+["makeindex sphinxgithub.idx"] 1550513878 "sphinxgithub.idx" "sphinxgithub.ind" "sphinxgithub" 1551227144
+  "sphinxgithub.idx" 1551227141 0 d41d8cd98f00b204e9800998ecf8427e ""
   (generated)
-  "sphinxgithub.ind"
   "sphinxgithub.ilg"
-["pdflatex"] 1551216775 "sphinxgithub.tex" "sphinxgithub.pdf" "sphinxgithub" 1551216778
+  "sphinxgithub.ind"
+["pdflatex"] 1551227140 "sphinxgithub.tex" "sphinxgithub.pdf" "sphinxgithub" 1551227144
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc" 1480098666 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/adobe/courier/pcrb8r.tfm" 1480098688 1292 3059476c50a24578715759f22652f3d0 ""
@@ -182,6 +182,8 @@
   "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
   "avg_rating_mon.png" 1519233059 54611 a50eaffe158162c893630bb1f1341cf0 ""
   "boxp.png" 1508250615 36071 4f805864fbb2b38a2cc50cf01b03ae4e ""
+  "cheatSheet_latex1.jpg" 1551226924 930052 c020ae20d4dac1b558c9861efa7c0e9e ""
+  "cheatSheet_latex2.jpg" 1551226878 1046989 9bd59f70b367cb38a3a66298f0eab326 ""
   "compiled.png" 1550693364 192911 41ed47aba3dbb68c27ca364d1d4a23d5 ""
   "corr.png" 1519233059 68893 2ac69d21033ce49aadb3e73822b5df2a ""
   "doc.png" 1550693362 260870 b50bfad6ab78a01f79fe79dc9c2d3845 ""
@@ -193,18 +195,18 @@
   "repository.png" 1550543244 279805 5f5ebc08ec4eeca04791a0e6fc9cc4b4 ""
   "setting.png" 1550543199 224116 d87e3233d8801142ba82437c372d5165 ""
   "sphinx.sty" 1549903942 76220 63a32157b97240a297c69d4d077e82ab ""
-  "sphinxgithub.aux" 1551216778 15360 53b0a0b164cadeeb8119e15556dcafed ""
+  "sphinxgithub.aux" 1551227143 15295 3ef4c82ca611fbef3b10b7115d114936 ""
   "sphinxgithub.ind" 1550513878 0 d41d8cd98f00b204e9800998ecf8427e "makeindex sphinxgithub.idx"
-  "sphinxgithub.out" 1551216778 5014 718b3bf9dfd196fe5cba02bc68a812d2 ""
-  "sphinxgithub.tex" 1551216775 192568 5fd2e663b0804fd8169cc8830582c645 ""
-  "sphinxgithub.toc" 1551216778 4838 3266424ad4fa3ce815f7f1e08cf09fef ""
-  "sphinxhighlight.sty" 1551216775 8137 38a433148fcb7611515a989ff1750dd5 ""
+  "sphinxgithub.out" 1551227143 4990 364d196b34dccf217a4083d4c59fb6ac ""
+  "sphinxgithub.tex" 1551227137 192746 87341ca11a7cabbfd7282d366755687c ""
+  "sphinxgithub.toc" 1551227143 4783 57a2e95b755403c92032907bda2e0ae5 ""
+  "sphinxhighlight.sty" 1551227137 8137 38a433148fcb7611515a989ff1750dd5 ""
   "sphinxmanual.cls" 1549903942 3606 fe67088d27cb5a0826fd3cdce3caff30 ""
   "sphinxmulticell.sty" 1549903942 14618 0defbdc8536ad2e67f1eac6a1431bc55 ""
   (generated)
-  "sphinxgithub.toc"
-  "sphinxgithub.aux"
-  "sphinxgithub.out"
+  "sphinxgithub.idx"
   "sphinxgithub.pdf"
   "sphinxgithub.log"
-  "sphinxgithub.idx"
+  "sphinxgithub.aux"
+  "sphinxgithub.toc"
+  "sphinxgithub.out"

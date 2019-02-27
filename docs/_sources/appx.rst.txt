@@ -1,17 +1,18 @@
 .. _appx:
 
-========
-Appendix
-========
-
-
-LaTex Cheat Sheet
-+++++++++++++++++
+==============================
+Appendix: My LaTex Cheat Sheet
+==============================
 
 
 You can download the PDF version: `LaTex Cheat Sheet`_ . 
 
 
+.. figure:: images/cheatSheet_latex1.jpg
+   :align: center
+
+.. figure:: images/cheatSheet_latex2.jpg
+   :align: center
 
 
 
