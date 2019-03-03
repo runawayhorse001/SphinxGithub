@@ -248,10 +248,10 @@ def linkcode_resolve(domain, info):
 
     if domain != 'py' or not info['module']:
         return None
-    try:
-        filename = 'theano/%s#L%d-L%d' % find_source()
-    except Exception:
-        filename = info['module'].replace('.', '/') + '.py'
+    # try:
+    #     filename = 'theano/%s#L%d-L%d' % find_source()
+    # except Exception:
+    #     filename = info['module'].replace('.', '/') + '.py'
     import subprocess
     tag = subprocess.Popen(['git', 'rev-parse', 'HEAD'],
                            stdout=subprocess.PIPE,
@@ -276,7 +276,7 @@ latex_elements = {
 # (source start file, target name, title, author, document class
 # [howto/manual]).
 latex_documents = [
-  ('index', 'sphinxgithub.tex', 'Sphinx Github Webpage Tutorials',
+  ('index', 'sphinxgithub.tex', 'Sphinx with Github Webpages',
    'Wenqiang Feng', 'manual'),
 ]
 # The name of an image file (relative to this directory) to place at the top of

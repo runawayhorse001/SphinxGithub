@@ -90,8 +90,8 @@
 \def\euler{\ e^{i\pi} + 1 = 0}
 
 
-\title{Sphinx Github Webpage Tutorials}
-\date{March 02, 2019}
+\title{Sphinx with Github Webpages}
+\date{March 03, 2019}
 \release{1.00}
 \author{Wenqiang Feng}
 \newcommand{\sphinxlogo}{\sphinxincludegraphics{logo.png}\par}
@@ -864,10 +864,10 @@ Version and date format
 
     \PYG{k}{if} \PYG{n}{domain} \PYG{o}{!=} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{py}\PYG{l+s+s1}{\PYGZsq{}} \PYG{o+ow}{or} \PYG{o+ow}{not} \PYG{n}{info}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{module}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{:}
         \PYG{k}{return} \PYG{n+nb+bp}{None}
-    \PYG{k}{try}\PYG{p}{:}
-        \PYG{n}{filename} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{theano/}\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s1}{\PYGZsh{}L}\PYG{l+s+si}{\PYGZpc{}d}\PYG{l+s+s1}{\PYGZhy{}L}\PYG{l+s+si}{\PYGZpc{}d}\PYG{l+s+s1}{\PYGZsq{}} \PYG{o}{\PYGZpc{}} \PYG{n}{find\PYGZus{}source}\PYG{p}{(}\PYG{p}{)}
-    \PYG{k}{except} \PYG{n+ne}{Exception}\PYG{p}{:}
-        \PYG{n}{filename} \PYG{o}{=} \PYG{n}{info}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{module}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{o}{.}\PYG{n}{replace}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{.}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{/}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)} \PYG{o}{+} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{.py}\PYG{l+s+s1}{\PYGZsq{}}
+    \PYG{c+c1}{\PYGZsh{} try:}
+    \PYG{c+c1}{\PYGZsh{}     filename = \PYGZsq{}theano/\PYGZpc{}s\PYGZsh{}L\PYGZpc{}d\PYGZhy{}L\PYGZpc{}d\PYGZsq{} \PYGZpc{} find\PYGZus{}source()}
+    \PYG{c+c1}{\PYGZsh{} except Exception:}
+    \PYG{c+c1}{\PYGZsh{}     filename = info[\PYGZsq{}module\PYGZsq{}].replace(\PYGZsq{}.\PYGZsq{}, \PYGZsq{}/\PYGZsq{}) + \PYGZsq{}.py\PYGZsq{}}
     \PYG{k+kn}{import} \PYG{n+nn}{subprocess}
     \PYG{n}{tag} \PYG{o}{=} \PYG{n}{subprocess}\PYG{o}{.}\PYG{n}{Popen}\PYG{p}{(}\PYG{p}{[}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{git}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{rev\PYGZhy{}parse}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{HEAD}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{]}\PYG{p}{,}
                            \PYG{n}{stdout}\PYG{o}{=}\PYG{n}{subprocess}\PYG{o}{.}\PYG{n}{PIPE}\PYG{p}{,}
@@ -892,7 +892,7 @@ Version and date format
 \PYG{c+c1}{\PYGZsh{} (source start file, target name, title, author, document class}
 \PYG{c+c1}{\PYGZsh{} [howto/manual]).}
 \PYG{n}{latex\PYGZus{}documents} \PYG{o}{=} \PYG{p}{[}
-  \PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{index}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sphinxgithub.tex}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Sphinx Github Webpage Tutorials}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+  \PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{index}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sphinxgithub.tex}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Sphinx with Github Webpages}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
    \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{Wenqiang Feng}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{manual}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}\PYG{p}{,}
 \PYG{p}{]}
 \PYG{c+c1}{\PYGZsh{} The name of an image file (relative to this directory) to place at the top of}
