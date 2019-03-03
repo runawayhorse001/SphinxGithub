@@ -76,7 +76,8 @@ if __name__ == '__main__':
     # add .nojekyll file to fix the github pages issues
     nojekyll_path = os.path.join(outdir, '.nojekyll')
     if not os.path.exists(nojekyll_path):
-        os.makedirs(nojekyll_path)
+        nojekyll = open(nojekyll_path,'a')
+        nojekyll.close()
 
     # Make sure the appropriate 'theano' directory is in the PYTHONPATH
     pythonpath = os.environ.get('PYTHONPATH', '')

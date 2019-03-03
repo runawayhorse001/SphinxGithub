@@ -995,7 +995,8 @@
     <span class="c1"># add .nojekyll file to fix the github pages issues</span>
     <span class="n">nojekyll_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">outdir</span><span class="p">,</span> <span class="s1">&#39;.nojekyll&#39;</span><span class="p">)</span>
     <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">nojekyll_path</span><span class="p">):</span>
-        <span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">nojekyll_path</span><span class="p">)</span>
+        <span class="n">nojekyll</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">nojekyll_path</span><span class="p">,</span><span class="s1">&#39;a&#39;</span><span class="p">)</span>
+        <span class="n">nojekyll</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
     <span class="c1"># Make sure the appropriate &#39;theano&#39; directory is in the PYTHONPATH</span>
     <span class="n">pythonpath</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;PYTHONPATH&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
@@ -1088,7 +1089,7 @@
     <p>
         &copy; Copyright 2019, Wenqiang Feng
       <span class="lastupdated">
-        Last updated on Feb 26, 2019.
+        Last updated on Mar 02, 2019.
       </span>
 
     </p>

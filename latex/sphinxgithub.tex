@@ -91,7 +91,7 @@
 
 
 \title{Sphinx Github Webpage Tutorials}
-\date{February 26, 2019}
+\date{March 02, 2019}
 \release{1.00}
 \author{Wenqiang Feng}
 \newcommand{\sphinxlogo}{\sphinxincludegraphics{logo.png}\par}
@@ -1202,7 +1202,8 @@ Version and date format
     \PYG{c+c1}{\PYGZsh{} add .nojekyll file to fix the github pages issues}
     \PYG{n}{nojekyll\PYGZus{}path} \PYG{o}{=} \PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{join}\PYG{p}{(}\PYG{n}{outdir}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{.nojekyll}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
     \PYG{k}{if} \PYG{o+ow}{not} \PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{exists}\PYG{p}{(}\PYG{n}{nojekyll\PYGZus{}path}\PYG{p}{)}\PYG{p}{:}
-        \PYG{n}{os}\PYG{o}{.}\PYG{n}{makedirs}\PYG{p}{(}\PYG{n}{nojekyll\PYGZus{}path}\PYG{p}{)}
+        \PYG{n}{nojekyll} \PYG{o}{=} \PYG{n+nb}{open}\PYG{p}{(}\PYG{n}{nojekyll\PYGZus{}path}\PYG{p}{,}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{a}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+        \PYG{n}{nojekyll}\PYG{o}{.}\PYG{n}{close}\PYG{p}{(}\PYG{p}{)}
 
     \PYG{c+c1}{\PYGZsh{} Make sure the appropriate \PYGZsq{}theano\PYGZsq{} directory is in the PYTHONPATH}
     \PYG{n}{pythonpath} \PYG{o}{=} \PYG{n}{os}\PYG{o}{.}\PYG{n}{environ}\PYG{o}{.}\PYG{n}{get}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{PYTHONPATH}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
