@@ -15,7 +15,7 @@ Create |reSTs|
 Create |reSTs|
 --------------
 
-Use the tips in :ref:`rtext` to create your |reSTs|. And out them in one folder, for example ``doc``.
+Use the tips in :ref:`rtext` to create your |reSTs| and add them in one folder, for example ``doc``.
 
 .. figure:: images/doc.png
 
