@@ -227,7 +227,7 @@ html_use_smartypants = True
 #html_file_suffix = ''
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'spnixgitdoc'
+#htmlhelp_basename = 'spnixgitdoc'
 
 # Options for the linkcode extension
 # ----------------------------------
@@ -243,7 +243,7 @@ def linkcode_resolve(domain, info):
         import inspect
         import os
         fn = inspect.getsourcefile(obj)
-        fn = os.path.relpath(fn, start=os.path.dirname(theano.__file__))
+        fn = os.path.relpath(fn, start=os.path.abspath('..'))
         source, lineno = inspect.getsourcelines(obj)
         return fn, lineno, lineno + len(source) - 1
 

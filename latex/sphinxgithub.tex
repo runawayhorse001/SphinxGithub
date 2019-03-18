@@ -91,7 +91,7 @@
 
 
 \title{Sphinx with Github Webpages}
-\date{March 17, 2019}
+\date{March 18, 2019}
 \release{1.00}
 \author{Wenqiang Feng}
 \newcommand{\sphinxlogo}{\sphinxincludegraphics{logo.png}\par}
@@ -843,7 +843,7 @@ Version and date format
 \PYG{c+c1}{\PYGZsh{}html\PYGZus{}file\PYGZus{}suffix = \PYGZsq{}\PYGZsq{}}
 
 \PYG{c+c1}{\PYGZsh{} Output file base name for HTML help builder.}
-\PYG{n}{htmlhelp\PYGZus{}basename} \PYG{o}{=} \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{spnixgitdoc}\PYG{l+s+s1}{\PYGZsq{}}
+\PYG{c+c1}{\PYGZsh{}htmlhelp\PYGZus{}basename = \PYGZsq{}spnixgitdoc\PYGZsq{}}
 
 \PYG{c+c1}{\PYGZsh{} Options for the linkcode extension}
 \PYG{c+c1}{\PYGZsh{} \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
@@ -859,7 +859,7 @@ Version and date format
         \PYG{k+kn}{import} \PYG{n+nn}{inspect}
         \PYG{k+kn}{import} \PYG{n+nn}{os}
         \PYG{n}{fn} \PYG{o}{=} \PYG{n}{inspect}\PYG{o}{.}\PYG{n}{getsourcefile}\PYG{p}{(}\PYG{n}{obj}\PYG{p}{)}
-        \PYG{n}{fn} \PYG{o}{=} \PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{relpath}\PYG{p}{(}\PYG{n}{fn}\PYG{p}{,} \PYG{n}{start}\PYG{o}{=}\PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{dirname}\PYG{p}{(}\PYG{n}{theano}\PYG{o}{.}\PYG{n+nv+vm}{\PYGZus{}\PYGZus{}file\PYGZus{}\PYGZus{}}\PYG{p}{)}\PYG{p}{)}
+        \PYG{n}{fn} \PYG{o}{=} \PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{relpath}\PYG{p}{(}\PYG{n}{fn}\PYG{p}{,} \PYG{n}{start}\PYG{o}{=}\PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{abspath}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{..}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}\PYG{p}{)}
         \PYG{n}{source}\PYG{p}{,} \PYG{n}{lineno} \PYG{o}{=} \PYG{n}{inspect}\PYG{o}{.}\PYG{n}{getsourcelines}\PYG{p}{(}\PYG{n}{obj}\PYG{p}{)}
         \PYG{k}{return} \PYG{n}{fn}\PYG{p}{,} \PYG{n}{lineno}\PYG{p}{,} \PYG{n}{lineno} \PYG{o}{+} \PYG{n+nb}{len}\PYG{p}{(}\PYG{n}{source}\PYG{p}{)} \PYG{o}{\PYGZhy{}} \PYG{l+m+mi}{1}
 
