@@ -258,7 +258,8 @@ def linkcode_resolve(domain, info):
     #                        stdout=subprocess.PIPE,
     #                        universal_newlines=True).communicate()[0][:-1]
     # https://github.com/runawayhorse001/statspy/blob/master/statspy/basics.py
-    return "https://github.com/runawayhorse001/statspy/blob/master/%s" % (filename)
+    # https://github.com/runawayhorse001/SphinxGithub/blob/master/statspy/basics.py
+    return "https://github.com/runawayhorse001/SphinxGithub/blob/master/%s" % (filename)
 
 # Options for LaTeX output
 # ------------------------

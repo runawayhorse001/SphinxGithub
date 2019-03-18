@@ -27,8 +27,8 @@ API Example
    :noindex:   
 
 
-T-test
-++++++
+``T-test``
+++++++++++
 
 .. automodule:: statspy.tests	
    :members:

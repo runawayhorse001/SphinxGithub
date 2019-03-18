@@ -20,8 +20,8 @@ Contents
    pkgs
    sphinx
    rtxt
-   github
    api
+   github
    reference
    appx
 

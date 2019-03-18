@@ -874,7 +874,8 @@ Version and date format
     \PYG{c+c1}{\PYGZsh{}                        stdout=subprocess.PIPE,}
     \PYG{c+c1}{\PYGZsh{}                        universal\PYGZus{}newlines=True).communicate()[0][:\PYGZhy{}1]}
     \PYG{c+c1}{\PYGZsh{} https://github.com/runawayhorse001/statspy/blob/master/statspy/basics.py}
-    \PYG{k}{return} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{https://github.com/runawayhorse001/statspy/blob/master/}\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{\PYGZdq{}} \PYG{o}{\PYGZpc{}} \PYG{p}{(}\PYG{n}{filename}\PYG{p}{)}
+    \PYG{c+c1}{\PYGZsh{} https://github.com/runawayhorse001/SphinxGithub/blob/master/statspy/basics.py}
+    \PYG{k}{return} \PYG{l+s+s2}{\PYGZdq{}}\PYG{l+s+s2}{https://github.com/runawayhorse001/SphinxGithub/blob/master/}\PYG{l+s+si}{\PYGZpc{}s}\PYG{l+s+s2}{\PYGZdq{}} \PYG{o}{\PYGZpc{}} \PYG{p}{(}\PYG{n}{filename}\PYG{p}{)}
 
 \PYG{c+c1}{\PYGZsh{} Options for LaTeX output}
 \PYG{c+c1}{\PYGZsh{} \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
@@ -3131,6 +3132,165 @@ reference.
 See more details at \sphinxhref{http://docutils.sourceforge.net/docs/ref/rst/directives.html\#admonitions}{Admonitions}.
 
 
+\chapter{API Example}
+\label{\detokenize{api:api-example}}\label{\detokenize{api:api}}\label{\detokenize{api::doc}}
+
+\section{\sphinxstyleliteralintitle{\sphinxupquote{rnorm}}}
+\label{\detokenize{api:module-statspy.basics}}\label{\detokenize{api:rnorm}}\index{statspy.basics (module)@\spxentry{statspy.basics}\spxextra{module}}\index{rnorm() (in module statspy.basics)@\spxentry{rnorm()}\spxextra{in module statspy.basics}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{api:statspy.basics.rnorm}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{statspy.basics.}}\sphinxbfcode{\sphinxupquote{rnorm}}}{\emph{n}, \emph{mean=0}, \emph{sd=1}}{}
+Random generation for the normal distribution with mean
+equal to mean and standard deviation equation to sd
+same functions as rnorm in r: \sphinxcode{\sphinxupquote{rnorm(n, mean=0, sd=1)}}
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode\begin{itemize}
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{n}} \textendash{} the number of the observations
+
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{mean}} \textendash{} vector of means
+
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{sd}} \textendash{} vector of standard deviations
+
+\end{itemize}
+
+\item[{Returns}] \leavevmode
+the vector of the random numbers
+
+\item[{Author}] \leavevmode
+Wenqiang Feng
+
+\item[{Email}] \leavevmode
+\sphinxhref{mailto:von198@gmail.com}{von198@gmail.com}
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+
+
+\section{\sphinxstyleliteralintitle{\sphinxupquote{dnorm}}}
+\label{\detokenize{api:dnorm}}
+
+\begin{fulllineitems}
+\pysiglinewithargsret{\sphinxcode{\sphinxupquote{statspy.basics.}}\sphinxbfcode{\sphinxupquote{dnorm}}}{\emph{x}, \emph{mean=0}, \emph{sd=1}, \emph{log=False}}{}
+Density of the normal distribution with mean
+equal to mean and standard deviation equation to sd
+same functions as rnorm in r: \sphinxcode{\sphinxupquote{dnorm(x, mean=0, sd=1, log=FALSE)}}
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode\begin{itemize}
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{x}} \textendash{} the vector od quantiles
+
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{mean}} \textendash{} vector of means
+
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{sd}} \textendash{} vector of standard deviations
+
+\end{itemize}
+
+\item[{Returns}] \leavevmode
+the list of the density
+
+\item[{Author}] \leavevmode
+Wenqiang Feng
+
+\item[{Email}] \leavevmode
+\sphinxhref{mailto:von198@gmail.com}{von198@gmail.com}
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+
+
+\section{\sphinxstyleliteralintitle{\sphinxupquote{runif}}}
+\label{\detokenize{api:runif}}
+
+\begin{fulllineitems}
+\pysiglinewithargsret{\sphinxcode{\sphinxupquote{statspy.basics.}}\sphinxbfcode{\sphinxupquote{runif}}}{\emph{n}, \emph{min=0}, \emph{max=1}}{}
+Random generation from the uniform distribution
+same functions as rnorm in r: \sphinxcode{\sphinxupquote{runif(n, min=0, max=1)}}
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode\begin{itemize}
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{n}} \textendash{} the number of the observations
+
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{min}} \textendash{} the lower limit of the distribution
+
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{max}} \textendash{} the upper limit of the distribution
+
+\end{itemize}
+
+\item[{Returns}] \leavevmode
+the list of n uniform random numers
+
+\item[{Author}] \leavevmode
+Wenqiang Feng
+
+\item[{Email}] \leavevmode
+\sphinxhref{mailto:von198@gmail.com}{von198@gmail.com}
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+
+
+\section{\sphinxstyleliteralintitle{\sphinxupquote{T-test}}}
+\label{\detokenize{api:module-statspy.tests}}\label{\detokenize{api:t-test}}\index{statspy.tests (module)@\spxentry{statspy.tests}\spxextra{module}}\index{t\_test() (in module statspy.tests)@\spxentry{t\_test()}\spxextra{in module statspy.tests}}
+
+\begin{fulllineitems}
+\phantomsection\label{\detokenize{api:statspy.tests.t_test}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{statspy.tests.}}\sphinxbfcode{\sphinxupquote{t\_test}}}{\emph{x}, \emph{y=None}, \emph{mu=0.0}, \emph{conf\_level=0.95}}{}
+Performs one and two sample t-tests on vectors of data.
+
+same functions as t.test in r: \sphinxcode{\sphinxupquote{t.test(x, ...)}}
+
+\sphinxcode{\sphinxupquote{t.test(x, y = NULL,}}
+\begin{quote}
+
+\sphinxcode{\sphinxupquote{alternative = c("two.sided", "less", "greater"),}}
+
+\sphinxcode{\sphinxupquote{mu = 0, paired = FALSE, var.equal = FALSE,}}
+
+\sphinxcode{\sphinxupquote{conf.level = 0.95, ...)}}
+\end{quote}
+\begin{quote}\begin{description}
+\item[{Parameters}] \leavevmode\begin{itemize}
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{x}} \textendash{} a (non-empty) numeric vector of data values.
+
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{y}} \textendash{} an optional (non-empty) numeric vector of data values.
+
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{mu}} \textendash{} vector of standard deviations.
+
+\item {} 
+\sphinxstyleliteralstrong{\sphinxupquote{conf\_level}} \textendash{} confidence level of the interval.
+
+\end{itemize}
+
+\item[{Returns}] \leavevmode
+the vector of the random numbers.
+
+\item[{Author}] \leavevmode
+Wenqiang Feng
+
+\item[{Email}] \leavevmode
+\sphinxhref{mailto:von198@gmail.com}{von198@gmail.com}
+
+\end{description}\end{quote}
+
+\end{fulllineitems}
+
+
+
 \chapter{Publishing on Github}
 \label{\detokenize{github:publishing-on-github}}\label{\detokenize{github:github}}\label{\detokenize{github::doc}}
 \begin{sphinxadmonition}{note}{Chinese proverb}
@@ -3300,165 +3460,6 @@ Once you commited your repository to the Github, you will get:
 
 \noindent\sphinxincludegraphics{{online}.png}
 \end{figure}
-
-
-\chapter{API Example}
-\label{\detokenize{api:api-example}}\label{\detokenize{api:api}}\label{\detokenize{api::doc}}
-
-\section{\sphinxstyleliteralintitle{\sphinxupquote{rnorm}}}
-\label{\detokenize{api:module-statspy.basics}}\label{\detokenize{api:rnorm}}\index{statspy.basics (module)@\spxentry{statspy.basics}\spxextra{module}}\index{rnorm() (in module statspy.basics)@\spxentry{rnorm()}\spxextra{in module statspy.basics}}
-
-\begin{fulllineitems}
-\phantomsection\label{\detokenize{api:statspy.basics.rnorm}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{statspy.basics.}}\sphinxbfcode{\sphinxupquote{rnorm}}}{\emph{n}, \emph{mean=0}, \emph{sd=1}}{}
-Random generation for the normal distribution with mean
-equal to mean and standard deviation equation to sd
-same functions as rnorm in r: \sphinxcode{\sphinxupquote{rnorm(n, mean=0, sd=1)}}
-\begin{quote}\begin{description}
-\item[{Parameters}] \leavevmode\begin{itemize}
-\item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{n}} \textendash{} the number of the observations
-
-\item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{mean}} \textendash{} vector of means
-
-\item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{sd}} \textendash{} vector of standard deviations
-
-\end{itemize}
-
-\item[{Returns}] \leavevmode
-the vector of the random numbers
-
-\item[{Author}] \leavevmode
-Wenqiang Feng
-
-\item[{Email}] \leavevmode
-\sphinxhref{mailto:von198@gmail.com}{von198@gmail.com}
-
-\end{description}\end{quote}
-
-\end{fulllineitems}
-
-
-
-\section{\sphinxstyleliteralintitle{\sphinxupquote{dnorm}}}
-\label{\detokenize{api:dnorm}}
-
-\begin{fulllineitems}
-\pysiglinewithargsret{\sphinxcode{\sphinxupquote{statspy.basics.}}\sphinxbfcode{\sphinxupquote{dnorm}}}{\emph{x}, \emph{mean=0}, \emph{sd=1}, \emph{log=False}}{}
-Density of the normal distribution with mean
-equal to mean and standard deviation equation to sd
-same functions as rnorm in r: \sphinxcode{\sphinxupquote{dnorm(x, mean=0, sd=1, log=FALSE)}}
-\begin{quote}\begin{description}
-\item[{Parameters}] \leavevmode\begin{itemize}
-\item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{x}} \textendash{} the vector od quantiles
-
-\item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{mean}} \textendash{} vector of means
-
-\item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{sd}} \textendash{} vector of standard deviations
-
-\end{itemize}
-
-\item[{Returns}] \leavevmode
-the list of the density
-
-\item[{Author}] \leavevmode
-Wenqiang Feng
-
-\item[{Email}] \leavevmode
-\sphinxhref{mailto:von198@gmail.com}{von198@gmail.com}
-
-\end{description}\end{quote}
-
-\end{fulllineitems}
-
-
-
-\section{\sphinxstyleliteralintitle{\sphinxupquote{runif}}}
-\label{\detokenize{api:runif}}
-
-\begin{fulllineitems}
-\pysiglinewithargsret{\sphinxcode{\sphinxupquote{statspy.basics.}}\sphinxbfcode{\sphinxupquote{runif}}}{\emph{n}, \emph{min=0}, \emph{max=1}}{}
-Random generation from the uniform distribution
-same functions as rnorm in r: \sphinxcode{\sphinxupquote{runif(n, min=0, max=1)}}
-\begin{quote}\begin{description}
-\item[{Parameters}] \leavevmode\begin{itemize}
-\item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{n}} \textendash{} the number of the observations
-
-\item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{min}} \textendash{} the lower limit of the distribution
-
-\item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{max}} \textendash{} the upper limit of the distribution
-
-\end{itemize}
-
-\item[{Returns}] \leavevmode
-the list of n uniform random numers
-
-\item[{Author}] \leavevmode
-Wenqiang Feng
-
-\item[{Email}] \leavevmode
-\sphinxhref{mailto:von198@gmail.com}{von198@gmail.com}
-
-\end{description}\end{quote}
-
-\end{fulllineitems}
-
-
-
-\section{T-test}
-\label{\detokenize{api:module-statspy.tests}}\label{\detokenize{api:t-test}}\index{statspy.tests (module)@\spxentry{statspy.tests}\spxextra{module}}\index{t\_test() (in module statspy.tests)@\spxentry{t\_test()}\spxextra{in module statspy.tests}}
-
-\begin{fulllineitems}
-\phantomsection\label{\detokenize{api:statspy.tests.t_test}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{statspy.tests.}}\sphinxbfcode{\sphinxupquote{t\_test}}}{\emph{x}, \emph{y=None}, \emph{mu=0.0}, \emph{conf\_level=0.95}}{}
-Performs one and two sample t-tests on vectors of data.
-
-same functions as t.test in r: \sphinxcode{\sphinxupquote{t.test(x, ...)}}
-
-\sphinxcode{\sphinxupquote{t.test(x, y = NULL,}}
-\begin{quote}
-
-\sphinxcode{\sphinxupquote{alternative = c("two.sided", "less", "greater"),}}
-
-\sphinxcode{\sphinxupquote{mu = 0, paired = FALSE, var.equal = FALSE,}}
-
-\sphinxcode{\sphinxupquote{conf.level = 0.95, ...)}}
-\end{quote}
-\begin{quote}\begin{description}
-\item[{Parameters}] \leavevmode\begin{itemize}
-\item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{x}} \textendash{} a (non-empty) numeric vector of data values.
-
-\item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{y}} \textendash{} an optional (non-empty) numeric vector of data values.
-
-\item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{mu}} \textendash{} vector of standard deviations.
-
-\item {} 
-\sphinxstyleliteralstrong{\sphinxupquote{conf\_level}} \textendash{} confidence level of the interval.
-
-\end{itemize}
-
-\item[{Returns}] \leavevmode
-the vector of the random numbers.
-
-\item[{Author}] \leavevmode
-Wenqiang Feng
-
-\item[{Email}] \leavevmode
-\sphinxhref{mailto:von198@gmail.com}{von198@gmail.com}
-
-\end{description}\end{quote}
-
-\end{fulllineitems}
-
 
 
 \chapter{Main Reference}
