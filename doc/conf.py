@@ -31,8 +31,9 @@ from __future__ import absolute_import, print_function, division
 import os
 import sys
 
-theano_path = os.path.join(os.path.dirname(__file__), os.pardir)
-sys.path.append(os.path.abspath(theano_path))
+# theano_path = os.path.join(os.path.dirname(__file__), os.pardir)
+# sys.path.append(os.path.abspath(theano_path))
+sys.path.insert(0, os.path.abspath('..'))
 import versioneer
 
 # General configuration
@@ -248,15 +249,16 @@ def linkcode_resolve(domain, info):
 
     if domain != 'py' or not info['module']:
         return None
-    # try:
-    #     filename = 'theano/%s#L%d-L%d' % find_source()
-    # except Exception:
-    #     filename = info['module'].replace('.', '/') + '.py'
+    try:
+        filename = '%s#L%d-L%d' % find_source()
+    except Exception:
+        filename = info['module'].replace('.', '/') + '.py'
     import subprocess
-    tag = subprocess.Popen(['git', 'rev-parse', 'HEAD'],
-                           stdout=subprocess.PIPE,
-                           universal_newlines=True).communicate()[0][:-1]
-    return "https://github.com/runawayhorse001/%s/%s" % (tag, filename)
+    # tag = subprocess.Popen(['git', 'rev-parse', 'HEAD'],
+    #                        stdout=subprocess.PIPE,
+    #                        universal_newlines=True).communicate()[0][:-1]
+    # https://github.com/runawayhorse001/statspy/blob/master/statspy/basics.py
+    return "https://github.com/runawayhorse001/statspy/blob/master/%s" % (filename)
 
 # Options for LaTeX output
 # ------------------------
@@ -266,7 +268,7 @@ latex_elements = {
     #latex_paper_size = 'a4',
 
     # The font size ('10pt', '11pt' or '12pt').
-    'pointsize': '12pt',
+    'pointsize': '11pt',
 
     # Additional stuff for the LaTeX preamble.
     #latex_preamble = '',

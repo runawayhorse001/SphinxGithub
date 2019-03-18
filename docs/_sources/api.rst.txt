@@ -1,0 +1,34 @@
+.. _api:
+
+===========
+API Example 
+===========
+
+``rnorm``
++++++++++
+
+.. automodule:: statspy.basics	
+   :members: rnorm
+
+
+``dnorm``
++++++++++
+
+.. automodule:: statspy.basics	
+   :members: dnorm
+   :noindex:   
+
+
+``runif``
++++++++++
+
+.. automodule:: statspy.basics	
+   :members: runif
+   :noindex:   
+
+
+T-test
+++++++
+
+.. automodule:: statspy.tests	
+   :members:

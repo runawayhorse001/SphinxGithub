@@ -21,6 +21,7 @@ Contents
    sphinx
    rtxt
    github
+   api
    reference
    appx
 
