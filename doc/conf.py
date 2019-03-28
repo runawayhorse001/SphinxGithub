@@ -33,7 +33,8 @@ import sys
 
 # theano_path = os.path.join(os.path.dirname(__file__), os.pardir)
 # sys.path.append(os.path.abspath(theano_path))
-sys.path.insert(0, os.path.abspath('..'))
+pkg_path = os.path.abspath('..')
+sys.path.insert(0, pkg_path)
 import versioneer
 
 # General configuration

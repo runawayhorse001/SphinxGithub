@@ -7,12 +7,32 @@ API Example
 ``rnorm``
 +++++++++
 
+reStructuredText:
+
+.. code-block:: rst
+
+	.. automodule:: statspy.basics	
+	   :members: rnorm
+
+Results:
+
 .. automodule:: statspy.basics	
    :members: rnorm
 
 
 ``dnorm``
 +++++++++
+
+reStructuredText:
+
+.. code-block:: rst
+
+	.. automodule:: statspy.basics	
+	   :members: dnorm
+	   :noindex:   
+
+
+Results:
 
 .. automodule:: statspy.basics	
    :members: dnorm
@@ -22,6 +42,16 @@ API Example
 ``runif``
 +++++++++
 
+reStructuredText:
+
+.. code-block:: rst
+
+	.. automodule:: statspy.basics	
+	   :members: runif
+	   :noindex:   
+
+Results:
+
 .. automodule:: statspy.basics	
    :members: runif
    :noindex:   
@@ -29,6 +59,16 @@ API Example
 
 ``T-test``
 ++++++++++
+
+reStructuredText:
+
+.. code-block:: rst
+
+	.. automodule:: statspy.tests	
+	   :members:
+
+
+Results:
 
 .. automodule:: statspy.tests	
    :members:

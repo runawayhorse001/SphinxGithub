@@ -446,7 +446,8 @@
 
 <span class="c1"># theano_path = os.path.join(os.path.dirname(__file__), os.pardir)</span>
 <span class="c1"># sys.path.append(os.path.abspath(theano_path))</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">))</span>
+<span class="n">pkg_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">)</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">pkg_path</span><span class="p">)</span>
 <span class="kn">import</span> <span class="nn">versioneer</span>
 
 <span class="c1"># General configuration</span>
@@ -1093,7 +1094,7 @@
     <p>
         &copy; Copyright 2019, Wenqiang Feng
       <span class="lastupdated">
-        Last updated on Mar 18, 2019.
+        Last updated on Mar 27, 2019.
       </span>
 
     </p>

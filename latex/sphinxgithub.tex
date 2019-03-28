@@ -91,7 +91,7 @@
 
 
 \title{Sphinx with Github Webpages}
-\date{March 18, 2019}
+\date{March 27, 2019}
 \release{1.00}
 \author{Wenqiang Feng}
 \newcommand{\sphinxlogo}{\sphinxincludegraphics{logo.png}\par}
@@ -649,7 +649,8 @@ Version and date format
 
 \PYG{c+c1}{\PYGZsh{} theano\PYGZus{}path = os.path.join(os.path.dirname(\PYGZus{}\PYGZus{}file\PYGZus{}\PYGZus{}), os.pardir)}
 \PYG{c+c1}{\PYGZsh{} sys.path.append(os.path.abspath(theano\PYGZus{}path))}
-\PYG{n}{sys}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{insert}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{abspath}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{..}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}\PYG{p}{)}
+\PYG{n}{pkg\PYGZus{}path} \PYG{o}{=} \PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{abspath}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{..}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
+\PYG{n}{sys}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{insert}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{pkg\PYGZus{}path}\PYG{p}{)}
 \PYG{k+kn}{import} \PYG{n+nn}{versioneer}
 
 \PYG{c+c1}{\PYGZsh{} General configuration}
@@ -3136,7 +3137,17 @@ See more details at \sphinxhref{http://docutils.sourceforge.net/docs/ref/rst/dir
 \label{\detokenize{api:api-example}}\label{\detokenize{api:api}}\label{\detokenize{api::doc}}
 
 \section{\sphinxstyleliteralintitle{\sphinxupquote{rnorm}}}
-\label{\detokenize{api:module-statspy.basics}}\label{\detokenize{api:rnorm}}\index{statspy.basics (module)@\spxentry{statspy.basics}\spxextra{module}}\index{rnorm() (in module statspy.basics)@\spxentry{rnorm()}\spxextra{in module statspy.basics}}
+\label{\detokenize{api:rnorm}}
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{o+ow}{automodule}\PYG{p}{::} statspy.basics
+   \PYG{n+nc}{:members:} \PYG{n+nf}{rnorm}
+\end{sphinxVerbatim}
+
+Results:
+
+\phantomsection\label{\detokenize{api:module-statspy.basics}}\index{statspy.basics (module)@\spxentry{statspy.basics}\spxextra{module}}\index{rnorm() (in module statspy.basics)@\spxentry{rnorm()}\spxextra{in module statspy.basics}}
 
 \begin{fulllineitems}
 \phantomsection\label{\detokenize{api:statspy.basics.rnorm}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{statspy.basics.}}\sphinxbfcode{\sphinxupquote{rnorm}}}{\emph{n}, \emph{mean=0}, \emph{sd=1}}{}
@@ -3173,6 +3184,16 @@ Wenqiang Feng
 
 \section{\sphinxstyleliteralintitle{\sphinxupquote{dnorm}}}
 \label{\detokenize{api:dnorm}}
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{o+ow}{automodule}\PYG{p}{::} statspy.basics
+   \PYG{n+nc}{:members:} \PYG{n+nf}{dnorm}
+   \PYG{n+nc}{:noindex:}
+\end{sphinxVerbatim}
+
+Results:
+
 
 \begin{fulllineitems}
 \pysiglinewithargsret{\sphinxcode{\sphinxupquote{statspy.basics.}}\sphinxbfcode{\sphinxupquote{dnorm}}}{\emph{x}, \emph{mean=0}, \emph{sd=1}, \emph{log=False}}{}
@@ -3209,6 +3230,16 @@ Wenqiang Feng
 
 \section{\sphinxstyleliteralintitle{\sphinxupquote{runif}}}
 \label{\detokenize{api:runif}}
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{o+ow}{automodule}\PYG{p}{::} statspy.basics
+   \PYG{n+nc}{:members:} \PYG{n+nf}{runif}
+   \PYG{n+nc}{:noindex:}
+\end{sphinxVerbatim}
+
+Results:
+
 
 \begin{fulllineitems}
 \pysiglinewithargsret{\sphinxcode{\sphinxupquote{statspy.basics.}}\sphinxbfcode{\sphinxupquote{runif}}}{\emph{n}, \emph{min=0}, \emph{max=1}}{}
@@ -3243,7 +3274,17 @@ Wenqiang Feng
 
 
 \section{\sphinxstyleliteralintitle{\sphinxupquote{T-test}}}
-\label{\detokenize{api:module-statspy.tests}}\label{\detokenize{api:t-test}}\index{statspy.tests (module)@\spxentry{statspy.tests}\spxextra{module}}\index{t\_test() (in module statspy.tests)@\spxentry{t\_test()}\spxextra{in module statspy.tests}}
+\label{\detokenize{api:t-test}}
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{o+ow}{automodule}\PYG{p}{::} statspy.tests
+   \PYG{n+nc}{:members:}
+\end{sphinxVerbatim}
+
+Results:
+
+\phantomsection\label{\detokenize{api:module-statspy.tests}}\index{statspy.tests (module)@\spxentry{statspy.tests}\spxextra{module}}\index{t\_test() (in module statspy.tests)@\spxentry{t\_test()}\spxextra{in module statspy.tests}}
 
 \begin{fulllineitems}
 \phantomsection\label{\detokenize{api:statspy.tests.t_test}}\pysiglinewithargsret{\sphinxcode{\sphinxupquote{statspy.tests.}}\sphinxbfcode{\sphinxupquote{t\_test}}}{\emph{x}, \emph{y=None}, \emph{mu=0.0}, \emph{conf\_level=0.95}}{}

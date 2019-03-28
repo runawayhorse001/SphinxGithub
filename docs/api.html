@@ -94,10 +94,10 @@
 <li class="toctree-l1"><a class="reference internal" href="sphinx.html">4. Sphinx Configuration</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rtxt.html">5. reStructuredText Markup</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">6. API Example</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#module-statspy.basics">6.1. <code class="docutils literal notranslate"><span class="pre">rnorm</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rnorm">6.1. <code class="docutils literal notranslate"><span class="pre">rnorm</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#dnorm">6.2. <code class="docutils literal notranslate"><span class="pre">dnorm</span></code></a></li>
 <li class="toctree-l2"><a class="reference internal" href="#runif">6.3. <code class="docutils literal notranslate"><span class="pre">runif</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-statspy.tests">6.4. <code class="docutils literal notranslate"><span class="pre">T-test</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#t-test">6.4. <code class="docutils literal notranslate"><span class="pre">T-test</span></code></a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="github.html">7. Publishing on Github</a></li>
@@ -171,9 +171,15 @@
             
   <div class="section" id="api-example">
 <span id="api"></span><h1>6. API Example<a class="headerlink" href="#api-example" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="module-statspy.basics">
-<span id="rnorm"></span><h2>6.1. <code class="docutils literal notranslate"><span class="pre">rnorm</span></code><a class="headerlink" href="#module-statspy.basics" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
+<div class="section" id="rnorm">
+<h2>6.1. <code class="docutils literal notranslate"><span class="pre">rnorm</span></code><a class="headerlink" href="#rnorm" title="Permalink to this headline">¶</a></h2>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">automodule</span><span class="p">::</span> statspy.basics
+   <span class="nc">:members:</span> <span class="nf">rnorm</span>
+</pre></div>
+</div>
+<p>Results:</p>
+<span class="target" id="module-statspy.basics"></span><dl class="function">
 <dt id="statspy.basics.rnorm">
 <code class="descclassname">statspy.basics.</code><code class="descname">rnorm</code><span class="sig-paren">(</span><em>n</em>, <em>mean=0</em>, <em>sd=1</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/runawayhorse001/SphinxGithub/blob/master/statspy/basics.py#L4-L18"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#statspy.basics.rnorm" title="Permalink to this definition">¶</a></dt>
 <dd><p>Random generation for the normal distribution with mean
@@ -206,6 +212,13 @@ same functions as rnorm in r: <code class="docutils literal notranslate"><span c
 </div>
 <div class="section" id="dnorm">
 <h2>6.2. <code class="docutils literal notranslate"><span class="pre">dnorm</span></code><a class="headerlink" href="#dnorm" title="Permalink to this headline">¶</a></h2>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">automodule</span><span class="p">::</span> statspy.basics
+   <span class="nc">:members:</span> <span class="nf">dnorm</span>
+   <span class="nc">:noindex:</span>
+</pre></div>
+</div>
+<p>Results:</p>
 <dl class="function">
 <dt>
 <code class="descclassname">statspy.basics.</code><code class="descname">dnorm</code><span class="sig-paren">(</span><em>x</em>, <em>mean=0</em>, <em>sd=1</em>, <em>log=False</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/runawayhorse001/SphinxGithub/blob/master/statspy/basics.py#L20-L37"><span class="viewcode-link">[source]</span></a></dt>
@@ -239,6 +252,13 @@ same functions as rnorm in r: <code class="docutils literal notranslate"><span c
 </div>
 <div class="section" id="runif">
 <h2>6.3. <code class="docutils literal notranslate"><span class="pre">runif</span></code><a class="headerlink" href="#runif" title="Permalink to this headline">¶</a></h2>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">automodule</span><span class="p">::</span> statspy.basics
+   <span class="nc">:members:</span> <span class="nf">runif</span>
+   <span class="nc">:noindex:</span>
+</pre></div>
+</div>
+<p>Results:</p>
 <dl class="function">
 <dt>
 <code class="descclassname">statspy.basics.</code><code class="descname">runif</code><span class="sig-paren">(</span><em>n</em>, <em>min=0</em>, <em>max=1</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/runawayhorse001/SphinxGithub/blob/master/statspy/basics.py#L39-L52"><span class="viewcode-link">[source]</span></a></dt>
@@ -269,9 +289,15 @@ same functions as rnorm in r: <code class="docutils literal notranslate"><span c
 </dd></dl>
 
 </div>
-<div class="section" id="module-statspy.tests">
-<span id="t-test"></span><h2>6.4. <code class="docutils literal notranslate"><span class="pre">T-test</span></code><a class="headerlink" href="#module-statspy.tests" title="Permalink to this headline">¶</a></h2>
-<dl class="function">
+<div class="section" id="t-test">
+<h2>6.4. <code class="docutils literal notranslate"><span class="pre">T-test</span></code><a class="headerlink" href="#t-test" title="Permalink to this headline">¶</a></h2>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">automodule</span><span class="p">::</span> statspy.tests
+   <span class="nc">:members:</span>
+</pre></div>
+</div>
+<p>Results:</p>
+<span class="target" id="module-statspy.tests"></span><dl class="function">
 <dt id="statspy.tests.t_test">
 <code class="descclassname">statspy.tests.</code><code class="descname">t_test</code><span class="sig-paren">(</span><em>x</em>, <em>y=None</em>, <em>mu=0.0</em>, <em>conf_level=0.95</em><span class="sig-paren">)</span><a class="reference external" href="https://github.com/runawayhorse001/SphinxGithub/blob/master/statspy/tests.py#L5-L62"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#statspy.tests.t_test" title="Permalink to this definition">¶</a></dt>
 <dd><p>Performs one and two sample t-tests on vectors of data.</p>
@@ -332,7 +358,7 @@ same functions as rnorm in r: <code class="docutils literal notranslate"><span c
     <p>
         &copy; Copyright 2019, Wenqiang Feng
       <span class="lastupdated">
-        Last updated on Mar 18, 2019.
+        Last updated on Mar 27, 2019.
       </span>
 
     </p>

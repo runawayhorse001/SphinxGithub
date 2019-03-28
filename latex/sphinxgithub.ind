@@ -10,10 +10,10 @@
   \indexspace
   \bigletter S
   \item \spxentry{statspy.basics}\spxextra{module}, \hyperpage{55}
-  \item \spxentry{statspy.tests}\spxextra{module}, \hyperpage{56}
+  \item \spxentry{statspy.tests}\spxextra{module}, \hyperpage{57}
 
   \indexspace
   \bigletter T
-  \item \spxentry{t\_test()}\spxextra{in module statspy.tests}, \hyperpage{56}
+  \item \spxentry{t\_test()}\spxextra{in module statspy.tests}, \hyperpage{57}
 
 \end{sphinxtheindex}

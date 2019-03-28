@@ -46,18 +46,18 @@
 \contentsline {section}{\numberline {6.2}\sphinxstyleliteralintitle {\sphinxupquote {dnorm}}}{55}{section.6.2}
 \contentsline {section}{\numberline {6.3}\sphinxstyleliteralintitle {\sphinxupquote {runif}}}{56}{section.6.3}
 \contentsline {section}{\numberline {6.4}\sphinxstyleliteralintitle {\sphinxupquote {T-test}}}{56}{section.6.4}
-\contentsline {chapter}{\numberline {7}Publishing on Github}{57}{chapter.7}
-\contentsline {section}{\numberline {7.1}Create reStructuredTexts}{57}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Create reStructuredTexts}{57}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Add them in \sphinxstyleliteralintitle {\sphinxupquote {index.rst}}}{58}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}Compile the reStructuredTexts files}{58}{subsection.7.1.3}
-\contentsline {section}{\numberline {7.2}Create Repository on Github}{58}{section.7.2}
-\contentsline {section}{\numberline {7.3}Commit reStructuredTexts folder to Repository}{58}{section.7.3}
-\contentsline {section}{\numberline {7.4}Setup Github Pages on Github}{59}{section.7.4}
-\contentsline {subsection}{\numberline {7.4.1}Repository}{59}{subsection.7.4.1}
-\contentsline {subsection}{\numberline {7.4.2}Setup Github Pages}{59}{subsection.7.4.2}
-\contentsline {chapter}{\numberline {8}Main Reference}{63}{chapter.8}
-\contentsline {chapter}{\numberline {9}Appendix: My LaTex Cheat Sheet}{65}{chapter.9}
-\contentsline {chapter}{Bibliography}{67}{chapter*.5}
-\contentsline {chapter}{Python Module Index}{69}{section*.6}
-\contentsline {chapter}{Index}{71}{section*.7}
+\contentsline {chapter}{\numberline {7}Publishing on Github}{59}{chapter.7}
+\contentsline {section}{\numberline {7.1}Create reStructuredTexts}{59}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Create reStructuredTexts}{59}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Add them in \sphinxstyleliteralintitle {\sphinxupquote {index.rst}}}{60}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Compile the reStructuredTexts files}{60}{subsection.7.1.3}
+\contentsline {section}{\numberline {7.2}Create Repository on Github}{60}{section.7.2}
+\contentsline {section}{\numberline {7.3}Commit reStructuredTexts folder to Repository}{60}{section.7.3}
+\contentsline {section}{\numberline {7.4}Setup Github Pages on Github}{61}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Repository}{61}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}Setup Github Pages}{61}{subsection.7.4.2}
+\contentsline {chapter}{\numberline {8}Main Reference}{65}{chapter.8}
+\contentsline {chapter}{\numberline {9}Appendix: My LaTex Cheat Sheet}{67}{chapter.9}
+\contentsline {chapter}{Bibliography}{69}{chapter*.7}
+\contentsline {chapter}{Python Module Index}{71}{section*.8}
+\contentsline {chapter}{Index}{73}{section*.9}
