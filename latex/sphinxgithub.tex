@@ -3317,7 +3317,7 @@ Python
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
 \PYG{k+kn}{import} \PYG{n+nn}{xgboost} \PYG{k+kn}{as} \PYG{n+nn}{xgb}
 \end{sphinxVerbatim}
-\subsubsection*{Example request}
+\subsubsection*{Train model}
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
 \PYG{n}{bst} \PYG{o}{=} \PYG{n}{xgb}\PYG{o}{.}\PYG{n}{train}\PYG{p}{(}\PYG{n}{param}\PYG{p}{,} \PYG{n}{dtrain}\PYG{p}{,} \PYG{n}{num\PYGZus{}round}\PYG{p}{,} \PYG{n}{evallist}\PYG{p}{)}
@@ -3329,7 +3329,7 @@ r
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
 \PYG{n+nf}{require}\PYG{p}{(}\PYG{n}{xgboost}\PYG{p}{)}
 \end{sphinxVerbatim}
-\subsubsection*{Example request}
+\subsubsection*{Train model}
 
 \begin{sphinxVerbatim}[commandchars=\\\{\}]
 \PYG{n}{bstSparse} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{xgboost}\PYG{p}{(}\PYG{n}{data} \PYG{o}{=} \PYG{n}{train}\PYG{o}{\PYGZdl{}}\PYG{n}{data}\PYG{p}{,} \PYG{n}{label} \PYG{o}{=} \PYG{n}{train}\PYG{o}{\PYGZdl{}}\PYG{n}{label}\PYG{p}{,} \PYG{n}{max.depth} \PYG{o}{=} \PYG{l+m}{2}\PYG{p}{,} \PYG{n}{eta} \PYG{o}{=} \PYG{l+m}{1}\PYG{p}{)}

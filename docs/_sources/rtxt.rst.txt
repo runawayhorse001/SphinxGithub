@@ -1553,7 +1553,7 @@ reStructuredText:
 
             import xgboost as xgb
 
-        .. rubric:: Example request
+        .. rubric:: Train model
 
         .. code-block:: python
 
@@ -1568,7 +1568,7 @@ reStructuredText:
 
             require(xgboost)
 
-        .. rubric:: Example request
+        .. rubric:: Train model 
 
         .. code-block:: r 
 
