@@ -1547,7 +1547,7 @@ reStructuredText:
     .. tab-container:: python
         :title: Python
 
-        .. rubric:: import library
+        .. rubric:: Import library
 
         .. code-block:: python
 
@@ -1562,7 +1562,7 @@ reStructuredText:
     .. tab-container:: r
         :title: r
 
-        .. rubric:: import library
+        .. rubric:: Import library
 
         .. code-block:: r
 
