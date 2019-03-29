@@ -27,6 +27,7 @@
         <script type="text/javascript" src="_static/underscore.js"></script>
         <script type="text/javascript" src="_static/doctools.js"></script>
         <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/contentui.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -36,6 +37,7 @@
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="_static/fix_rtd.css" type="text/css" />
+  <link rel="stylesheet" href="_static/contentui.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="6. API Example" href="api.html" />
@@ -110,6 +112,8 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#directives">5.3. Directives</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#admonitions">5.3.1. Admonitions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hiddencode">5.3.2. Hiddencode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#options">5.3.3. Options</a></li>
 </ul>
 </li>
 </ul>
@@ -1524,6 +1528,200 @@ reference.</p>
 </div>
 <p>See more details at <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#admonitions">Admonitions</a>.</p>
 </div>
+<div class="section" id="hiddencode">
+<h3>5.3.2. Hiddencode<a class="headerlink" href="#hiddencode" title="Permalink to this headline">¶</a></h3>
+<p>reference: <a class="reference external" href="https://sphinxcontrib-contentui.readthedocs.io/en/latest/index.html">https://sphinxcontrib-contentui.readthedocs.io/en/latest/index.html</a></p>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">toggle-header</span><span class="p">::</span>
+    <span class="nc">:header:</span> <span class="nf">Example 1 **Show/Hide Code**</span>
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+    culpa qui officia deserunt mollit anim id est laborum
+</pre></div>
+</div>
+<p class="toggle-header">Example 1 <strong>Show/Hide Code</strong></p>
+<div class="toggle-content docutils container">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum</div>
+</div>
+<div class="section" id="options">
+<h3>5.3.3. Options<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h3>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">content-tabs</span><span class="p">::</span>
+
+<span class="p">    ..</span> <span class="ow">tab-container</span><span class="p">::</span> ex1
+        <span class="nc">:title:</span> <span class="nf">Example 1</span>
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum
+
+<span class="p">    ..</span> <span class="ow">tab-container</span><span class="p">::</span> ex2
+        <span class="nc">:title:</span> <span class="nf">Example 2</span>
+
+        Sed ut perspiciatis, unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae
+        ab illo inventore veritatis et quasi architecto beatae vitae dicta
+        sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit,
+        aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos,
+        qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui
+        dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed
+        quia non numquam eius modi tempora incidunt, ut labore et dolore magnam
+        aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+        exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+        ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in
+        ea voluptate velit esse, quam nihil molestiae consequatur, vel illum,
+        qui dolorem eum fugiat, quo voluptas nulla pariatur? At vero eos et
+        accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium
+        voluptatum deleniti atque corrupti, quos dolores et quas molestias
+        excepturi sint, obcaecati cupiditate non provident, similique sunt in
+        culpa, qui officia deserunt mollitia animi, id est laborum et dolorum
+        fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam
+        libero tempore, cum soluta nobis est eligendi optio, cumque nihil
+        impedit, quo minus id, quod maxime placeat, facere possimus, omnis
+        voluptas assumenda est, omnis dolor repellendus. Temporibus autem
+        quibusdam et aut officiis debitis aut rerum necessitatibus saepe
+        eveniet, ut et voluptates repudiandae sint et molestiae non recusandae.
+        Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
+        voluptatibus maiores alias consequatur aut perferendis doloribus
+        asperiores repellat.
+</pre></div>
+</div>
+<div class="content-tabs docutils container">
+<div class="tab-content docutils container" id="tab-ex1">
+<p class="tab-title">Example 1</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum</p>
+</div>
+<div class="tab-content docutils container" id="tab-ex2">
+<p class="tab-title">Example 2</p>
+<p>Sed ut perspiciatis, unde omnis iste natus error sit voluptatem
+accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae
+ab illo inventore veritatis et quasi architecto beatae vitae dicta
+sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit,
+aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos,
+qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui
+dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed
+quia non numquam eius modi tempora incidunt, ut labore et dolore magnam
+aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in
+ea voluptate velit esse, quam nihil molestiae consequatur, vel illum,
+qui dolorem eum fugiat, quo voluptas nulla pariatur? At vero eos et
+accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium
+voluptatum deleniti atque corrupti, quos dolores et quas molestias
+excepturi sint, obcaecati cupiditate non provident, similique sunt in
+culpa, qui officia deserunt mollitia animi, id est laborum et dolorum
+fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam
+libero tempore, cum soluta nobis est eligendi optio, cumque nihil
+impedit, quo minus id, quod maxime placeat, facere possimus, omnis
+voluptas assumenda est, omnis dolor repellendus. Temporibus autem
+quibusdam et aut officiis debitis aut rerum necessitatibus saepe
+eveniet, ut et voluptates repudiandae sint et molestiae non recusandae.
+Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
+voluptatibus maiores alias consequatur aut perferendis doloribus
+asperiores repellat.</p>
+</div>
+</div>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">content-tabs</span><span class="p">::</span>
+
+
+<span class="p">    ..</span> <span class="ow">tab-container</span><span class="p">::</span> python
+        <span class="nc">:title:</span> <span class="nf">Python</span>
+
+<span class="p">        ..</span> <span class="ow">rubric</span><span class="p">::</span> Description for Python
+
+<span class="p">    ..</span> <span class="ow">tab-container</span><span class="p">::</span> php
+        <span class="nc">:title:</span> <span class="nf">PHP</span>
+
+<span class="p">        ..</span> <span class="ow">rubric</span><span class="p">::</span> Description for PHP
+</pre></div>
+</div>
+<div class="content-tabs docutils container">
+<div class="tab-content docutils container" id="tab-python">
+<p class="tab-title">Python</p>
+<p class="rubric">Description for Python</p>
+</div>
+<div class="tab-content docutils container" id="tab-php">
+<p class="tab-title">PHP</p>
+<p class="rubric">Description for PHP</p>
+</div>
+</div>
+<p>reStructuredText:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">container</span><span class="p">::</span> content-tabs right-col
+
+<span class="p">    ..</span> <span class="ow">tab-container</span><span class="p">::</span> python
+        <span class="nc">:title:</span> <span class="nf">Python</span>
+
+<span class="p">        ..</span> <span class="ow">rubric</span><span class="p">::</span> import library
+
+<span class="p">        ..</span> <span class="ow">code-block</span><span class="p">::</span> <span class="k">python</span>
+
+            <span class="kn">import</span> <span class="nn">xgboost</span> <span class="kn">as</span> <span class="nn">xgb</span>
+
+<span class="p">        ..</span> <span class="ow">rubric</span><span class="p">::</span> Example request
+
+<span class="p">        ..</span> <span class="ow">code-block</span><span class="p">::</span> <span class="k">python</span>
+
+            <span class="n">bst</span> <span class="o">=</span> <span class="n">xgb</span><span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="n">param</span><span class="p">,</span> <span class="n">dtrain</span><span class="p">,</span> <span class="n">num_round</span><span class="p">,</span> <span class="n">evallist</span><span class="p">)</span>
+
+<span class="p">    ..</span> <span class="ow">tab-container</span><span class="p">::</span> r
+        <span class="nc">:title:</span> <span class="nf">r</span>
+
+<span class="p">        ..</span> <span class="ow">rubric</span><span class="p">::</span> import library
+
+<span class="p">        ..</span> <span class="ow">code-block</span><span class="p">::</span> <span class="k">r</span>
+
+            <span class="nf">require</span><span class="p">(</span><span class="n">xgboost</span><span class="p">)</span>
+
+<span class="p">        ..</span> <span class="ow">rubric</span><span class="p">::</span> Example request
+
+<span class="p">        ..</span> <span class="ow">code-block</span><span class="p">::</span> r
+
+            bstSparse &lt;- xgboost(data = train$data, label = train$label, max.depth = 2, eta = 1)
+</pre></div>
+</div>
+<div class="content-tabs right-col docutils container">
+<div class="tab-content docutils container" id="tab-python">
+<p class="tab-title">Python</p>
+<p class="rubric">import library</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">xgboost</span> <span class="kn">as</span> <span class="nn">xgb</span>
+</pre></div>
+</div>
+<p class="rubric">Example request</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">bst</span> <span class="o">=</span> <span class="n">xgb</span><span class="o">.</span><span class="n">train</span><span class="p">(</span><span class="n">param</span><span class="p">,</span> <span class="n">dtrain</span><span class="p">,</span> <span class="n">num_round</span><span class="p">,</span> <span class="n">evallist</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="tab-content docutils container" id="tab-r">
+<p class="tab-title">r</p>
+<p class="rubric">import library</p>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">require</span><span class="p">(</span><span class="n">xgboost</span><span class="p">)</span>
+</pre></div>
+</div>
+<p class="rubric">Example request</p>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">bstSparse</span> <span class="o">&lt;-</span> <span class="nf">xgboost</span><span class="p">(</span><span class="n">data</span> <span class="o">=</span> <span class="n">train</span><span class="o">$</span><span class="n">data</span><span class="p">,</span> <span class="n">label</span> <span class="o">=</span> <span class="n">train</span><span class="o">$</span><span class="n">label</span><span class="p">,</span> <span class="n">max.depth</span> <span class="o">=</span> <span class="m">2</span><span class="p">,</span> <span class="n">eta</span> <span class="o">=</span> <span class="m">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 
@@ -1549,7 +1747,7 @@ reference.</p>
     <p>
         &copy; Copyright 2019, Wenqiang Feng
       <span class="lastupdated">
-        Last updated on Mar 27, 2019.
+        Last updated on Mar 28, 2019.
       </span>
 
     </p>

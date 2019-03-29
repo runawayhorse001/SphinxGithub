@@ -35,7 +35,8 @@ import sys
 # sys.path.append(os.path.abspath(theano_path))
 pkg_path = os.path.abspath('..')
 sys.path.insert(0, pkg_path)
-import versioneer
+
+import versioneer, hidden_code_block
 
 # General configuration
 # ---------------------
@@ -47,7 +48,9 @@ extensions = ['sphinx.ext.autodoc',
               'sphinx.ext.doctest',
               'sphinx.ext.napoleon',
               'sphinx.ext.linkcode',
-              'sphinx.ext.intersphinx' 
+              'sphinx.ext.intersphinx',
+              'hidden_code_block',
+              'sphinxcontrib.contentui' 
               ]
 
 todo_include_todos = True

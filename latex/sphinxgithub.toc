@@ -41,23 +41,25 @@
 \contentsline {subsection}{\numberline {5.2.2}Specialized Roles}{51}{subsection.5.2.2}
 \contentsline {section}{\numberline {5.3}Directives}{52}{section.5.3}
 \contentsline {subsection}{\numberline {5.3.1}Admonitions}{52}{subsection.5.3.1}
-\contentsline {chapter}{\numberline {6}API Example}{55}{chapter.6}
-\contentsline {section}{\numberline {6.1}\sphinxstyleliteralintitle {\sphinxupquote {rnorm}}}{55}{section.6.1}
-\contentsline {section}{\numberline {6.2}\sphinxstyleliteralintitle {\sphinxupquote {dnorm}}}{55}{section.6.2}
-\contentsline {section}{\numberline {6.3}\sphinxstyleliteralintitle {\sphinxupquote {runif}}}{56}{section.6.3}
-\contentsline {section}{\numberline {6.4}\sphinxstyleliteralintitle {\sphinxupquote {T-test}}}{56}{section.6.4}
-\contentsline {chapter}{\numberline {7}Publishing on Github}{59}{chapter.7}
-\contentsline {section}{\numberline {7.1}Create reStructuredTexts}{59}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Create reStructuredTexts}{59}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Add them in \sphinxstyleliteralintitle {\sphinxupquote {index.rst}}}{60}{subsection.7.1.2}
-\contentsline {subsection}{\numberline {7.1.3}Compile the reStructuredTexts files}{60}{subsection.7.1.3}
-\contentsline {section}{\numberline {7.2}Create Repository on Github}{60}{section.7.2}
-\contentsline {section}{\numberline {7.3}Commit reStructuredTexts folder to Repository}{60}{section.7.3}
-\contentsline {section}{\numberline {7.4}Setup Github Pages on Github}{61}{section.7.4}
-\contentsline {subsection}{\numberline {7.4.1}Repository}{61}{subsection.7.4.1}
-\contentsline {subsection}{\numberline {7.4.2}Setup Github Pages}{61}{subsection.7.4.2}
-\contentsline {chapter}{\numberline {8}Main Reference}{65}{chapter.8}
-\contentsline {chapter}{\numberline {9}Appendix: My LaTex Cheat Sheet}{67}{chapter.9}
-\contentsline {chapter}{Bibliography}{69}{chapter*.7}
-\contentsline {chapter}{Python Module Index}{71}{section*.8}
-\contentsline {chapter}{Index}{73}{section*.9}
+\contentsline {subsection}{\numberline {5.3.2}Hiddencode}{53}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Options}{54}{subsection.5.3.3}
+\contentsline {chapter}{\numberline {6}API Example}{59}{chapter.6}
+\contentsline {section}{\numberline {6.1}\sphinxstyleliteralintitle {\sphinxupquote {rnorm}}}{59}{section.6.1}
+\contentsline {section}{\numberline {6.2}\sphinxstyleliteralintitle {\sphinxupquote {dnorm}}}{59}{section.6.2}
+\contentsline {section}{\numberline {6.3}\sphinxstyleliteralintitle {\sphinxupquote {runif}}}{60}{section.6.3}
+\contentsline {section}{\numberline {6.4}\sphinxstyleliteralintitle {\sphinxupquote {T-test}}}{60}{section.6.4}
+\contentsline {chapter}{\numberline {7}Publishing on Github}{63}{chapter.7}
+\contentsline {section}{\numberline {7.1}Create reStructuredTexts}{63}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Create reStructuredTexts}{63}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Add them in \sphinxstyleliteralintitle {\sphinxupquote {index.rst}}}{64}{subsection.7.1.2}
+\contentsline {subsection}{\numberline {7.1.3}Compile the reStructuredTexts files}{64}{subsection.7.1.3}
+\contentsline {section}{\numberline {7.2}Create Repository on Github}{64}{section.7.2}
+\contentsline {section}{\numberline {7.3}Commit reStructuredTexts folder to Repository}{64}{section.7.3}
+\contentsline {section}{\numberline {7.4}Setup Github Pages on Github}{65}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Repository}{65}{subsection.7.4.1}
+\contentsline {subsection}{\numberline {7.4.2}Setup Github Pages}{65}{subsection.7.4.2}
+\contentsline {chapter}{\numberline {8}Main Reference}{69}{chapter.8}
+\contentsline {chapter}{\numberline {9}Appendix: My LaTex Cheat Sheet}{71}{chapter.9}
+\contentsline {chapter}{Bibliography}{73}{chapter*.7}
+\contentsline {chapter}{Python Module Index}{75}{section*.8}
+\contentsline {chapter}{Index}{77}{section*.9}

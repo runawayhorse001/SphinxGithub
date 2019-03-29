@@ -91,7 +91,7 @@
 
 
 \title{Sphinx with Github Webpages}
-\date{March 27, 2019}
+\date{March 28, 2019}
 \release{1.00}
 \author{Wenqiang Feng}
 \newcommand{\sphinxlogo}{\sphinxincludegraphics{logo.png}\par}
@@ -651,7 +651,8 @@ Version and date format
 \PYG{c+c1}{\PYGZsh{} sys.path.append(os.path.abspath(theano\PYGZus{}path))}
 \PYG{n}{pkg\PYGZus{}path} \PYG{o}{=} \PYG{n}{os}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{abspath}\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{..}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{)}
 \PYG{n}{sys}\PYG{o}{.}\PYG{n}{path}\PYG{o}{.}\PYG{n}{insert}\PYG{p}{(}\PYG{l+m+mi}{0}\PYG{p}{,} \PYG{n}{pkg\PYGZus{}path}\PYG{p}{)}
-\PYG{k+kn}{import} \PYG{n+nn}{versioneer}
+
+\PYG{k+kn}{import} \PYG{n+nn}{versioneer}\PYG{o}{,} \PYG{n+nn}{hidden\PYGZus{}code\PYGZus{}block}
 
 \PYG{c+c1}{\PYGZsh{} General configuration}
 \PYG{c+c1}{\PYGZsh{} \PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}\PYGZhy{}}
@@ -663,7 +664,9 @@ Version and date format
               \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sphinx.ext.doctest}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
               \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sphinx.ext.napoleon}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
               \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sphinx.ext.linkcode}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
-              \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sphinx.ext.intersphinx}\PYG{l+s+s1}{\PYGZsq{}} 
+              \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sphinx.ext.intersphinx}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+              \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{hidden\PYGZus{}code\PYGZus{}block}\PYG{l+s+s1}{\PYGZsq{}}\PYG{p}{,}
+              \PYG{l+s+s1}{\PYGZsq{}}\PYG{l+s+s1}{sphinxcontrib.contentui}\PYG{l+s+s1}{\PYGZsq{}} 
               \PYG{p}{]}
 
 \PYG{n}{todo\PYGZus{}include\PYGZus{}todos} \PYG{o}{=} \PYG{n+nb+bp}{True}
@@ -3131,6 +3134,206 @@ reference.
 
 
 See more details at \sphinxhref{http://docutils.sourceforge.net/docs/ref/rst/directives.html\#admonitions}{Admonitions}.
+
+
+\subsection{Hiddencode}
+\label{\detokenize{rtxt:hiddencode}}
+reference: \sphinxurl{https://sphinxcontrib-contentui.readthedocs.io/en/latest/index.html}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{o+ow}{toggle\PYGZhy{}header}\PYG{p}{::}
+    \PYG{n+nc}{:header:} \PYG{n+nf}{Example 1 **Show/Hide Code**}
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+    culpa qui officia deserunt mollit anim id est laborum
+\end{sphinxVerbatim}
+
+
+Example 1 \sphinxstylestrong{Show/Hide Code}
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum
+
+
+\subsection{Options}
+\label{\detokenize{rtxt:options}}
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{o+ow}{content\PYGZhy{}tabs}\PYG{p}{::}
+
+\PYG{p}{    ..} \PYG{o+ow}{tab\PYGZhy{}container}\PYG{p}{::} ex1
+        \PYG{n+nc}{:title:} \PYG{n+nf}{Example 1}
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+        fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum
+
+\PYG{p}{    ..} \PYG{o+ow}{tab\PYGZhy{}container}\PYG{p}{::} ex2
+        \PYG{n+nc}{:title:} \PYG{n+nf}{Example 2}
+
+        Sed ut perspiciatis, unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae
+        ab illo inventore veritatis et quasi architecto beatae vitae dicta
+        sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit,
+        aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos,
+        qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui
+        dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed
+        quia non numquam eius modi tempora incidunt, ut labore et dolore magnam
+        aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+        exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+        ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in
+        ea voluptate velit esse, quam nihil molestiae consequatur, vel illum,
+        qui dolorem eum fugiat, quo voluptas nulla pariatur? At vero eos et
+        accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium
+        voluptatum deleniti atque corrupti, quos dolores et quas molestias
+        excepturi sint, obcaecati cupiditate non provident, similique sunt in
+        culpa, qui officia deserunt mollitia animi, id est laborum et dolorum
+        fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam
+        libero tempore, cum soluta nobis est eligendi optio, cumque nihil
+        impedit, quo minus id, quod maxime placeat, facere possimus, omnis
+        voluptas assumenda est, omnis dolor repellendus. Temporibus autem
+        quibusdam et aut officiis debitis aut rerum necessitatibus saepe
+        eveniet, ut et voluptates repudiandae sint et molestiae non recusandae.
+        Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
+        voluptatibus maiores alias consequatur aut perferendis doloribus
+        asperiores repellat.
+\end{sphinxVerbatim}
+
+Example 1
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+culpa qui officia deserunt mollit anim id est laborum
+
+Example 2
+
+Sed ut perspiciatis, unde omnis iste natus error sit voluptatem
+accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae
+ab illo inventore veritatis et quasi architecto beatae vitae dicta
+sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit,
+aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos,
+qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui
+dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed
+quia non numquam eius modi tempora incidunt, ut labore et dolore magnam
+aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in
+ea voluptate velit esse, quam nihil molestiae consequatur, vel illum,
+qui dolorem eum fugiat, quo voluptas nulla pariatur? At vero eos et
+accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium
+voluptatum deleniti atque corrupti, quos dolores et quas molestias
+excepturi sint, obcaecati cupiditate non provident, similique sunt in
+culpa, qui officia deserunt mollitia animi, id est laborum et dolorum
+fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam
+libero tempore, cum soluta nobis est eligendi optio, cumque nihil
+impedit, quo minus id, quod maxime placeat, facere possimus, omnis
+voluptas assumenda est, omnis dolor repellendus. Temporibus autem
+quibusdam et aut officiis debitis aut rerum necessitatibus saepe
+eveniet, ut et voluptates repudiandae sint et molestiae non recusandae.
+Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis
+voluptatibus maiores alias consequatur aut perferendis doloribus
+asperiores repellat.
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{o+ow}{content\PYGZhy{}tabs}\PYG{p}{::}
+
+
+\PYG{p}{    ..} \PYG{o+ow}{tab\PYGZhy{}container}\PYG{p}{::} python
+        \PYG{n+nc}{:title:} \PYG{n+nf}{Python}
+
+\PYG{p}{        ..} \PYG{o+ow}{rubric}\PYG{p}{::} Description for Python
+
+\PYG{p}{    ..} \PYG{o+ow}{tab\PYGZhy{}container}\PYG{p}{::} php
+        \PYG{n+nc}{:title:} \PYG{n+nf}{PHP}
+
+\PYG{p}{        ..} \PYG{o+ow}{rubric}\PYG{p}{::} Description for PHP
+\end{sphinxVerbatim}
+
+Python
+\subsubsection*{Description for Python}
+
+PHP
+\subsubsection*{Description for PHP}
+
+reStructuredText:
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{p}{..} \PYG{o+ow}{container}\PYG{p}{::} content\PYGZhy{}tabs right\PYGZhy{}col
+
+\PYG{p}{    ..} \PYG{o+ow}{tab\PYGZhy{}container}\PYG{p}{::} python
+        \PYG{n+nc}{:title:} \PYG{n+nf}{Python}
+
+\PYG{p}{        ..} \PYG{o+ow}{rubric}\PYG{p}{::} import library
+
+\PYG{p}{        ..} \PYG{o+ow}{code\PYGZhy{}block}\PYG{p}{::} \PYG{k}{python}
+
+            \PYG{k+kn}{import} \PYG{n+nn}{xgboost} \PYG{k+kn}{as} \PYG{n+nn}{xgb}
+
+\PYG{p}{        ..} \PYG{o+ow}{rubric}\PYG{p}{::} Example request
+
+\PYG{p}{        ..} \PYG{o+ow}{code\PYGZhy{}block}\PYG{p}{::} \PYG{k}{python}
+
+            \PYG{n}{bst} \PYG{o}{=} \PYG{n}{xgb}\PYG{o}{.}\PYG{n}{train}\PYG{p}{(}\PYG{n}{param}\PYG{p}{,} \PYG{n}{dtrain}\PYG{p}{,} \PYG{n}{num\PYGZus{}round}\PYG{p}{,} \PYG{n}{evallist}\PYG{p}{)}
+
+\PYG{p}{    ..} \PYG{o+ow}{tab\PYGZhy{}container}\PYG{p}{::} r
+        \PYG{n+nc}{:title:} \PYG{n+nf}{r}
+
+\PYG{p}{        ..} \PYG{o+ow}{rubric}\PYG{p}{::} import library
+
+\PYG{p}{        ..} \PYG{o+ow}{code\PYGZhy{}block}\PYG{p}{::} \PYG{k}{r}
+
+            \PYG{n+nf}{require}\PYG{p}{(}\PYG{n}{xgboost}\PYG{p}{)}
+
+\PYG{p}{        ..} \PYG{o+ow}{rubric}\PYG{p}{::} Example request
+
+\PYG{p}{        ..} \PYG{o+ow}{code\PYGZhy{}block}\PYG{p}{::} r
+
+            bstSparse \PYGZlt{}\PYGZhy{} xgboost(data = train\PYGZdl{}data, label = train\PYGZdl{}label, max.depth = 2, eta = 1)
+\end{sphinxVerbatim}
+
+Python
+\subsubsection*{import library}
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{k+kn}{import} \PYG{n+nn}{xgboost} \PYG{k+kn}{as} \PYG{n+nn}{xgb}
+\end{sphinxVerbatim}
+\subsubsection*{Example request}
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n}{bst} \PYG{o}{=} \PYG{n}{xgb}\PYG{o}{.}\PYG{n}{train}\PYG{p}{(}\PYG{n}{param}\PYG{p}{,} \PYG{n}{dtrain}\PYG{p}{,} \PYG{n}{num\PYGZus{}round}\PYG{p}{,} \PYG{n}{evallist}\PYG{p}{)}
+\end{sphinxVerbatim}
+
+r
+\subsubsection*{import library}
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n+nf}{require}\PYG{p}{(}\PYG{n}{xgboost}\PYG{p}{)}
+\end{sphinxVerbatim}
+\subsubsection*{Example request}
+
+\begin{sphinxVerbatim}[commandchars=\\\{\}]
+\PYG{n}{bstSparse} \PYG{o}{\PYGZlt{}\PYGZhy{}} \PYG{n+nf}{xgboost}\PYG{p}{(}\PYG{n}{data} \PYG{o}{=} \PYG{n}{train}\PYG{o}{\PYGZdl{}}\PYG{n}{data}\PYG{p}{,} \PYG{n}{label} \PYG{o}{=} \PYG{n}{train}\PYG{o}{\PYGZdl{}}\PYG{n}{label}\PYG{p}{,} \PYG{n}{max.depth} \PYG{o}{=} \PYG{l+m}{2}\PYG{p}{,} \PYG{n}{eta} \PYG{o}{=} \PYG{l+m}{1}\PYG{p}{)}
+\end{sphinxVerbatim}
 
 
 \chapter{API Example}

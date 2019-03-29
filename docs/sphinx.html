@@ -27,6 +27,7 @@
         <script type="text/javascript" src="_static/underscore.js"></script>
         <script type="text/javascript" src="_static/doctools.js"></script>
         <script type="text/javascript" src="_static/language_data.js"></script>
+        <script type="text/javascript" src="_static/contentui.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -36,6 +37,7 @@
   <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
   <link rel="stylesheet" href="_static/fix_rtd.css" type="text/css" />
+  <link rel="stylesheet" href="_static/contentui.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="5. reStructuredText Markup" href="rtxt.html" />
@@ -448,7 +450,8 @@
 <span class="c1"># sys.path.append(os.path.abspath(theano_path))</span>
 <span class="n">pkg_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s1">&#39;..&#39;</span><span class="p">)</span>
 <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">pkg_path</span><span class="p">)</span>
-<span class="kn">import</span> <span class="nn">versioneer</span>
+
+<span class="kn">import</span> <span class="nn">versioneer</span><span class="o">,</span> <span class="nn">hidden_code_block</span>
 
 <span class="c1"># General configuration</span>
 <span class="c1"># ---------------------</span>
@@ -460,7 +463,9 @@
               <span class="s1">&#39;sphinx.ext.doctest&#39;</span><span class="p">,</span>
               <span class="s1">&#39;sphinx.ext.napoleon&#39;</span><span class="p">,</span>
               <span class="s1">&#39;sphinx.ext.linkcode&#39;</span><span class="p">,</span>
-              <span class="s1">&#39;sphinx.ext.intersphinx&#39;</span> 
+              <span class="s1">&#39;sphinx.ext.intersphinx&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;hidden_code_block&#39;</span><span class="p">,</span>
+              <span class="s1">&#39;sphinxcontrib.contentui&#39;</span> 
               <span class="p">]</span>
 
 <span class="n">todo_include_todos</span> <span class="o">=</span> <span class="bp">True</span>
@@ -1094,7 +1099,7 @@
     <p>
         &copy; Copyright 2019, Wenqiang Feng
       <span class="lastupdated">
-        Last updated on Mar 27, 2019.
+        Last updated on Mar 28, 2019.
       </span>
 
     </p>
